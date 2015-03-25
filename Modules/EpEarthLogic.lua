@@ -8,8 +8,8 @@ local mod = core:NewBoss("EpEarthLogic", 52)
 if not mod then return end
 
 --mod:RegisterEnableMob("Megalith")
-mod:RegisterEnableBossPair("Megalith", "Mnemesis")
-mod:RegisterRestrictZone("EpEarthLogic", "Elemental Vortex Alpha", "Elemental Vortex Beta", "Elemental Vortex Delta")
+mod:RegisterEnableBossPair("Megalith", "Mnemesis") -- Mnemesis
+mod:RegisterRestrictZone("EpEarthLogic", "Elemental Vortex Alpha", "Elemental Vortex Beta", "Elemental Vortex Delta") -- Elemental Vortex Alpha, Elemental Vortex Beta, Elemental Vortex Delta
 
 --------------------------------------------------------------------------------
 -- Locals
@@ -53,7 +53,7 @@ end
 function mod:OnUnitCreated(unit)
 	local sName = unit:GetName()
 	--Print(sName)
-	if sName == "Obsidian Outcropping" then
+	if sName == "Obsidian Outcropping" then -- Obsidian Outcropping
 		--core:AddLine(unit:GetId(), 1, GameLib.GetPlayerUnit(), unit, 3)
 		core:AddPixie(unit:GetId().."_1", 1, GameLib.GetPlayerUnit(), unit, "Blue", 10)
 	end
@@ -62,14 +62,14 @@ end
 function mod:OnUnitDestroyed(unit)
 	local sName = unit:GetName()
 	--Print(sName)
-	if sName == "Obsidian Outcropping" then
+	if sName == "Obsidian Outcropping" then -- Obsidian Outcropping
 		core:DropPixie(unit:GetId())
 	end	
 end
 
 
 function mod:OnSpellCastStart(unitName, castName, unit)
-	if unitName == "Mnemesis" and castName == "Defragment" then
+	if unitName == "Mnemesis" and castName == "Defragmentieren" then -- Mnemesis, Defragment
 		local timeOfEvent = GameLib.GetGameTime()
 		if timeOfEvent - prev > 10 then
 			prev = timeOfEvent
@@ -82,9 +82,9 @@ end
 
 
 function mod:OnChatDC(message)
-	if message:find("The ground shudders beneath Megalith") then
+	if message:find("The ground shudders beneath Megalith") then -- The ground shudders beneath Megalith
 		core:AddMsg("QUAKE", "JUMP !", 3, "Beware")
-	elseif message:find("Logic creates powerful data caches") then
+	elseif message:find("Logic creates powerful data caches") then -- Logic creates powerful data caches
 		core:AddMsg("STAR", "STARS !", 5, "Alert")
 		core:AddBar("STAR", "STARS", 60)
 	end
@@ -108,9 +108,9 @@ function mod:OnCombatStateChanged(unit, bInCombat)
 	if unit:GetType() == "NonPlayer" and bInCombat then
 		local sName = unit:GetName()
 
-		if sName == "Megalith" then
+		if sName == "Megalith" then -- Megalith
 			core:AddUnit(unit)
-		elseif sName == "Mnemesis" then
+		elseif sName == "Mnemesis" then -- Mnemesis
 			self:Start()
 			prev = 0
 			pilarCount = 0
@@ -122,7 +122,7 @@ function mod:OnCombatStateChanged(unit, bInCombat)
 			core:RaidDebuff()
 			Apollo.RegisterEventHandler("UnitCreated", 			"OnUnitCreated", self)
 			core:StartScan()
-		elseif sName == "Crystalline Matrix" then
+		elseif sName == "Kristallmatrix" then -- Crystalline Matrix
 			pilarCount = pilarCount + 1
 			--core:MarkUnit(unit)
 			--core:AddUnit(unit)
@@ -130,7 +130,7 @@ function mod:OnCombatStateChanged(unit, bInCombat)
 		end
 	elseif unit:GetType() == "NonPlayer" and not bInCombat then
 		local sName = unit:GetName()
-		if sName == "Mnemesis" then
+		if sName == "Mnemesis" then -- Mnemesis
 			Apollo.RemoveEventHandler("UnitCreated", self)
 			core:ResetLines()
 		end

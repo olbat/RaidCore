@@ -7,7 +7,7 @@ local core = Apollo.GetPackage("Gemini:Addon-1.1").tPackage:GetAddon("RaidCore")
 local mod = core:NewBoss("FrostAvalanche", 52)
 if not mod then return end
 
-mod:RegisterEnableMob("Frost-Boulder Avalanche")
+mod:RegisterEnableMob("Frostfelsen-Lawine") -- Frost-Boulder Avalanche
 
 --------------------------------------------------------------------------------
 -- Locals
@@ -38,14 +38,14 @@ function mod:OnHealthChanged(unitName, health)
 end
 
 function mod:OnSpellCastStart(unitName, castName, unit)
-	if unitName == "Frost-Boulder Avalanche" and castName == "Icicle Storm" then
+	if unitName == "Frostfelsen-Lawine" and castName == "Eiszapfensturm" then -- Frost-Boulder Avalanche, Icicle Storm
 		core:AddMsg("ICICLE", "ICICLE !!", 5, "Alert")
 		core:AddBar("ICICLE", "ICICLE", 22)
 		icicleSpell = true
-	elseif unitName == "Frost-Boulder Avalanche" and castName == "Shatter" then
+	elseif unitName == "Frostfelsen-Lawine" and castName == "Zerschmettern" then -- Frost-Boulder Avalanche, Shatter
 		core:AddMsg("ICICLE", "SHATTER !!", 5, "Alert")
 		core:AddBar("ICICLE", "SHATTER", 22)
-	elseif unitName == "Frost-Boulder Avalanche" and castName == "Cyclone" then
+	elseif unitName == "Frostfelsen-Lawine" and castName == "Wirbelsturm" then -- Frost-Boulder Avalanche, Cyclone
 		core:AddMsg("CYCLONE", "CYCLONE", 5, "RunAway")
 		core:AddBar("RUN", "CYCLONE", 23)
 		core:AddBar("ICICLE", icicleSpell and "ICICLE" or "SHATTER", 48)
@@ -56,7 +56,7 @@ end
 function mod:OnCombatStateChanged(unit, bInCombat)
 	if unit:GetType() == "NonPlayer" and bInCombat then
 		local sName = unit:GetName()
-		if sName == "Frost-Boulder Avalanche" then
+		if sName == "Frostfelsen-Lawine" then -- Frost-Boulder Avalanche
 			icicleSpell = false
 			core:AddUnit(unit)
 			core:WatchUnit(unit)

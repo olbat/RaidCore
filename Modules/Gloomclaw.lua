@@ -7,7 +7,7 @@ local core = Apollo.GetPackage("Gemini:Addon-1.1").tPackage:GetAddon("RaidCore")
 local mod = core:NewBoss("Gloomclaw", 52)
 if not mod then return end
 
-mod:RegisterEnableMob("Gloomclaw")
+mod:RegisterEnableMob("Düsterklaue") -- Gloomclaw
 
 --------------------------------------------------------------------------------
 -- Locals
@@ -111,12 +111,12 @@ function mod:OnUnitCreated(unit)
 	local sName = unit:GetName()
 	--Print(sName .. " Created")
 	--[[
-	if sName == "Datascape Corruption Pool" then
+	if sName == "Korrumpierungslache der Datenzone" then -- Datascape Corruption Pool
 		core:MarkUnit(unit)
 	end--]]
-	if sName == "Corrupted Ravager" or sName == "Empowered Ravager" then
+	if sName == "Korrumpierter Verwüster" or sName == "Empowered Ravager" then -- Corrupted Ravager, Empowered Ravager
 		core:WatchUnit(unit)
-	elseif sName == "Volatile Mauler" then
+	elseif sName == "Unbeständiger Schläger" then -- Volatile Mauler
 		--local Rover = Apollo.GetAddon("Rover")
 		--Rover:AddWatch("Mauler", unit:GetPosition(), 0)
 	end
@@ -124,7 +124,7 @@ end
 
 function mod:OnSpellCastStart(unitName, castName, unit)
 	--Print(castName .. " by " .. unitName)
-	if unitName == "Gloomclaw" and castName == "Rupture" then
+	if unitName == "Düsterklaue" and castName == "Aufreißen" then -- Gloomclaw, Rupture
 		ruptCount = ruptCount + 1
 		core:AddMsg("RUPTURE", "INTERRUPT BOSS", 5, "Destruction")
 		if ruptCount == 1 then
@@ -141,13 +141,13 @@ end
 
 
 function mod:OnChatDC(message)
-	if message:find("Gloomclaw is pushed back by the purification of the essences") or message:find("Gloomclaw is moving forward to corrupt more essences!") then
+	if message:find("Gloomclaw is pushed back by the purification of the essences") or message:find("Gloomclaw is moving forward to corrupt more essences!") then -- Gloomclaw is pushed back by the purification of the essences
 		if not first then
 			waveCount, ruptCount, prev = 0, 0, 0
 			core:StopBar("RUPTURE")
 			core:StopBar("CORRUPTION")
 			core:StopBar("WAVE")
-			if message:find("pushed") then
+			if message:find("pushed") then -- pushed
 				section = section + 1
 			else
 				section = section - 1
@@ -173,7 +173,7 @@ function mod:OnChatDC(message)
 			core:SetWorldMarker(rightSpawn[section], "RIGHT")
 		end
 		Apollo.RegisterEventHandler("CombatLogHeal", 		"OnCombatLogHeal", self)		
-	elseif message:find("Gloomclaw is reduced to a weakened state") then
+	elseif message:find("Gloomclaw is reduced to a weakened state") then -- Gloomclaw is reduced to a weakened state
 		core:StopBar("RUPTURE")
 		core:StopBar("CORRUPTION")
 		core:StopBar("WAVE")
@@ -184,7 +184,7 @@ function mod:OnChatDC(message)
 			essenceUp[unitId] = nil
 		end
 		--essenceUp = {}
-	elseif message:find("Gloomclaw is vulnerable") then
+	elseif message:find("Gloomclaw is vulnerable") then -- Gloomclaw is vulnerable
 		core:StopBar("RUPTURE")
 		core:StopBar("CORRUPTION")
 		core:StopBar("WAVE")
@@ -219,7 +219,7 @@ function mod:OnCombatStateChanged(unit, bInCombat)
 	if unit:GetType() == "NonPlayer" and bInCombat then
 		local sName = unit:GetName()
 
-		if sName == "Gloomclaw" then
+		if sName == "Düsterklaue" then -- Gloomclaw
 			self:Start()
 			waveCount, ruptCount, prev = 0, 0, 0
 			section = 1

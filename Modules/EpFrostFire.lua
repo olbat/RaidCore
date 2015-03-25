@@ -8,8 +8,8 @@ local mod = core:NewBoss("EpFrostFire", 52)
 if not mod then return end
 
 --mod:RegisterEnableMob("Hydroflux")
-mod:RegisterEnableBossPair("Hydroflux", "Pyrobane")
-mod:RegisterRestrictZone("EpFrostFire", "Elemental Vortex Alpha", "Elemental Vortex Beta", "Elemental Vortex Delta")
+mod:RegisterEnableBossPair("Hydroflux", "Pyroman") -- Pyrobane
+mod:RegisterRestrictZone("EpFrostFire", "Elemental Vortex Alpha", "Elemental Vortex Beta", "Elemental Vortex Delta") -- Elemental Vortex Alpha, Elemental Vortex Beta, Elemental Vortex Delta
 
 --------------------------------------------------------------------------------
 -- Locals
@@ -75,24 +75,24 @@ function mod:RemoveBombMarker(bomb_type, unit)
 	if not unitId or not unitName then return end -- stupid carbine api likes to return nil...
 	core:DropMark(unitId)
 	core:RemoveUnit(unitId)
-	if bomb_type == "fire" then
+	if bomb_type == "fire" then -- fire
 		firebomb_players[unitName] = nil
 		core:DropPixie(unitId .. "_BOMB")
-	elseif bomb_type == "frost" then
+	elseif bomb_type == "frost" then -- frost
 		frostbomb_players[unitName] = nil
 		core:DropPixie(unitId .. "_BOMB")
 	end
 end
 
 function mod:ApplyBombLines(bomb_type)
-	if bomb_type == "fire" then
+	if bomb_type == "fire" then -- fire
 		for key, value in pairs(frostbomb_players) do
 			local unitId = value:GetId()
 			if unitId then
 				core:AddPixie(unitId .. "_BOMB", 1, uPlayer, value, "Blue", 5, 10, 10)
 			end
 		end
-	elseif bomb_type == "frost" then
+	elseif bomb_type == "frost" then -- frost
 		for key, value in pairs(firebomb_players) do
 			local unitId = value:GetId()
 			if unitId then
@@ -162,7 +162,7 @@ end
 
 function mod:OnUnitCreated(unit)
 	local sName = unit:GetName()
-	if sName == "Ice Tomb" then
+	if sName == "Eisgrab" then -- Ice Tomb
 		local timeOfEvent = GameLib.GetGameTime()
 		if timeOfEvent - prev > 13 then
 			prev = timeOfEvent
@@ -170,7 +170,7 @@ function mod:OnUnitCreated(unit)
 			core:AddBar("TOMB", "ICE TOMB", 15)
 		end
 		core:AddUnit(unit)
-	elseif sName == "Flame Wave" then
+	elseif sName == "Flammenwelle" then -- Flame Wave
 		local unitId = unit:GetId()
 		if unitId then
 			core:AddPixie(unitId, 2, unit, nil, "Green", 10, 20, 0)	
@@ -180,7 +180,7 @@ end
 
 function mod:OnUnitDestroyed(unit)
 	local sName = unit:GetName()
-	if sName == "Flame Wave" then
+	if sName == "Flammenwelle" then -- Flame Wave
 		local unitId = unit:GetId()
 		if unitId then
 			core:DropPixie(unitId)
@@ -198,7 +198,7 @@ function mod:OnDebuffAppliedDose(unitName, splId, stack)
 end
 
 function mod:OnChatNPCSay(message)
-	if message:find("Burning mortals... such sweet agony") 
+	if message:find("Burning mortals... such sweet agony")  -- Burning mortals... such sweet agony
 	or message:find("Run! Soon my fires will destroy you")
 	or message:find("Ah! The smell of seared flesh") 
 	or message:find("Enshrouded in deadly flame")  
@@ -211,14 +211,14 @@ function mod:OnCombatStateChanged(unit, bInCombat)
 	if unit:GetType() == "NonPlayer" and bInCombat then
 		local sName = unit:GetName()
 
-		if sName == "Hydroflux" then
+		if sName == "Hydroflux" then -- Hydroflux
 			core:AddUnit(unit)
 			local unitId = unit:GetId()
 			if unitId then
 				core:AddPixie(unitId .. "_1", 2, unit, nil, "Yellow", 3, 7, 0)
 				core:AddPixie(unitId .. "_2", 2, unit, nil, "Yellow", 3, 7, 180)
 			end
-		elseif sName == "Pyrobane" then
+		elseif sName == "Pyroman" then -- Pyrobane
 			self:Start()
 			uPlayer = GameLib.GetPlayerUnit()
 			strMyName = uPlayer:GetName()

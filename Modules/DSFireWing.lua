@@ -7,7 +7,7 @@ local core = Apollo.GetPackage("Gemini:Addon-1.1").tPackage:GetAddon("RaidCore")
 local mod = core:NewBoss("DSFireWing", 52)
 if not mod then return end
 
-mod:RegisterEnableMob("Warmonger Agratha", "Warmonger Talarii", "Grand Warmonger Tar'gresh")
+mod:RegisterEnableMob("Kriegstreiberin Agratha", "Kriegstreiberin Talarii", "Großer Kriegstreiber Tar’gresh") -- Warmonger Agratha, Warmonger Talarii, Grand Warmonger Tar'gresh
 
 --------------------------------------------------------------------------------
 -- Locals
@@ -37,7 +37,7 @@ end
 function mod:OnUnitCreated(unit)
 	local sName = unit:GetName()
 	--Print(sName)
-	if sName == "Conjured Fire Bomb" then
+	if sName == "Beschworene Feuerbombe" then -- Conjured Fire Bomb
 		core:AddMsg("BOMB", "BOMB", 5, "Long", "Blue")
 		core:AddBar("BOMB", "BOMB", first and 20 or 23)
 	end
@@ -53,18 +53,18 @@ function mod:OnHealthChanged(unitName, health)
 end
 
 function mod:OnSpellCastStart(unitName, castName, unit)
-	if unitName == "Warmonger Talarii" and castName == "Incineration" then
+	if unitName == "Kriegstreiberin Talarii" and castName == "Lodernde Flammen" then -- Warmonger Talarii, Incineration
 		core:AddMsg("KNOCK", "INTERRUPT !", 5, "Alert")
 		core:AddBar("KNOCK", "KNOCKBACK", 29)
-	elseif unitName == "Warmonger Agratha" and castName == "Conjure Fire Elementals" then
+	elseif unitName == "Kriegstreiberin Agratha" and castName == "Feuerelementare beschwören" then -- Warmonger Agratha, Conjure Fire Elementals
 		core:AddMsg("ELEMENTALS", "ELEMENTALS", 5, "Alert")
 		core:AddBar("1STAB", "FIRST ABILITY", 15)
 		core:AddBar("2DNAB", "SECOND ABILITY", 24)			
-	elseif unitName == "Warmonger Talarii" and castName == "Conjure Fire Elementals" then
+	elseif unitName == "Kriegstreiberin Talarii" and castName == "Feuerelementare beschwören" then -- Warmonger Talarii, Conjure Fire Elementals
 		core:AddMsg("ELEMENTALS", "ELEMENTALS", 5, "Alert")
 		core:AddBar("1STAB", "FIRST ABILITY", 15)
 		core:AddBar("2DNAB", "SECOND ABILITY", 24)	
-	elseif unitName == "Grand Warmonger Tar'gresh" and castName == "Meteor Storm" then
+	elseif unitName == "Großer Kriegstreiber Tar’gresh" and castName == "Meteorsturm" then -- Grand Warmonger Tar'gresh, Meteor Storm
 		core:AddMsg("STORM", "STORM !!", 5, "RunAway")
 		core:AddBar("STORM", "METEOR STORM", 43, 1)	
 	end
@@ -84,7 +84,7 @@ end
 function mod:OnCombatStateChanged(unit, bInCombat)
 	if unit:GetType() == "NonPlayer" and bInCombat then
 		local sName = unit:GetName()
-		if sName == "Warmonger Agratha" then
+		if sName == "Kriegstreiberin Agratha" then -- Warmonger Agratha
 			self:Start()
 			prev, first = 0, true
 			boss = sName
@@ -93,7 +93,7 @@ function mod:OnCombatStateChanged(unit, bInCombat)
 			core:RaidDebuff()
 			core:StartScan()
 			core:AddBar("BOMB", "BOMB", 23)
-		elseif sName == "Warmonger Talarii" then
+		elseif sName == "Kriegstreiberin Talarii" then -- Warmonger Talarii
 			self:Start()
 			prev = 0
 			boss = sName
@@ -102,7 +102,7 @@ function mod:OnCombatStateChanged(unit, bInCombat)
 			core:RaidDebuff()
 			core:StartScan()
 			core:AddBar("KNOCK", "KNOCKBACK", 23)
-		elseif sName == "Grand Warmonger Tar'gresh" then
+		elseif sName == "Großer Kriegstreiber Tar’gresh" then -- Grand Warmonger Tar'gresh
 			self:Start()
 			core:AddUnit(unit)
 			core:WatchUnit(unit)

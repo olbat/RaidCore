@@ -7,9 +7,9 @@ local core = Apollo.GetPackage("Gemini:Addon-1.1").tPackage:GetAddon("RaidCore")
 local mod = core:NewBoss("ExperimentX89", 67)
 if not mod then return end
 
-mod:RegisterEnableMob("Experiment X-89")
-mod:RegisterRestrictZone("ExperimentX89", "Isolation Chamber")
-mod:RegisterEnableZone("ExperimentX89", "Isolation Chamber")
+mod:RegisterEnableMob("Experiment X-89") -- Experiment X-89
+mod:RegisterRestrictZone("ExperimentX89", "Isolation Chamber") -- Isolation Chamber
+mod:RegisterEnableZone("ExperimentX89", "Isolation Chamber") -- Isolation Chamber
 
 --------------------------------------------------------------------------------
 -- Locals
@@ -36,13 +36,13 @@ end
 
 
 function mod:OnSpellCastStart(unitName, castName, unit)
-	if unitName == "Experiment X-89" and castName == "Resounding Shout" then
+	if unitName == "Experiment X-89" and castName == "Widerhallender Schrei" then -- Experiment X-89, Resounding Shout
 		core:AddMsg("KNOCKBACK", "KNOCKBACK !!", 5, "Alert")
 		core:AddBar("KNOCKBACK", "KNOCKBACK", 23)
-	elseif unitName == "Experiment X-89" and castName == "Repugnant Spew" then
+	elseif unitName == "Experiment X-89" and castName == "Widerliches Erbrochenes" then -- Experiment X-89, Repugnant Spew
 		core:AddMsg("BEAM", "BEAM !!", 5, "Alarm")
 		core:AddBar("BEAM", "BEAM", 40)
-	elseif unitName == "Experiment X-89" and castName == "Shattering Shockwave" then
+	elseif unitName == "Experiment X-89" and castName == "Zerschmetternde Schockwelle" then -- Experiment X-89, Shattering Shockwave
 		core:AddBar("SHOCKWAVE", "SHOCKWAVE", 19)
 	end
 end
@@ -50,7 +50,7 @@ end
 function mod:OnChatDC(message)
 	-- the dash in X-89 needs to be escaped... they are magic symbols in lua
 	-- can be escaped by adding a % in front of it.
-	if message:find("Experiment X%-89 has placed a bomb") then
+	if message:find("Experiment X%-89 has placed a bomb") then -- Experiment X%-89 has placed a bomb
 		local pName = string.gsub(string.sub(message, 38), "!", "")
 		if pName == playerName then
 			core:AddMsg("BIGB", "BIG BOMB on YOU !!!", 5, "Destruction", "Blue")
@@ -69,7 +69,7 @@ end
 function mod:OnCombatStateChanged(unit, bInCombat)
 	if unit:GetType() == "NonPlayer" and bInCombat then
 		local sName = unit:GetName()
-		if sName == "Experiment X-89" then
+		if sName == "Experiment X-89" then -- Experiment X-89
 			self:Start()
 			playerName = GameLib.GetPlayerUnit():GetName()
 			core:AddUnit(unit)

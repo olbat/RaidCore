@@ -7,8 +7,8 @@ local core = Apollo.GetPackage("Gemini:Addon-1.1").tPackage:GetAddon("RaidCore")
 local mod = core:NewBoss("EpFrostLogic", 52)
 if not mod then return end
 
-mod:RegisterEnableBossPair("Hydroflux", "Mnemesis")
-mod:RegisterRestrictZone("EpFrostLogic", "Elemental Vortex Alpha", "Elemental Vortex Beta", "Elemental Vortex Delta")
+mod:RegisterEnableBossPair("Hydroflux", "Mnemesis") -- Mnemesis
+mod:RegisterRestrictZone("EpFrostLogic", "Elemental Vortex Alpha", "Elemental Vortex Beta", "Elemental Vortex Delta") -- Elemental Vortex Alpha, Elemental Vortex Beta, Elemental Vortex Delta
 
 --------------------------------------------------------------------------------
 -- Locals
@@ -54,17 +54,17 @@ end
 function mod:OnSpellCastStart(unitName, castName, unit)
 	local eventTime = GameLib.GetGameTime()
 	--Print(eventTime .. castName .. unit:GetName())
-	if unitName == "Mnemesis" and castName == "Circuit Breaker" then
+	if unitName == "Mnemesis" and castName == "Schaltkreiszerstörer" then -- Mnemesis, Circuit Breaker
 		core:StopBar("MIDPHASE")
 		core:AddBar("MIDPHASE", "Middle Phase", 100, true)
 		midphase = true
 	elseif unitName == "Hydroflux" and castName == "Watery Grave" and self:Tank() then
 		core:StopBar("GRAVE")
 		core:AddBar("GRAVE", "Watery Grave", 10)
-	elseif unitName == "Mnemesis" and castName == "Imprison" then
+	elseif unitName == "Mnemesis" and castName == "Einsperren" then -- Mnemesis, Imprison
 		core:StopBar("PRISON")
 		core:AddBar("PRISON", "Imprison", 19)
-	elseif unitName == "Mnemesis" and castName == "Defragment" then
+	elseif unitName == "Mnemesis" and castName == "Defragmentieren" then -- Mnemesis, Defragment
 		core:StopBar("DEFRAG")
 		core:AddMsg("DEFRAG", "SPREAD", 5, "Beware")
 		core:AddBar("DEFRAG", "~Defrag", 40, true)
@@ -72,14 +72,14 @@ function mod:OnSpellCastStart(unitName, castName, unit)
 end
 
 function mod:OnSpellCastEnd(unitName, castName)
-	if unitName == "Mnemesis" and castName == "Circuit Breaker" then
+	if unitName == "Mnemesis" and castName == "Schaltkreiszerstörer" then -- Mnemesis, Circuit Breaker
 		midphase = false
 	end
 end
 
 function mod:OnDebuffApplied(unitName, splId, unit)
 	local splName = GameLib.GetSpell(splId):GetName()
-	if splName == "Data Disruptor" then
+	if splName == "Datenstörer" then -- Data Disruptor
 		if unitName == strMyName then
 			core:AddMsg("DISRUPTOR", "Stay away from boss with buff!", 5, "Beware")
 		end
@@ -91,7 +91,7 @@ function mod:OnDebuffRemoved(unitName, splId, unit)
 	local eventTime = GameLib.GetGameTime()
 	local tSpell = GameLib.GetSpell(splId)
 	local strSpellName = tSpell:GetName()
-	if strSpellName == "Data Disruptor" then
+	if strSpellName == "Datenstörer" then -- Data Disruptor
 		local unitId = unit:GetId()
 		if unitId then
 			core:DropMark(unit:GetId())
@@ -103,7 +103,7 @@ function mod:OnUnitCreated(unit)
 	local sName = unit:GetName()
 	local eventTime = GameLib.GetGameTime()
 
-	if sName == "Alphanumeric Hash" then
+	if sName == "Alphanumerische Raute" then -- Alphanumeric Hash
 		local unitId = unit:GetId()
 		if unitId then
 			core:AddPixie(unitId, 2, unit, nil, "Red", 10, 20, 0)	
@@ -122,12 +122,12 @@ function mod:OnUnitDestroyed(unit)
 	local sName = unit:GetName()
 	local eventTime = GameLib.GetGameTime()
 	
-	if sName == "Alphanumeric Hash" then
+	if sName == "Alphanumerische Raute" then -- Alphanumeric Hash
 		local unitId = unit:GetId()
 		if unitId then
 			core:DropPixie(unitId)
 		end
-	elseif sName == "Hydro Disrupter - DNT" then
+	elseif sName == "Hydro Disrupter - DNT" then -- Hydro Disrupter - DNT
 		local unitId = unit:GetId()
 		if unitId then
 			core:DropPixie(unitId)
@@ -140,10 +140,10 @@ function mod:OnCombatStateChanged(unit, bInCombat)
 		local sName = unit:GetName()
 		local eventTime = GameLib.GetGameTime()
 
-		if sName == "Hydroflux" then
+		if sName == "Hydroflux" then -- Hydroflux
 			core:AddUnit(unit)
 			core:WatchUnit(unit)
-		elseif sName == "Mnemesis" then
+		elseif sName == "Mnemesis" then -- Mnemesis
 			self:Start()
 			uPlayer = GameLib.GetPlayerUnit()
 			strMyName = uPlayer:GetName()

@@ -3,7 +3,7 @@ local core = Apollo.GetPackage("Gemini:Addon-1.1").tPackage:GetAddon("RaidCore")
 local mod = core:NewBoss("Gnash", 8)
 if not mod then return end
 
-mod:RegisterEnableMob("Gnash")
+mod:RegisterEnableMob("Knirschen") -- Gnash
 
 function mod:OnBossEnable()
 	Print("YEAHHH")
@@ -13,7 +13,7 @@ end
 function mod:OnUnitCreated(unit)
 	local sName = unit:GetName()
 	--if sName == "Crimson Augmentor" then
-	if sName == "Gnash" then
+	if sName == "Knirschen" then -- Gnash
 		core:MarkUnit(unit, 1)
 		core:AddUnit(unit)
 	end
