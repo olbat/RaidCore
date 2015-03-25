@@ -7,7 +7,7 @@ local core = Apollo.GetPackage("Gemini:Addon-1.1").tPackage:GetAddon("RaidCore")
 local mod = core:NewBoss("VolatilityLattice", 52)
 if not mod then return end
 
-mod:RegisterEnableMob("Big Red Button")
+mod:RegisterEnableMob("Big Red Button") -- Big Red Button
 
 --------------------------------------------------------------------------------
 -- Locals
@@ -63,7 +63,7 @@ end
 
 function mod:OnUnitDestroyed(unit)
 	local sName = unit:GetName()
-	if sName == "Big Red Button" then
+	if sName == "Big Red Button" then -- Big Red Button
 		self:Start()
 		playerName = GameLib.GetPlayerUnit():GetName()
 		prev = 0
@@ -72,14 +72,14 @@ function mod:OnUnitDestroyed(unit)
 		core:AddBar("BEAM", "NEXT BEAM", 24)
 		core:AddBar("WAVE", ("[%s] WAVE"):format(waveCount + 1), 24, 1)
 		core:Berserk(600)
-	elseif sName == "Data Devourer" then
+	elseif sName == "Dévoreur de données" then -- Data Devourer
 		core:DropPixie(unit:GetId())
 	end
 end
 
 
 function mod:OnChatDC(message)
-	if message:find("Avatus sets his focus on") then
+	if message:find("Avatus sets his focus on") then -- Avatus sets his focus on
 		beamCount = beamCount + 1
 		local pName = string.gsub(string.sub(message, 26), "!", "")
 		local pUnit = GameLib.GetPlayerUnitByName(pName)
@@ -101,13 +101,13 @@ function mod:OnChatDC(message)
 				core:AddBar("WAVE", ("[%s] WAVE"):format(waveCount + 1), 15, 1)
 			end
 		end
-	elseif message:find("Avatus prepares to delete all data") then
+	elseif message:find("Avatus prepares to delete all data") then -- Avatus prepares to delete all data
 		core:StopBar("BEAM")
 		core:StopBar("WAVE")
 		core:AddMsg("BIGC", "BIG CAST !!", 5, "Beware")		
 		core:AddBar("BIGC", "BIG CAST", 10)
 		beamCount = 0
-	elseif message:find("The Secure Sector Enhancement Ports have been activated") then
+	elseif message:find("The Secure Sector Enhancement Ports have been activated") then -- The Secure Sector Enhancement Ports have been activated
 		core:StopBar("BEAM")
 		core:StopBar("WAVE")
 		phase2 = true
@@ -115,7 +115,7 @@ function mod:OnChatDC(message)
 		core:AddMsg("P2", "P2 : SHIELD PHASE", 5, "Alert")
 		core:AddBar("P2", "LASER", 15, 1)			
 		core:AddBar("BEAM", "NEXT BEAM", 44)		
-	elseif message:find("The Vertical Locomotion Enhancement Ports have been activated") then
+	elseif message:find("The Vertical Locomotion Enhancement Ports have been activated") then -- The Vertical Locomotion Enhancement Ports have been activated
 		core:StopBar("BEAM")
 		core:StopBar("WAVE")
 		phase2 = true
@@ -131,7 +131,7 @@ function mod:OnCombatStateChanged(unit, bInCombat)
 	if unit:GetType() == "NonPlayer" and bInCombat then
 		local sName = unit:GetName()
 
-		if sName == "Obstinate Logic Wall" then
+		if sName == "Mur de logique obstiné" then -- Obstinate Logic Wall
 			local timeOfEvent = GameLib.GetGameTime()
 			core:MarkUnit(unit)
 			core:AddUnit(unit)

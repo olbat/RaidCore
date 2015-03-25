@@ -8,9 +8,9 @@ local mod = core:NewBoss("SystemDeamons", 52)
 if not mod then return end
 
 --mod:RegisterEnableBossPair("Binary System Daemon","Null System Daemon")
-mod:RegisterEnableMob("Binary System Daemon","Null System Daemon")
-mod:RegisterRestrictZone("SystemDeamons", "Halls of the Infinite Mind", "Infinite Generator Core", "Lower Infinite Generator Core")
-mod:RegisterEnableZone("SystemDeamons", "Halls of the Infinite Mind", "Infinite Generator Core", "Lower Infinite Generator Core")
+mod:RegisterEnableMob("Daemon 2.0","Daemon 1.0") -- Binary System Daemon, Null System Daemon
+mod:RegisterRestrictZone("SystemDeamons", "Halls of the Infinite Mind", "Infinite Generator Core", "Lower Infinite Generator Core") -- Halls of the Infinite Mind, Infinite Generator Core, Lower Infinite Generator Core
+mod:RegisterEnableZone("SystemDeamons", "Halls of the Infinite Mind", "Infinite Generator Core", "Lower Infinite Generator Core") -- Halls of the Infinite Mind, Infinite Generator Core, Lower Infinite Generator Core
 mod:RegisterRestrictEventObjective("SystemDeamons", "Defeat the System Daemons")
 mod:RegisterEnableEventObjective("SystemDeamons", "Defeat the System Daemons")
 --------------------------------------------------------------------------------
@@ -92,7 +92,7 @@ function mod:OnUnitCreated(unit)
 			end
 			core:AddBar("PROBES", "[1] Probe", 10)
 		end
-	elseif sName == "Null System Daemon" or sName == "Binary System Daemon" then
+	elseif sName == "Daemon 1.0" or sName == "Daemon 2.0" then -- Null System Daemon, Binary System Daemon
 		--core:MarkUnit(unit, 0, ("N%s"):format(sdSurgeCount[unit:GetId()] or 0))
 		core:MarkUnit(unit, 0, ("%s"):format(sName:find("Null") and "S" or "N"))
 		core:AddUnit(unit)
@@ -101,31 +101,31 @@ function mod:OnUnitCreated(unit)
 	--	core:MarkUnit(unit, 0, ("S%s"):format(sdSurgeCount[unit:GetId()] or 0))
 	--	core:AddUnit(unit)
 	--	core:WatchUnit(unit)
-	elseif sName == "Conduction Unit Mk. I" then
+	elseif sName == "Unité de conductivité v1" then -- Conduction Unit Mk. I
 		if probeCount == 0 then probeCount = 1 end
-		if GetCurrentSubZoneName():find("Infinite Generator Core") then core:MarkUnit(unit, 1, 1) end
+		if GetCurrentSubZoneName():find("Infinite Generator Core") then core:MarkUnit(unit, 1, 1) end -- Infinite Generator Core
 		core:AddBar("PROBES", "[2] Probe", 10)
-	elseif sName == "Conduction Unit Mk. II" then
+	elseif sName == "Unité de conductivité v2" then -- Conduction Unit Mk. II
 		if probeCount == 1 then probeCount = 2 end
-		if GetCurrentSubZoneName():find("Infinite Generator Core") then core:MarkUnit(unit, 1, 2) end
+		if GetCurrentSubZoneName():find("Infinite Generator Core") then core:MarkUnit(unit, 1, 2) end -- Infinite Generator Core
 		core:AddBar("PROBES", "[3] Probe", 10)
-	elseif sName == "Conduction Unit Mark III" then
+	elseif sName == "Unité de conductivité v3" then -- Conduction Unit Mark III
 		if probeCount == 2 then probeCount = 3 end
-		if GetCurrentSubZoneName():find("Infinite Generator Core") then core:MarkUnit(unit, 1, 3) end
-	elseif sName == "Enhancement Module" then
+		if GetCurrentSubZoneName():find("Infinite Generator Core") then core:MarkUnit(unit, 1, 3) end -- Infinite Generator Core
+	elseif sName == "Module d'amélioration" then -- Enhancement Module
 		--Print("Adding Lines for " .. unit:GetId())
 		--core:MarkUnit(unit, 0)
 		core:AddUnit(unit)
 		core:AddLine(unit:GetId().."_1", 2, unit, nil, 1, 25, 90)
 		core:AddLine(unit:GetId().."_2", 2, unit, nil, 2, 25, -90)
-	elseif sName == "Recovery Protocol" then
+	elseif sName == "Protocole de récupération" then -- Recovery Protocol
 		core:WatchUnit(unit)
 	end
 end
 
 function mod:OnUnitDestroyed(unit)
 	local sName = unit:GetName()
-	if sName == "Enhancement Module" then
+	if sName == "Module d'amélioration" then -- Enhancement Module
 		--Print("Dropping Lines for " .. unit:GetId())
 		core:DropLine(unit:GetId().."_1")
 		core:DropLine(unit:GetId().."_2")
@@ -157,24 +157,24 @@ end
 
 
 function mod:OnSpellCastEnd(unitName, castName, unit)
-	if unitName == "Recovery Protocol" and castName == "Repair Sequence" then
+	if unitName == "Protocole de récupération" and castName == "Séquence de réparation" then -- Recovery Protocol, Repair Sequence
 		core:DropMark(unit:GetId())
 	end
 end
 
 
 function mod:OnSpellCastStart(unitName, castName, unit)
-	if unitName == "Binary System Daemon" and castName == "Power Surge" then
+	if unitName == "Daemon 2.0" and castName == "Afflux d'énergie" then -- Binary System Daemon, Power Surge
 		core:SendSync("NORTH_SURGE", unit:GetId())
 		if phase2 and dist2unit(GameLib.GetPlayerUnit(), unit) < 40 then
 			core:AddMsg("PURGE", "INTERRUPT NORTH", 5, "Alert")
 		end		
-	elseif unitName == "Null System Daemon" and castName == "Power Surge" then
+	elseif unitName == "Daemon 1.0" and castName == "Afflux d'énergie" then -- Null System Daemon, Power Surge
 		core:SendSync("SOUTH_SURGE", unit:GetId())
 		if phase2 and dist2unit(GameLib.GetPlayerUnit(), unit) < 40 then
 			core:AddMsg("PURGE", "INTERRUPT SOUTH", 5, "Alert")
 		end			
-	elseif castName == "Purge" then
+	elseif castName == "Purge" then -- Purge
 		PurgeLast[unit:GetId()] = GameLib.GetGameTime()
 		if dist2unit(GameLib.GetPlayerUnit(), unit) < 40 then
 			core:AddMsg("PURGE", "AIDDDDDDDS !", 5, "Beware")
@@ -182,10 +182,10 @@ function mod:OnSpellCastStart(unitName, castName, unit)
 		elseif phase2 then
 			core:AddBar("PURGE_"..unit:GetId(), ("PURGE - %s"):format(unitName:find("Null") and "NULL" or "BINARY"), 27)
 		end
-	elseif unitName == "Defragmentation Unit" and castName == "Black IC" then
+	elseif unitName == "Unité de défragmentation" and castName == "CI noir" then -- Defragmentation Unit, Black IC
 		core:AddMsg("BLACKIC", "INTERRUPT !", 5, "Alert")
 		core:AddBar("BLACKIC", "BLACK IC", 30)
-	elseif unitName == "Recovery Protocol" and castName == "Repair Sequence" then
+	elseif unitName == "Protocole de récupération" and castName == "Séquence de réparation" then -- Recovery Protocol, Repair Sequence
 		if dist2unit(GameLib.GetPlayerUnit(), unit) < 50 then
 			core:AddMsg("HEAL", "INTERRUPT HEAL!", 5, "Inferno")
 			core:MarkUnit(unit, nil, "HEAL")
@@ -203,9 +203,9 @@ function mod:OnDebuffApplied(unitName, splId, unit)
 	local eventTime = GameLib.GetGameTime()
 	local tSpell = GameLib.GetSpell(splId)
 	local strSpellName = tSpell:GetName()
-	if strSpellName == "Overload" then
+	if strSpellName == "Surcharge" then -- Overload
 		core:MarkUnit(unit, nil, "DOT DMG")
-	elseif strSpellName == "Purge" then
+	elseif strSpellName == "Purge" then -- Purge
 		core:MarkUnit(unit, nil, "PURGE")
 		if unitName == playerName then
 			core:AddMsg("PURGEDEBUFF", "PURGE ON YOU", 5, "Beware")
@@ -217,17 +217,17 @@ function mod:OnDebuffRemoved(unitName, splId, unit)
 	local eventTime = GameLib.GetGameTime()
 	local tSpell = GameLib.GetSpell(splId)
 	local strSpellName = tSpell:GetName()
-	if strSpellName == "Overload" then
+	if strSpellName == "Surcharge" then -- Overload
 		core:DropMark(unit:GetId())
-	elseif strSpellName == "Purge" then
+	elseif strSpellName == "Purge" then -- Purge
 		core:DropMark(unit:GetId())
 	end
 end
 
 function mod:OnZoneChanged(zoneId, zoneName)
-	if zoneName == "Datascape" then
+	if zoneName == "Infosphère" then -- Datascape
 		return
-	elseif zoneName == "Halls of the Infinite Mind" then
+	elseif zoneName == "Halls of the Infinite Mind" then -- Halls of the Infinite Mind
 		local timeOfEvent = GameLib.GetGameTime()
 		for id, timer in pairs(PurgeLast) do
 			local unit = GameLib.GetUnitById(id)
@@ -237,7 +237,7 @@ function mod:OnZoneChanged(zoneId, zoneName)
 				end
 			end
 		end
-	elseif zoneName:find("Infinite Generator Core") then
+	elseif zoneName:find("Infinite Generator Core") then -- Infinite Generator Core
 		for id, timer in pairs(PurgeLast) do
 			core:StopBar("PURGE_" .. id)
 		end
@@ -264,7 +264,7 @@ function mod:NextWave()
 end
 
 function mod:OnChatDC(message)
-	if message:find("INVALID SIGNAL. DISCONNECTING") then
+	if message:find("INVALID SIGNAL. DISCONNECTING") then -- INVALID SIGNAL. DISCONNECTING
 		if phase2 then
 			core:ResetWorldMarkers()
 			phase2 = false
@@ -274,7 +274,7 @@ function mod:OnChatDC(message)
 		--if self:Tank() then
 			core:AddBar("DISC", ("DISCONNECT (%s)"):format(discoCount + 1), 60)
 		--end
-	elseif message:find("COMMENCING ENHANCEMENT SEQUENCE") then
+	elseif message:find("COMMENCING ENHANCEMENT SEQUENCE") then -- COMMENCING ENHANCEMENT SEQUENCE
 		phase2, phase2warn = true, false
 		phase2count = phase2count + 1
 		core:StopBar("DISC")
@@ -340,7 +340,7 @@ function mod:OnCombatStateChanged(unit, bInCombat)
 	if unit:GetType() == "NonPlayer" and bInCombat then
 		local sName = unit:GetName()
 
-		if sName == "Null System Daemon" or sName == "Binary System Daemon" then
+		if sName == "Daemon 1.0" or sName == "Daemon 2.0" then -- Null System Daemon, Binary System Daemon
 			self:Start()
 			discoCount, sdwaveCount, probeCount = 0, 0, 0
 			phase2warn, phase2 = false, false
@@ -358,8 +358,8 @@ function mod:OnCombatStateChanged(unit, bInCombat)
 			end
 			core:AddBar("SDWAVE", ("[%s] WAVE"):format(sdwaveCount + 1), 15, 1)
 			core:StartScan()
-		elseif sName == "Defragmentation Unit" then
-			if GetCurrentSubZoneName():find("Infinite Generator Core") then
+		elseif sName == "Unité de défragmentation" then -- Defragmentation Unit
+			if GetCurrentSubZoneName():find("Infinite Generator Core") then -- Infinite Generator Core
 				core:WatchUnit(unit)
 			end
 		end

@@ -8,8 +8,8 @@ local mod = core:NewBoss("EpAirLife", 52)
 if not mod then return end
 
 --mod:RegisterEnableMob("Aileron", "Test")
-mod:RegisterEnableBossPair("Aileron", "Visceralus")
-mod:RegisterRestrictZone("EpAirLife", "Elemental Vortex Alpha", "Elemental Vortex Beta", "Elemental Vortex Delta")
+mod:RegisterEnableBossPair("Aileron", "Visceralus") -- Visceralus
+mod:RegisterRestrictZone("EpAirLife", "Elemental Vortex Alpha", "Elemental Vortex Beta", "Elemental Vortex Delta") -- Elemental Vortex Alpha, Elemental Vortex Beta, Elemental Vortex Delta
 
 -- Tracking Blinding Light and Aileron knockback seems too random to display on timers.
 
@@ -97,10 +97,10 @@ function mod:OnUnitCreated(unit)
 		core:AddBar("Lifekeep", "Next Healing Tree", 35)
 
 		--Print(eventTime .. " Midphase STARTED")
-	elseif sName == "Life Force" then
+	elseif sName == "Force vitale" then -- Life Force
 		--Print(eventTime .. " - Orb")
 		core:AddPixie(unit:GetId(), 2, unit, nil, "Blue", 10, 40, 0)
-	elseif sName == "Lifekeeper" then
+	elseif sName == "Garde-vie" then -- Lifekeeper
 		--Print(eventTime .. " - " .. sName)
 		core:AddPixie(unit:GetId(), 1, GameLib.GetPlayerUnit(), unit, "Yellow", 5, 10, 10)
 		core:AddUnit(unit)
@@ -117,9 +117,9 @@ function mod:OnUnitDestroyed(unit)
 		midphase = false
 		core:AddBar("MIDPHASE", "Middle Phase", 90, true)
 		--Print(eventTime .. " Midphase ENDED")
-	elseif sName == "Life Force" then
+	elseif sName == "Force vitale" then -- Life Force
 		core:DropPixie(unit:GetId())
-	elseif sName == "Lifekeeper" then
+	elseif sName == "Garde-vie" then -- Lifekeeper
 		core:DropPixie(unit:GetId())
 	end
 end
@@ -139,17 +139,17 @@ function mod:OnDebuffApplied(unitName, splId, unit)
 		if not CheckTwirlTimer then
 			CheckTwirlTimer = self:ScheduleRepeatingTimer("CheckTwirlTimer", 1)
 		end
-	elseif splName == "Life Force Shackle" then
+	elseif splName == "Chaîne de force vitale" then -- Life Force Shackle
 		core:MarkUnit(unit, nil, "NO HEAL\nDEBUFF")
 		if unitName == strMyName then
 			core:AddMsg("NOHEAL", "No-Healing Debuff!", 5, "Alarm")
 		end
-	elseif splName == "Lightning Strike" then
+	elseif splName == "Coup de foudre" then -- Lightning Strike
 		core:MarkUnit(unit, nil, "Lightning")
 		if unitName == strMyName then
 			core:AddMsg("LIGHTNING", "Lightning on YOU", 5, "RunAway")
 		end
-	elseif splName == "Recently Saved" then
+	elseif splName == "Récemment sauvegardé" then -- Recently Saved
 		core:AddMsg("SAVE", "Recently Saved!", 5, "Beware")
 	end
 end
@@ -158,16 +158,16 @@ function mod:OnDebuffRemoved(unitName, splId, unit)
 	local splName = GameLib.GetSpell(splId):GetName()
 	if splId == 70440 then
 		core:RemoveUnit(unit:GetId())
-	elseif splName == "Life Force Shackle" then
+	elseif splName == "Chaîne de force vitale" then -- Life Force Shackle
 		core:DropMark(unit:GetId())
-	elseif splName == "Lightning Strike" then
+	elseif splName == "Coup de foudre" then -- Lightning Strike
 		core:DropMark(unit:GetId())
 	end
 end
 
 function mod:OnSpellCastStart(unitName, castName, unit)
 	local eventTime = GameLib.GetGameTime()
-	if unitName == "Visceralus" and castName == "Blinding Light" then
+	if unitName == "Visceralus" and castName == "Lumière aveuglante" then -- Visceralus, Blinding Light
 		local playerUnit = GameLib.GetPlayerUnit()
 		if dist2unit(unit, playerUnit) < 33 then
 			core:AddMsg("BLIND", "Blinding Light", 5, "Beware")
@@ -203,10 +203,10 @@ function mod:OnCombatStateChanged(unit, bInCombat)
 		local playerUnit = GameLib.GetPlayerUnit()
 		myName = playerUnit:GetName()
 
-		if sName == "Aileron" then
+		if sName == "Ventemort" then -- Aileron
 			core:AddUnit(unit)
 			core:AddPixie(unit:GetId(), 2, unit, nil, "Red", 10, 30, 0)
-		elseif sName == "Visceralus" then
+		elseif sName == "Visceralus" then -- Visceralus
 			self:Start()
 			core:AddUnit(unit)
 			core:WatchUnit(unit)

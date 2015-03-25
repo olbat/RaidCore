@@ -7,7 +7,7 @@ local core = Apollo.GetPackage("Gemini:Addon-1.1").tPackage:GetAddon("RaidCore")
 local mod = core:NewBoss("DSFrostWing", 52)
 if not mod then return end
 
-mod:RegisterEnableMob("Frost-Boulder Avalanche", "Frostbringer Warlock")
+mod:RegisterEnableMob("Avalanche cryoroc", "Sorcier cryogène") -- Frost-Boulder Avalanche, Frostbringer Warlock
 
 --------------------------------------------------------------------------------
 -- Locals
@@ -40,15 +40,15 @@ function mod:OnHealthChanged(unitName, health)
 end
 
 function mod:OnSpellCastStart(unitName, castName, unit)
-	if unitName == "Frost-Boulder Avalanche" and castName == "Icicle Storm" then
+	if unitName == "Avalanche cryoroc" and castName == "Tempête de stalactites" then -- Frost-Boulder Avalanche, Icicle Storm
 		core:StopBar("SHATTER")
 		core:AddMsg("ICICLE", "ICICLE !!", 5, "Alert")
 		core:AddBar("ICICLE", "ICICLE", 22)
 		icicleSpell = true
-	elseif unitName == "Frost-Boulder Avalanche" and castName == "Shatter" then
+	elseif unitName == "Avalanche cryoroc" and castName == "Fracasser" then -- Frost-Boulder Avalanche, Shatter
 		core:AddMsg("SHATTER", "SHATTER !!", 5, "Alert")
 		core:AddBar("SHATTER", "SHATTER", 30)
-	elseif unitName == "Frost-Boulder Avalanche" and castName == "Cyclone" then
+	elseif unitName == "Avalanche cryoroc" and castName == "Cyclone" then -- Frost-Boulder Avalanche, Cyclone
 		core:AddMsg("CYCLONE", "CYCLONE", 5, "RunAway")
 		core:AddBar("RUN", "RUNNNN", 23, 1)
 		if icicleSpell then
@@ -67,7 +67,7 @@ end
 function mod:OnCombatStateChanged(unit, bInCombat)
 	if unit:GetType() == "NonPlayer" and bInCombat then
 		local sName = unit:GetName()
-		if sName == "Frost-Boulder Avalanche" then
+		if sName == "Avalanche cryoroc" then -- Frost-Boulder Avalanche
 			self:Start()
 			icicleSpell = false
 			core:AddUnit(unit)
@@ -75,7 +75,7 @@ function mod:OnCombatStateChanged(unit, bInCombat)
 			core:AddBar("ICICLE", "~ICICLE", 17)
 			core:AddBar("SHATTER", "~SHATTER", 30)
 			core:StartScan()
-		elseif sName == "Frostbringer Warlock" then
+		elseif sName == "Sorcier cryogène" then -- Frostbringer Warlock
 			self:Start()
 			core:AddUnit(unit)
 			core:AddBar("WAVES", "FROST WAVE", 30)

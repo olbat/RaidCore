@@ -7,7 +7,7 @@ local core = Apollo.GetPackage("Gemini:Addon-1.1").tPackage:GetAddon("RaidCore")
 local mod = core:NewBoss("MaelstromAuthority", 52)
 if not mod then return end
 
-mod:RegisterEnableMob("Weather Control Station")
+mod:RegisterEnableMob("Weather Control Station") -- Weather Control Station
 
 --------------------------------------------------------------------------------
 -- Locals
@@ -40,16 +40,16 @@ end
 function mod:OnUnitCreated(unit)
 	local sName = unit:GetName()
 	--Print(sName)
-	if sName == "Avatus Hologram" then
+	if sName == "Avatus Hologram" then -- Avatus Hologram
 		self:Start()
 		core:AddBar("JUMP", "JUMP", 8.5, 1)
 		bossPos = {}
-	elseif sName == "Wind Wall" then
+	elseif sName == "Mur de vent" then -- Wind Wall
 		core:AddPixie(unit:GetId().."_1", 2, unit, nil, "Green", 10, 20, 0)
 		core:AddPixie(unit:GetId().."_2", 2, unit, nil, "Green", 10, 20, 180)
 		--core:AddLine(unit:GetId().."_1", 2, unit, nil, 1, 20, 0)
 		--core:AddLine(unit:GetId().."_2", 2, unit, nil, 1, 20, 180)
-	elseif sName == "Weather Station" then
+	elseif sName == "Station météorologique" then -- Weather Station
 		-- Todo see if we can concat position to display in unit monitor.
 		local stationPos = unit:GetPosition()
 		--local Rover = Apollo.GetAddon("Rover")
@@ -64,36 +64,36 @@ end
 function mod:OnUnitDestroyed(unit)
 	local sName = unit:GetName()
 	--Print(sName)
-	if sName == "Wind Wall" then
+	if sName == "Mur de vent" then -- Wind Wall
 		--core:DropLine(unit:GetId().."_1")
 		--core:DropLine(unit:GetId().."_2")
 		core:DropPixie(unit:GetId().."_1")
 		core:DropPixie(unit:GetId().."_2")
-	elseif sName == "Weather Station" then
+	elseif sName == "Station météorologique" then -- Weather Station
 		core:DropPixie(unit:GetId())
 	end
 end
 
 
 function mod:OnSpellCastStart(unitName, castName, unit)
-	if unitName == "Maelstrom Authority" and castName == "Activate Weather Cycle" then
+	if unitName == "Contrôleur du Maelstrom" and castName == "Activer cycle climatique" then -- Maelstrom Authority, Activate Weather Cycle
 		bossPos = unit:GetPosition()
 		--local Rover = Apollo.GetAddon("Rover")
 		--Rover:AddWatch("bossPoss", bossPos, 0)
 		stationCount = 0
 		core:AddBar("STATION", ("[%s] STATION"):format(stationCount + 1), 13)
-	elseif unitName == "Maelstrom Authority" and castName == "Ice Breath" then
+	elseif unitName == "Contrôleur du Maelstrom" and castName == "Souffle de glace" then -- Maelstrom Authority, Ice Breath
 		core:AddMsg("BREATH", "ICE BREATH", 5, "RunAway")
-	elseif unitName == "Maelstrom Authority" and castName == "Crystallize" then
+	elseif unitName == "Contrôleur du Maelstrom" and castName == "Cristalliser" then -- Maelstrom Authority, Crystallize
 		core:AddMsg("BREATH", "ICE BREATH", 5, "Beware")
-	elseif unitName == "Maelstrom Authority" and castName == "Typhoon" then
+	elseif unitName == "Contrôleur du Maelstrom" and castName == "Typhon" then -- Maelstrom Authority, Typhoon
 		core:AddMsg("BREATH", "TYPHOON", 5, "Beware")
 	end
 end
 
 
 function mod:OnChatDC(message)
-	if message:find("The platform trembles") then
+	if message:find("The platform trembles") then -- The platform trembles
 		core:AddBar("JUMP", "JUMP", 7, 14)
 	end
 end
@@ -103,13 +103,13 @@ function mod:OnCombatStateChanged(unit, bInCombat)
 	if unit:GetType() == "NonPlayer" and bInCombat then
 		local sName = unit:GetName()
 
-		if sName == "Maelstrom Authority" then
+		if sName == "Contrôleur du Maelstrom" then -- Maelstrom Authority
 			stationCount = 0
 			core:AddUnit(unit)
 			core:WatchUnit(unit)
 			core:StartScan()
 			core:AddPixie(unit:GetId(), 2, unit, nil, "Red", 10, 15, 0)
-		elseif sName == "Weather Station" then
+		elseif sName == "Station météorologique" then -- Weather Station
 			stationCount = stationCount + 1
 			local station_name = "STATION" .. tostring(stationCount)
 

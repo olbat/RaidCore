@@ -3,8 +3,8 @@ local core = Apollo.GetPackage("Gemini:Addon-1.1").tPackage:GetAddon("RaidCore")
 local mod = core:NewBoss("Avatus", 52)
 if not mod then return end
 
-mod:RegisterEnableMob("Avatus")
-mod:RegisterRestrictZone("Avatus", "The Oculus")
+mod:RegisterEnableMob("Avatus") -- Avatus
+mod:RegisterRestrictZone("Avatus", "The Oculus") -- The Oculus
 
 local phase2warn, phase2 = false, false
 local phase_blueroom = false
@@ -167,11 +167,11 @@ function mod:OnUnitCreated(unit)
 
 	local sName = unit:GetName()
 	--Print(eventTime .. " " .. sName .. " spawned")
-	if sName == "Avatus" then
+	if sName == "Avatus" then -- Avatus
 		core:AddUnit(unit)
 		core:WatchUnit(unit)
 		core:AddPixie(unit:GetId(), 2, unit, nil, "Green", 10, 22, 0)
-	elseif sName == "Holo Hand" then
+	elseif sName == "Holo-main" then -- Holo Hand
 		--Print(eventTime .. " Holo hand Spawned")
 		local unitId = unit:GetId()
 		core:AddUnit(unit)
@@ -182,7 +182,7 @@ function mod:OnUnitCreated(unit)
 			core:AddPixie(unitId .. "_1", 2, unit, nil, "Blue", 7, 20, 0)
 			--core:AddPixie(unitId .. "_2", 2, unit, nil, "Blue", 7, 20, 270)
 		end
-	elseif sName == "Mobius Physics Constructor" then
+	elseif sName == "Constructeur de physique de Möbius" then -- Mobius Physics Constructor
 		core:AddUnit(unit)
 		core:WatchUnit(unit)
 		local unitId = unit:GetId()
@@ -191,18 +191,18 @@ function mod:OnUnitCreated(unit)
 				core:AddPixie(unitId, 2, unit, nil, "Red", 5, 35, 0)
 			end
 		end
-	elseif sName == "Unstoppable Object Simulation" then
+	elseif sName == "Simulacre invincible" then -- Unstoppable Object Simulation
 		core:AddUnit(unit)
-	elseif sName == "Holo Cannon" then
+	elseif sName == "Holocanon" then -- Holo Cannon
 		core:AddPixie(unit:GetId(), 2, unit, nil, "Blue", 5, 100, 0)
-	elseif sName == "Shock Sphere" then
+	elseif sName == "Sphère de choc" then -- Shock Sphere
 		core:AddPixie(unit:GetId(), 2, unit, nil, "Blue", 5, -7, 0)
-	elseif sName == "Support Cannon" then
+	elseif sName == "Canon d'appui" then -- Support Cannon
 		core:AddUnit(unit)
 	end
 
 	-- TESTING BLUE ROOM:
-	if sName == "Infinite Logic Loop" then
+	if sName == "Boucle de logique infinie" then -- Infinite Logic Loop
 		core:AddUnit(unit)
 		core:UnitBuff(unit)
 		phase2_blueroom = true
@@ -214,7 +214,7 @@ function mod:OnUnitDestroyed(unit)
 	local sName = unit:GetName()
 	local unitId = unit:GetId()
 
-	if sName == "Holo Hand" then
+	if sName == "Holo-main" then -- Holo Hand
 		if unitId then
 			core:DropPixie(unitId .. "_1")
 			--core:DropPixie(unitId .. "_2")
@@ -223,15 +223,15 @@ function mod:OnUnitDestroyed(unit)
 	
 	if sName == "Holo Hand" and holo_hands[unitId] then
 		holo_hands[unitId] = nil
-	elseif sName == "Holo Cannon" then
+	elseif sName == "Holocanon" then -- Holo Cannon
 		core:DropPixie(unit:GetId())
-	elseif sName == "Avatus" then
+	elseif sName == "Avatus" then -- Avatus
 		core:DropPixie(unit:GetId())
-	elseif sName == "Shock Sphere" then
+	elseif sName == "Sphère de choc" then -- Shock Sphere
 		core:DropPixie(unit:GetId())
-	elseif sName == "Infinite Logic Loop" then
+	elseif sName == "Boucle de logique infinie" then -- Infinite Logic Loop
 		phase2_blueroom = false
-	elseif sName == "Mobius Physics Constructor" then
+	elseif sName == "Constructeur de physique de Möbius" then -- Mobius Physics Constructor
 		core:DropPixie(unit:GetId())
 	end
 	--[[
@@ -253,7 +253,7 @@ function mod:OnBuffApplied(unitName, splId, unit)
 		end
 
 		-- Todo change to SplId instead of name to reduce API calls
-		if strSpellName == "Green Reconstitution Matrix" then
+		if strSpellName == "Matrice de reconstitution verte" then -- Green Reconstitution Matrix
 			local playerAssigned = getPlayerAssignment(phase2_blueroom_rotation["green"])
 			if playerAssigned == strMyName then
 				core:AddMsg("BLUEPURGE", "PURGE BLUE BOSS", 5, "Inferno")
@@ -263,7 +263,7 @@ function mod:OnBuffApplied(unitName, splId, unit)
 			greenBuffCount = greenBuffCount + 1
 			phase2_blueroom_rotation["green"][playerAssigned] = phase2_blueroom_rotation["green"][playerAssigned] + 1
 			if not buffCountTimer then buffCountTimer = true self:ScheduleTimer("ResetBuffCount", 13) end
-		elseif strSpellName == "Blue Disruption Matrix" then
+		elseif strSpellName == "Matrice disruptive bleue" then -- Blue Disruption Matrix
 			local playerAssigned = getPlayerAssignment(phase2_blueroom_rotation["blue"])
 			if playerAssigned == strMyName then
 				core:AddMsg("BLUEPURGE", "PURGE BLUE BOSS", 5, "Inferno")
@@ -273,7 +273,7 @@ function mod:OnBuffApplied(unitName, splId, unit)
 			phase2_blueroom_rotation["blue"][playerAssigned] = phase2_blueroom_rotation["blue"][playerAssigned] + 1
 			blueBuffCount = blueBuffCount + 1
 			if not buffCountTimer then buffCountTimer = true self:ScheduleTimer("ResetBuffCount", 13) end
-		elseif strSpellName == "Red Empowerment Matrix" then
+		elseif strSpellName == "Matrice de renforcement rouge" then -- Red Empowerment Matrix
 			local playerAssigned = getPlayerAssignment(phase2_blueroom_rotation["red"])
 			if playerAssigned == strMyName then
 				core:AddMsg("BLUEPURGE", "PURGE BLUE BOSS", 5, "Inferno")
@@ -302,14 +302,14 @@ end
 
 function mod:OnSpellCastStart(unitName, castName, unit)
 	local eventTime = GameLib.GetGameTime()
-	if unitName == "Avatus" and castName == "Obliteration Beam" then
+	if unitName == "Avatus" and castName == "Rayon de suppression" then -- Avatus, Obliteration Beam
 		core:AddMsg("BEAMS", "GO TO SIDES !", 5, "RunAway")
 		core:StopBar("OBBEAM")
 		-- check if next ob beam in {obliteration_beam_timer} sec doesn't happen during a gungrid which takes 20 sec
 		if gungrid_time + gungrid_timer + 20 < eventTime + obliteration_beam_timer then
 			core:AddBar("OBBEAM", "Obliteration Beam", obliteration_beam_timer, true)
 		end
-	elseif unitName == "Holo Hand" and castName == "Crushing Blow" then
+	elseif unitName == "Holo-main" and castName == "Coup écrasant" then -- Holo Hand, Crushing Blow
 		local playerUnit = GameLib.GetPlayerUnit()
 		for _, hand in pairs(holo_hands) do
 			local distance_to_hand = dist2unit(playerUnit, hand["unit"])
@@ -325,7 +325,7 @@ function mod:OnSpellCastStart(unitName, castName, unit)
 		if closest_holo_hand["unit"]:GetCastName() == "Crushing Blow" then
 			core:AddMsg("CRBLOW", "INTERRUPT CRUSHING BLOW!", 5, "Inferno")
 		end
-	elseif unitName == "Mobius Physics Constructor" and castName == "Data Flare" then
+	elseif unitName == "Constructeur de physique de Möbius" and castName == "Signal de données" then -- Mobius Physics Constructor, Data Flare
 		core:AddBar("BLIND", "Blind", 29, true)
 		core:AddMsg("BLIND", "BLIND! TURN AWAY FROM BOSS", 5, "Inferno")
 	end
@@ -336,7 +336,7 @@ end
 function mod:OnChatDC(message)
 	local eventTime = GameLib.GetGameTime()
 	--Print(eventTime .. " ChatDC Message: " .. message)
-	if message:find("Gun Grid Activated") then
+	if message:find("Gun Grid Activated") then -- Gun Grid Activated
 		--Print(eventTime .. " ChatDC Message: " .. message)
 		gungrid_time = eventTime
 		core:AddMsg("GGRIDMSG", "Gun Grid NOW!", 5, "Beware")
@@ -345,7 +345,7 @@ function mod:OnChatDC(message)
 		core:AddBar("GGRID", "~Gun Grid", gungrid_timer, true)
 		core:AddBar("HHAND", "Holo Hands spawn", 22)
 	end
-	if message:find("Portals have opened!") then
+	if message:find("Portals have opened!") then -- Portals have opened!
 		phase2 = true
 		core:StopBar("GGRID")
 		core:StopBar("OBBEAM")
@@ -359,13 +359,13 @@ function mod:OnChatMessage(channelCurrent, tMessage)
 		local msg = string.lower(tMessage["arMessageSegments"][1]["strText"])
 		local strSender = tMessage["strSender"]
 		
-		if msg == "red" then
+		if msg == "red" then -- red
 			if not phase2_blueroom_rotation["red"] then phase2_blueroom_rotation["red"] = {} end
 			phase2_blueroom_rotation["red"][strSender] = 1
-		elseif msg == "green" then
+		elseif msg == "green" then -- green
 			if not phase2_blueroom_rotation["green"] then phase2_blueroom_rotation["green"] = {} end
 			phase2_blueroom_rotation["green"][strSender] = 1
-		elseif msg == "blue" then
+		elseif msg == "blue" then -- blue
 			if not phase2_blueroom_rotation["blue"] then phase2_blueroom_rotation["blue"] = {} end
 			phase2_blueroom_rotation["blue"][strSender] = 1
 		end
@@ -411,7 +411,7 @@ function mod:OnCombatStateChanged(unit, bInCombat)
 			core:SetWorldMarker(referencePos["south"], "South")
 			gungrid_timer = 112
 			obliteration_beam_timer = 37
-		elseif sName == "Infinite Logic Loop" then
+		elseif sName == "Boucle de logique infinie" then -- Infinite Logic Loop
 			local strRedBuffs = "Red Buffs:"
 			local strGreenBuffs = "Green Buffs:"
 			local strBlueBuffs = "Blue Buffs:"
