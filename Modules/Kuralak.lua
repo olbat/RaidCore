@@ -7,9 +7,9 @@ local core = Apollo.GetPackage("Gemini:Addon-1.1").tPackage:GetAddon("RaidCore")
 local mod = core:NewBoss("Kuralak", 67)
 if not mod then return end
 
-mod:RegisterEnableMob("Kuralak the Defiler")
-mod:RegisterRestrictZone("Kurulak", "Archive Access Core")
-mod:RegisterEnableZone("Kurulak", "Archive Access Core")
+mod:RegisterEnableMob("Kuralak la Profanatrice") -- "Kuralak the Defiler"
+mod:RegisterRestrictZone("Kurulak", "Archive Access Core") -- !!! "Archive Access Core"
+mod:RegisterEnableZone("Kurulak", "Archive Access Core") -- !!! "Archive Access Core"
 
 --------------------------------------------------------------------------------
 -- Locals
@@ -39,7 +39,7 @@ end
 
 function mod:OnUnitCreated(unit)
 	local sName = unit:GetName()
-	if sName == "Kuralak the Defiler" then
+	if sName == "Kuralak la Profanatrice" then -- "Kuralak the Defiler"
 		core:AddUnit(unit)
 	end
 end
@@ -52,10 +52,10 @@ end
 
 
 function mod:OnChatDC(message)
-	if message:find("Kuralak the Defiler returns to the Archive Core") then
+	if message:find("Kuralak the Defiler returns to the Archive Core") then -- !!! "Kuralak the Defiler returns to the Archive Core"
 		core:AddMsg("VANISH", "VANISH", 5, "Alert")
 		core:AddBar("VANISH", "Vanish", 47, 1)
-	elseif message:find("Kuralak the Defiler causes a violent outbreak of corruption") then
+	elseif message:find("Kuralak the Defiler causes a violent outbreak of corruption") then -- !!! "Kuralak the Defiler causes a violent outbreak of corruption"
 		core:AddMsg("OUTBREAK", "OUTBREAK", 5, "RunAway")
 		outbreakCount = outbreakCount + 1
 		if outbreakCount <= 5 then
@@ -64,7 +64,7 @@ function mod:OnChatDC(message)
 		if outbreakCount == 4 then
 			core:StopScan()
 		end
-	elseif message:find("The corruption begins to fester") then
+	elseif message:find("The corruption begins to fester") then -- !!! "The corruption begins to fester"
 		if eggsCount < 2 then eggsCount = 2 end
 		core:AddMsg("EGGS", ("EGGS (%s)"):format(math.pow(2, eggsCount-1)), 5, "Alert")
 		eggsCount = eggsCount + 1
@@ -74,7 +74,7 @@ function mod:OnChatDC(message)
 		else
 			core:AddBar("EGGS", ("Eggs (%s)"):format(math.pow(2, eggsCount-1)), 66)
 		end
-	elseif message:find("has been anesthetized") then
+	elseif message:find("has been anesthetized") then -- !!! "has been anesthetized"
 		if siphonCount == 0 then siphonCount = 1 end
 		siphonCount = siphonCount + 1
 		if self:Tank() then
@@ -87,7 +87,7 @@ function mod:OnChatDC(message)
 end
 
 function mod:OnChatNPCSay(message)
-		if message:find("Through the Strain you will be transformed") 
+		if message:find("Through the Strain you will be transformed")  -- !!! "Through the Strain you will be transformed"
 		or message:find("Your form is flawed, but I will make you beautiful")
 		or message:find("Let the Strain perfect you")  
 		or message:find("The Experiment has failed")  
@@ -124,7 +124,7 @@ end
 function mod:OnCombatStateChanged(unit, bInCombat)
 	if unit:GetType() == "NonPlayer" and bInCombat then
 		local sName = unit:GetName()
-		if sName == "Kuralak the Defiler" then
+		if sName == "Kuralak la Profanatrice" then -- "Kuralak the Defiler"
 			self:Start()
 			core:AddUnit(unit)
 			eggsCount, siphonCount, outbreakCount = 2, 1, 0		

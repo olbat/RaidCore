@@ -7,9 +7,9 @@ local core = Apollo.GetPackage("Gemini:Addon-1.1").tPackage:GetAddon("RaidCore")
 local mod = core:NewBoss("Prototypes", 67)
 if not mod then return end
 
-mod:RegisterEnableMob("Phagetech Commander", "Phagetech Augmentor", "Phagetech Protector", "Phagetech Fabricator")
-mod:RegisterRestrictZone("Prototypes", "Phagetech Uplink Hub")
-mod:RegisterEnableZone("Prototypes", "Phagetech Uplink Hub")
+mod:RegisterEnableMob("Commandant technophage", "Augmenteur technophage", "Protecteur technophage", "Fabricant technophage") -- "Phagetech Commander", "Phagetech Augmentor", "Phagetech Protector", "Phagetech Fabricator"
+mod:RegisterRestrictZone("Prototypes", "Phagetech Uplink Hub") -- !!! "Phagetech Uplink Hub"
+mod:RegisterEnableZone("Prototypes", "Phagetech Uplink Hub") -- !!! "Phagetech Uplink Hub"
 
 --------------------------------------------------------------------------------
 -- Locals
@@ -37,26 +37,26 @@ end
 
 
 function mod:OnSpellCastStart(unitName, castName, unit)
-	if unitName == "Phagetech Augmentor" and castName == "Summon Repairbot" then
+	if unitName == "Augmenteur technophage" and castName == "Déployer Bricobot" then -- "Phagetech Augmentor", "Summon Repairbot"
 		core:AddMsg("BOTS", "BOTS !!", 5, "Alert")
-	elseif unitName == "Phagetech Fabricator" and castName == "Summon Destructobot" then
+	elseif unitName == "Fabricant technophage" and castName == "Déployer Destructobot" then -- "Phagetech Fabricator", "Summon Destructobot"
 		core:AddMsg("BOTS", "BOTS !!", 5, "Alert")
 	end
 end
 
 function mod:OnChatDC(message)
-	if message:find("Phagetech Commander is now active!") then
+	if message:find("Phagetech Commander is now active!") then -- !!! "Phagetech Commander is now active!"
 		core:AddBar("PROTO", "[2] TP + CROIX + BOTS", protoFirst and 20 or 60)
 		if protoFirst then 
 			protoFirst = nil
 			core:AddBar("BERSERK", "BERSERK", 585)
 		end
-	elseif message:find("Phagetech Augmentor is now active!") then
+	elseif message:find("Phagetech Augmentor is now active!") then -- !!! "Phagetech Augmentor is now active!"
 		core:AddBar("PROTO", "[3] SINGULARITY + VAGUE", 60)
-	elseif message:find("Phagetech Protector is now active!") then
+	elseif message:find("Phagetech Protector is now active!") then -- !!! "Phagetech Protector is now active!"
 		core:AddBar("SINGU", "Singularity", 5)
 		core:AddBar("PROTO", "[4] SOAK + BOTS", 60)
-	elseif message:find("Phagetech Fabricator is now active!") then
+	elseif message:find("Phagetech Fabricator is now active!") then -- !!! "Phagetech Fabricator is now active!"
 		core:AddBar("PROTO", "[1] LINK + KICK", 60)
 	end
 end
@@ -68,9 +68,9 @@ end
 function mod:OnCombatStateChanged(unit, bInCombat)
 	if unit:GetType() == "NonPlayer" and bInCombat then
 		local sName = unit:GetName()
-		if sName == "Phagetech Commander" then
+		if sName == "Commandant technophage" then -- "Phagetech Commander"
 			self:Start()
-		elseif sName == "Phagetech Augmentor"  or  sName == "Phagetech Fabricator" then
+		elseif sName == "Augmenteur technophage"  or  sName == "Fabricant technophage" then -- "Phagetech Augmentor", "Phagetech Fabricator"
 			core:WatchUnit(unit)
 			core:StartScan()
 		end

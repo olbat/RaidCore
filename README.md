@@ -1,6 +1,12 @@
 RaidCore
 ================
 
+__Note__: The modules of this repository have been translated using the [raidcore-translator](https://github.com/olbat/ws-raidcore-translator) script
+
+__Warning__: ATM there is no warranty that it would work properly
+
+---
+
 Raidcore is a Wildstar addon. It is a boss-mods addon intended to aid with fights in GA/DS.
 
 RaidCore is a work in progress, some bosses are buggy or may not be fully accurate.

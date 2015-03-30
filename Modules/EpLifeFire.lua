@@ -8,8 +8,8 @@ local mod = core:NewBoss("EpLifeFire", 52)
 if not mod then return end
 
 --mod:RegisterEnableMob("Visceralus")
-mod:RegisterEnableBossPair("Visceralus", "Pyrobane")
-mod:RegisterRestrictZone("EpLifeFire", "Elemental Vortex Alpha", "Elemental Vortex Beta", "Elemental Vortex Delta")
+mod:RegisterEnableBossPair("Visceralus", "Pyromagnus") -- "Pyrobane"
+mod:RegisterRestrictZone("EpLifeFire", "Elemental Vortex Alpha", "Elemental Vortex Beta", "Elemental Vortex Delta") -- !!! "Elemental Vortex Alpha", !!! "Elemental Vortex Beta", !!! "Elemental Vortex Delta"
 
 --------------------------------------------------------------------------------
 -- Locals
@@ -115,12 +115,12 @@ function mod:OnUnitCreated(unit)
 	local sName = unit:GetName()
 	local eventTime = GameLib.GetGameTime()
 	
-	if sName == "Life Force" then
+	if sName == "Force vitale" then -- "Life Force"
 		core:AddPixie(unit:GetId(), 2, unit, nil, "Blue", 10, -40, 0)
-	elseif sName == "Essence of Life" then
+	elseif sName == "Essence de vie" then -- "Essence of Life"
 		--Print("Life essence spawned")
 		--core:AddUnit(unit)
-	elseif sName == "Flame Wave" then
+	elseif sName == "Vague de feu" then -- "Flame Wave"
 		local unitId = unit:GetId()
 		if unitId then
 			core:AddPixie(unitId, 2, unit, nil, "Green", 10, 20, 0)	
@@ -133,9 +133,9 @@ function mod:OnUnitDestroyed(unit)
 	local sName = unit:GetName()
 	local eventTime = GameLib.GetGameTime()
 
-	if sName == "Life Force" then
+	if sName == "Force vitale" then -- "Life Force"
 		core:DropPixie(unit:GetId())
-	elseif sName == "Flame Wave" then
+	elseif sName == "Vague de feu" then -- "Flame Wave"
 		local unitId = unit:GetId()
 		if unitId then
 			core:DropPixie(unitId)
@@ -145,7 +145,7 @@ end
 
 function mod:OnSpellCastStart(unitName, castName, unit)
 	local eventTime = GameLib.GetGameTime()
-	if unitName == "Visceralus" and castName == "Blinding Light" then
+	if unitName == "Visceralus" and castName == "Lumière aveuglante" then -- "Visceralus", "Blinding Light"
 		local playerUnit = GameLib.GetPlayerUnit()
 		if dist2unit(unit, playerUnit) < 33 then
 			core:AddMsg("BLIND", "Blinding Light", 5, "Beware")
@@ -158,10 +158,10 @@ function mod:OnCombatStateChanged(unit, bInCombat)
 	if unit:GetType() == "NonPlayer" and bInCombat then
 		local sName = unit:GetName()
 
-		if sName == "Visceralus" then
+		if sName == "Visceralus" then -- "Visceralus"
 			core:AddUnit(unit)
 			core:WatchUnit(unit)
-		elseif sName == "Pyrobane" then
+		elseif sName == "Pyromagnus" then -- "Pyrobane"
 			self:Start()
 			rooted_units = {}
 			CheckRootTimer = nil

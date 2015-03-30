@@ -8,8 +8,8 @@ local mod = core:NewBoss("EpFrostAir", 52)
 if not mod then return end
 
 --mod:RegisterEnableMob("Hydroflux")
-mod:RegisterEnableBossPair("Hydroflux", "Aileron")
-mod:RegisterRestrictZone("EpFrostAir", "Elemental Vortex Alpha", "Elemental Vortex Beta", "Elemental Vortex Delta")
+mod:RegisterEnableBossPair("Hydroflux", "Ventemort") -- "Aileron"
+mod:RegisterRestrictZone("EpFrostAir", "Elemental Vortex Alpha", "Elemental Vortex Beta", "Elemental Vortex Delta") -- !!! "Elemental Vortex Alpha", !!! "Elemental Vortex Beta", !!! "Elemental Vortex Delta"
 
 --------------------------------------------------------------------------------
 -- Locals
@@ -56,7 +56,7 @@ end
 function mod:OnUnitCreated(unit)
 	local sName = unit:GetName()
 	--Print(sName)
-	if sName == "Landing Volume" then
+	if sName == "Landing Volume" then -- !!! "Landing Volume"
 		core:MarkUnit(unit, 0, "LAND")
 	end
 end
@@ -64,7 +64,7 @@ end
 function mod:OnUnitDestroyed(unit)
 	local sName = unit:GetName()
 	--Print(sName)
-	if sName == "Wind Wall" then
+	if sName == "Mur de vent" then -- "Wind Wall"
 		core:DropLine(unit:GetId().."_1")
 		core:DropLine(unit:GetId().."_2")
 	end	
@@ -72,17 +72,17 @@ end
 
 
 function mod:OnSpellCastStart(unitName, castName, unit)
-	if unitName == "Hydroflux" and castName == "Tsunami" then
+	if unitName == "Hydroflux" and castName == "Tsunami" then -- "Hydroflux", "Tsunami"
 		phase2 = true
 		mooCount = mooCount + 1
 		core:AddMsg("PHASE2", "TSUNAMI", 5, "Alert")
-	elseif unitName == "Hydroflux" and castName == "Glacial Icestorm" then
+	elseif unitName == "Hydroflux" and castName == "Tempête de neige glaciale" then -- "Hydroflux", "Glacial Icestorm"
 		core:AddMsg("ICESTORM", "ICESTORM", 5, "RunAway")
 	end
 end
 
 function mod:OnSpellCastEnd(unitName, castName)
-	if unitName == "Hydroflux" and castName == "Tsunami" then
+	if unitName == "Hydroflux" and castName == "Tsunami" then -- "Hydroflux", "Tsunami"
 		core:AddBar("MIDPHASE", "~Middle Phase", 88, true)
 		core:AddBar("TOMB", "~Frost Tombs", 30, true)
 	end
@@ -90,12 +90,12 @@ function mod:OnSpellCastEnd(unitName, castName)
 end
 
 function mod:OnChatDC(message)
-	if message:find("Hydroflux evaporates") then
+	if message:find("Hydroflux evaporates") then -- !!! "Hydroflux evaporates"
 		--core:AddMsg("PHASE1", "MOO !", 5, "Info", "Blue")
 		core:AddBar("PHASE2", "EYE OF THE STORM", 45, 1)
-	elseif message:find("Aileron dissipates with a flurry") then
+	elseif message:find("Aileron dissipates with a flurry") then -- !!! "Aileron dissipates with a flurry"
 		core:AddBar("PHASE2", "TSUNAMI", 45, 1)
-	elseif message:find("The wind starts to blow faster and faster") then
+	elseif message:find("The wind starts to blow faster and faster") then -- !!! "The wind starts to blow faster and faster"
 		phase2 = true
 		mooCount = mooCount + 1
 		core:AddMsg("PHASE2", "EYE OF THE STORM", 5, "Alert")
@@ -160,11 +160,11 @@ function mod:OnCombatStateChanged(unit, bInCombat)
 		local playerUnit = GameLib.GetPlayerUnit()
 		myName = playerUnit:GetName()
 
-		if sName == "Hydroflux" then
+		if sName == "Hydroflux" then -- "Hydroflux"
 			core:AddUnit(unit)
 			core:WatchUnit(unit)
 			core:UnitBuff(unit)
-		elseif sName == "Aileron" then
+		elseif sName == "Ventemort" then -- "Aileron"
 			self:Start()
 			mooCount = 0
 			phase2 = false
