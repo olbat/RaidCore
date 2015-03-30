@@ -38,6 +38,26 @@ local msgStrings = {
 		fabricatorMsg = "Phagetech Fabricator is now active!",
 		fabricatorBar = "[1] LINK + KICK",
 	},
+	["frFR"] = {
+		moduleName = "",	-- !!! "Module %s loaded"
+		unitNameAugmentor = "Augmenteur technophage",
+		unitNameFabricator = "Fabricant technophage",
+		unitNameCommander = "Commandant technophage",
+		repairbotCast = "Déployer Bricobot",
+		reparibotWarn = "",	-- !!! "Repairbot!"
+		destructobotCast = "Déployer Destructobot",
+		destructobotWarn = "",	-- !!! "Destructobot!"
+		commanderMsg = "",	-- !!! "Phagetech Commander is now active!"
+		commanderBar = "",	-- !!! "[2] TP + CROIX + BOTS"
+		berserkBar = "",	-- !!! "BERSERK"
+		augmentorMsg = "",	-- !!! "Phagetech Augmentor is now active!"
+		augmentorBar = "",	-- !!! "[3] SINGULARITY + VAGUE"
+		protectorMsg = "",	-- !!! "Phagetech Protector is now active!"
+		protectorBar1 = "Singularité",
+		protectorBar2 = "",	-- !!! "[4] SOAK + BOTS"
+		fabricatorMsg = "",	-- !!! "Phagetech Fabricator is now active!"
+		fabricatorBar = "",	-- !!! "[1] LINK + KICK"
+	},
 	["deDE"] = {
 		moduleName = "Modul %s geladen",
 		unitNameAugmentor = "Phagentech-Augmentor",

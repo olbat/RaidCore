@@ -28,6 +28,17 @@ local msgStrings = {
 		boomBar = "BOOOM !",
 		orbitalStrikeMsg = "Phage Maw begins charging an orbital strike",		
 	},
+	["frFR"] = {
+		moduleName = "",	-- !!! "Module %s loaded"
+		unitName = "Phagegueule",
+		bombName = "Bombe à détonateur",
+		shieldMsg = "",	-- !!! "The augmented shield has been destroyed"
+		mawBar1 = "",	-- !!! "Bomb 1"
+		mawBar2 = "",	-- !!! "Bomb 2"
+		mawBar3 = "",	-- !!! "Bomb 3"
+		boomBar = "",	-- !!! "BOOOM !"
+		orbitalStrikeMsg = "",			-- !!! "Phage Maw begins charging an orbital strike"
+	},
 	["deDE"] = {
 		moduleName = "Modul %s geladen",
 		unitName = "Phagenschlund",

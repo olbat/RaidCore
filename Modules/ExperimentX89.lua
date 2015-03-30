@@ -32,6 +32,19 @@ local msgStrings = {
 		cast_spew = "Repugnant Spew",
 		cast_shockwave = "Shattering Shockwave",
 	},
+	["frFR"] = {
+		knockback = "",	-- !!! "KNOCKBACK"
+		knockback_msg = "",	-- !!! "KNOCKBACK !!!"
+		shockwave = "",	-- !!! "SHOCKWAVE"
+		beam = "",	-- !!! "BEAM"
+		small_bomb = "",	-- !!! "LITTLE BOMB"
+		small_bomb_you = "",	-- !!! "LITTLE BOMB on YOU !!!"
+		big_bomb = "",	-- !!! "BIG BOMB on YOU !!!"
+		chatdc_big_bomb = "",	-- !!! "Experiment X-89 has placed a bomb"
+		cast_shout = "Hurlement retentissant",
+		cast_spew = "Crachat répugnant",
+		cast_shockwave = "Onde de choc dévastatrice",
+	},
 	["deDE"] = {
 		knockback = "RÜCKSTOß",
 		knockback_msg = "RÜCKSTOß !!!",
