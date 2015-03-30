@@ -8,8 +8,8 @@ local mod = core:NewBoss("EpEarthAir", 52)
 if not mod then return end
 
 --mod:RegisterEnableMob("Megalith")
-mod:RegisterEnableBossPair("Megalith", "Aileron")
-mod:RegisterRestrictZone("EpEarthAir", "Elemental Vortex Alpha", "Elemental Vortex Beta", "Elemental Vortex Delta")
+mod:RegisterEnableBossPair("Megalith", "Aileron") -- "Aileron"
+mod:RegisterRestrictZone("EpEarthAir", "Elemental Vortex Alpha", "Elemental Vortex Beta", "Elemental Vortex Delta") -- !!! "Elemental Vortex Alpha", !!! "Elemental Vortex Beta", !!! "Elemental Vortex Delta"
 
 --------------------------------------------------------------------------------
 -- Locals
@@ -44,7 +44,7 @@ function mod:OnUnitCreated(unit)
 	local sName = unit:GetName()
 	local eventTime = GameLib.GetGameTime()
 	--Print(sName)
-	if sName == "Air Column" then
+	if sName == "Luftsäule" then -- "Air Column"
 		core:AddLine(unit:GetId(), 2, unit, nil, 3, 30, 0, 10)
 		if eventTime > startTime + 10 then
 			core:StopBar("TORNADO")
@@ -56,16 +56,16 @@ end
 function mod:OnUnitDestroyed(unit)
 	local sName = unit:GetName()
 	--Print(sName)
-	if sName == "Air Column" then
+	if sName == "Luftsäule" then -- "Air Column"
 		core:DropLine(unit:GetId())
 	end	
 end
 
 function mod:OnSpellCastStart(unitName, castName, unit)
-	if unitName == "Megalith" and castName == "Raw Power" then	
+	if unitName == "Megalith" and castName == "Rohe Kraft" then	 -- "Megalith", "Raw Power"
 			midphase = true
 			core:AddMsg("RAW", "RAW POWER", 5, "Alert")
-	elseif unitName == "Aileron" and castName == "Supercell" then
+	elseif unitName == "Aileron" and castName == "Superzelle" then -- "Aileron", "Supercell"
 		local timeOfEvent = GameLib.GetGameTime()
 		if timeOfEvent - prev > 30 then
 			prev = timeOfEvent
@@ -77,9 +77,9 @@ end
 
 
 function mod:OnChatDC(message)
-	if message:find("The ground shudders beneath Megalith") then
+	if message:find("The ground shudders beneath Megalith") then -- !!! "The ground shudders beneath Megalith"
 		core:AddMsg("QUAKE", "JUMP !", 3, "Beware")
-	elseif message:find("fractured crust leaves it exposed") and midphase then
+	elseif message:find("fractured crust leaves it exposed") and midphase then -- !!! "fractured crust leaves it exposed"
 		midphase = false
 		core:AddMsg("MOO", "MOO !", 5, "Info", "Blue")
 		core:AddBar("RAW", "RAW POWER", 60, 1)
@@ -94,11 +94,11 @@ function mod:OnCombatStateChanged(unit, bInCombat)
 		local eventTime = GameLib.GetGameTime()
 		startTime = eventTime
 
-		if sName == "Megalith" then
+		if sName == "Megalith" then -- "Megalith"
 			core:AddUnit(unit)
 			core:WatchUnit(unit)
 			core:MarkUnit(unit, nil, "EARTH")
-		elseif sName == "Aileron" then
+		elseif sName == "Aileron" then -- "Aileron"
 			self:Start()
 			prev = 0
 			midphase = false

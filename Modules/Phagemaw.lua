@@ -7,9 +7,9 @@ local core = Apollo.GetPackage("Gemini:Addon-1.1").tPackage:GetAddon("RaidCore")
 local mod = core:NewBoss("PhageMaw", 67)
 if not mod then return end
 
-mod:RegisterEnableMob("Phage Maw")
-mod:RegisterRestrictZone("PhageMaw", "Experimentation Lab CX-33")
-mod:RegisterEnableZone("PhageMaw", "Experimentation Lab CX-33")
+mod:RegisterEnableMob("Phagenschlund") -- "Phage Maw"
+mod:RegisterRestrictZone("PhageMaw", "Experimentation Lab CX-33") -- !!! "Experimentation Lab CX-33"
+mod:RegisterEnableZone("PhageMaw", "Experimentation Lab CX-33") -- !!! "Experimentation Lab CX-33"
 
 --------------------------------------------------------------------------------
 -- Locals
@@ -35,7 +35,7 @@ end
 
 function mod:OnUnitCreated(unit)
 	local sName = unit:GetName()
-	if sName == "Detonation Bomb" then
+	if sName == "Sprengbombe" then -- "Detonation Bomb"
 		core:MarkUnit(unit, 1)
 		core:AddUnit(unit)
 	end
@@ -43,12 +43,12 @@ end
 
 
 function mod:OnChatDC(message)
-	if message:find("The augmented shield has been destroyed") then
+	if message:find("The augmented shield has been destroyed") then -- !!! "The augmented shield has been destroyed"
 		core:AddBar("MAW1", "Bomb 1", 20)
 		core:AddBar("MAW2", "Bomb 2", 49)
 		core:AddBar("MAW3", "Bomb 3", 78)
 		core:AddBar("PHAGEMAW", "BOOOM !", 104, 1)
-	elseif message:find("Phage Maw begins charging an orbital strike") then
+	elseif message:find("Phage Maw begins charging an orbital strike") then -- !!! "Phage Maw begins charging an orbital strike"
 		core:ResetMarks()
 	end
 end
@@ -57,7 +57,7 @@ function mod:OnCombatStateChanged(unit, bInCombat)
 	if unit:GetType() == "NonPlayer" and bInCombat then
 		local sName = unit:GetName()
 
-		if sName == "Phage Maw" then
+		if sName == "Phagenschlund" then -- "Phage Maw"
 			self:Start()
 			core:AddUnit(unit)				
 		end

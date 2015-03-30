@@ -7,7 +7,7 @@ local core = Apollo.GetPackage("Gemini:Addon-1.1").tPackage:GetAddon("RaidCore")
 local mod = core:NewBoss("Ohmna", 67)
 if not mod then return end
 
-mod:RegisterEnableMob("Dreadphage Ohmna")
+mod:RegisterEnableMob("Schreckensphage Ohmna") -- "Dreadphage Ohmna"
 mod:RegisterRestrictEventObjective("Ohmna", "Defeat Dreadphage Ohmna")
 mod:RegisterEnableEventObjective("Ohmna", "Defeat Dreadphage Ohmna")
 
@@ -69,15 +69,15 @@ end
 
 function mod:OnUnitCreated(unit)
 	local sName = unit:GetName()
-	if sName == "Tentacle of Ohmna" then
+	if sName == "Tentakel von Ohmna" then -- "Tentacle of Ohmna"
 		if not OhmnaP4 then
 			core:AddMsg("OTENT", "Tentacles", 5, "Info", "Blue")
 			core:AddBar("OTENT", "Next Tentacles", 20)
 		end
-	elseif sName == "Ravenous Maw of the Dreadphage" then
+	elseif sName == "Unersättliches Maul der Schreckensphage" then -- "Ravenous Maw of the Dreadphage"
 		core:MarkUnit(unit, 0)
 		core:AddLine(unit:GetId(), 2, unit, nil, 3, 25, 0)
-	elseif sName == "Dreadphage Ohmna" then
+	elseif sName == "Schreckensphage Ohmna" then -- "Dreadphage Ohmna"
 		core:AddUnit(unit)
 	end
 end
@@ -94,7 +94,7 @@ end
 
 
 function mod:OnSpellCastStart(unitName, castName, unit)
-	if unitName == "Dreadphage Ohmna" and castName == "Erupt" then
+	if unitName == "Schreckensphage Ohmna" and castName == "Ausbrechen" then -- "Dreadphage Ohmna", "Erupt"
 		if OhmnaP3 then return end
 		local pilarActivated = self:OhmnaPE(pilarCount % 2)
 		core:AddBar("OPILAR", ("PILLAR %s : %s"):format(pilarCount, pilarActivated), 32, 1)
@@ -102,7 +102,7 @@ function mod:OnSpellCastStart(unitName, castName, unit)
 			core:AddBar("OBORE", "SWITCH TANK", 45)
 		end
 		core:StopScan()
-	elseif unitName == "Dreadphage Ohmna" and castName == "Genetic Torrent" then
+	elseif unitName == "Schreckensphage Ohmna" and castName == "Genetische Strömung" then -- "Dreadphage Ohmna", "Genetic Torrent"
 		core:AddMsg("SPEW", "BIG SPEW", 5, "RunAway")
 		core:AddBar("OSPEW", "NEXT BIG SPEW", OhmnaP4 and 40 or 60, 1)
 	end
@@ -137,7 +137,7 @@ function mod:OhmnaPE(lowest)
 end
 
 function mod:OnChatDC(message)
-		if message:find("A plasma leech begins draining") then
+		if message:find("A plasma leech begins draining") then -- !!! "A plasma leech begins draining"
 			if OhmnaP3 then return end
 			pilarCount = pilarCount + 1
 			if submergeCount < 2 and pilarCount > 4 then
@@ -147,19 +147,19 @@ function mod:OnChatDC(message)
 				local pilarActivated = self:OhmnaPE(pilarCount % 2)
 				core:AddBar("OPILAR", ("PILLAR %s : %s"):format(pilarCount, pilarActivated), 25, 1)
 			end
-		elseif message:find("Dreadphage Ohmna submerges") then
+		elseif message:find("Dreadphage Ohmna submerges") then -- !!! "Dreadphage Ohmna submerges"
 			pilarCount, boreCount = 1, 0
 			submergeCount = submergeCount + 1
 			core:StopBar("OTENT")
 			core:StartScan()
-		elseif message:find("Dreadphage Ohmna is bored") then
+		elseif message:find("Dreadphage Ohmna is bored") then -- !!! "Dreadphage Ohmna is bored"
 			boreCount = boreCount + 1
 			if boreCount < 2 and self:Tank() then
 				core:AddBar("OBORE", "SWITCH TANK", 42)
 			end
-		elseif message:find("The Archives tremble as Dreadphage Ohmna") then
+		elseif message:find("The Archives tremble as Dreadphage Ohmna") then -- !!! "The Archives tremble as Dreadphage Ohmna"
 			core:AddMsg("OP2", "P2 : TENTACLES", 5, "Alert")
-		elseif message:find("The Archives quake with the furious might") then
+		elseif message:find("The Archives quake with the furious might") then -- !!! "The Archives quake with the furious might"
 			core:AddMsg("OP3", "P3 : RAVENOUS", 5, "Alert")
 			OhmnaP3 = true
 			core:StopBar("OPILAR")
@@ -174,7 +174,7 @@ end
 function mod:OnCombatStateChanged(unit, bInCombat)
 	if unit:GetType() == "NonPlayer" and bInCombat then
 		local sName = unit:GetName()
-		if sName == "Dreadphage Ohmna" then
+		if sName == "Schreckensphage Ohmna" then -- "Dreadphage Ohmna"
 			self:Start()
 			pilarCount, boreCount, submergeCount = 1, 0, 0
 			firstPull, OhmnaP3, OhmnaP4 = true, false, false
