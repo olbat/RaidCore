@@ -33,16 +33,66 @@ mod:RegisterEnglishLocale({
 })
 mod:RegisterFrenchLocale({
 	-- Unit names.
+	["Hydroflux"] = "Hydroflux",
+	["Pyrobane"] = "Pyromagnus",
+	["Ice Tomb"] = "Tombeau de glace",
+	-- Datachron messages.
+	-- NPCSay messages.
+	["Burning mortals... such sweet agony"] = "Burning mortals... such sweet agony",	-- !!!!
+	["Run! Soon my fires will destroy you"] = "Run! Soon my fires will destroy you",	-- !!!!
+	["Ah! The smell of seared flesh"] = "Ah! The smell of seared flesh",	-- !!!!
+	["Enshrouded in deadly flame"] = "Enshrouded in deadly flame",	-- !!!!
+	["Pyrobane ignites you"] = "Pyrobane ignites you",	-- !!!!
+	-- Cast.
+	["Flame Wave"] = "Vague de feu",
+	-- Bar and messages.
+	["Frost Bomb"] = "Frost Bomb",	-- !!!!
+	["BOMBS"] = "BOMBS",	-- !!!!
+	["BOMBS UP !"] = "BOMBS UP !",	-- !!!!
+	["Bomb Explosion"] = "Bomb Explosion",
+	["ICE TOMB"] = "ICE TOMB",	-- !!!!
+})
+mod:RegisterGermanLocale({
+	-- Unit names.
+	["Hydroflux"] = "Hydroflux",
+	["Pyrobane"] = "Pyroman",
+	["Ice Tomb"] = "Eisgrab",
+	-- Datachron messages.
+	-- NPCSay messages.
+	["Burning mortals... such sweet agony"] = "Burning mortals... such sweet agony",	-- !!!!
+	["Run! Soon my fires will destroy you"] = "Run! Soon my fires will destroy you",	-- !!!!
+	["Ah! The smell of seared flesh"] = "Ah! The smell of seared flesh",	-- !!!!
+	["Enshrouded in deadly flame"] = "Enshrouded in deadly flame",	-- !!!!
+	["Pyrobane ignites you"] = "Pyrobane ignites you",	-- !!!!
+	-- Cast.
+	["Flame Wave"] = "Flammenwelle",
+	-- Bar and messages.
+	["Frost Bomb"] = "Frost Bomb",	-- !!!!
+	["BOMBS"] = "BOMBS",	-- !!!!
+	["BOMBS UP !"] = "BOMBS UP !",	-- !!!!
+	["Bomb Explosion"] = "Bomb Explosion",
+	["ICE TOMB"] = "ICE TOMB",	-- !!!!
+})
+-- TODO: to be merged
+--[[
+mod:RegisterFrenchLocale({
+	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
+-- TODO: to be merged
+--[[
 mod:RegisterGermanLocale({
 	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
 
 --------------------------------------------------------------------------------
 -- Locals

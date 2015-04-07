@@ -47,12 +47,86 @@ mod:RegisterEnglishLocale({
 mod:RegisterFrenchLocale({
 	-- Unit names.
 	["Dreadphage Ohmna"] = "Ohmna la Terriphage",
+	["Tentacle of Ohmna"] = "Tentacule d'Ohmna",
+	["Ravenous Maw of the Dreadphage"] = "Gueule vorace de la Terriphage",
+	-- Datachron messages.
+	["A plasma leech begins draining"] = "A plasma leech begins draining",	-- !!!!
+	["Dreadphage Ohmna submerges"] = "Dreadphage Ohmna submerges",	-- !!!!
+	["Dreadphage Ohmna is bored"] = "Dreadphage Ohmna is bored",	-- !!!!
+	["The Archives tremble as Dreadphage Ohmna"] = "The Archives tremble as Dreadphage Ohmna",	-- !!!!
+	["The Archives quake with the furious might"] = "The Archives quake with the furious might",	-- !!!!
+	-- Objectifs.
+	["North Power Core Energy"] = "North Power Core Energy",	-- !!!!
+	["South Power Core Energy"] = "South Power Core Energy",	-- !!!!
+	["East Power Core Energy"] = "East Power Core Energy",	-- !!!!
+	["West Power Core Energy"] = "West Power Core Energy",	-- !!!!
+	-- Cast.
+	["Erupt"] = "Jaillir",
+	["Genetic Torrent"] = "Torrent génétique",
+	-- Bar and messages.
+	["Next Tentacles"] = "Next Tentacles",	-- !!!!
+	["Tentacles"] = "Tentacule",
+	["P2 SOON !"] = "P2 SOON !",	-- !!!!
+	["P2: TENTACLES"] = "P2: TENTACLES",	-- !!!!
+	["PHASE 2"] = "PHASE 2",	-- !!!!
+	["P3 SOON !"] = "P3 SOON !",	-- !!!!
+	["P3: RAVENOUS"] = "P3: RAVENOUS",	-- !!!!
+	["P3 REALLY SOON !"] = "P3 REALLY SOON !",	-- !!!!
+	["PILLAR %u : %u"] = "PILLAR %u : %u",	-- !!!!
+	["PILLAR %u"] = "PILLAR %u",	-- !!!!
+	["SWITCH TANK"] = "SWITCH TANK",	-- !!!!
+	["BIG SPEW"] = "BIG SPEW",	-- !!!!
+	["NEXT BIG SPEW"] = "NEXT BIG SPEW",	-- !!!!
+})
+mod:RegisterGermanLocale({
+	-- Unit names.
+	["Dreadphage Ohmna"] = "Schreckensphage Ohmna",
+	["Tentacle of Ohmna"] = "Tentakel von Ohmna",
+	["Ravenous Maw of the Dreadphage"] = "Unersättliches Maul der Schreckensphage",
+	-- Datachron messages.
+	["A plasma leech begins draining"] = "A plasma leech begins draining",	-- !!!!
+	["Dreadphage Ohmna submerges"] = "Dreadphage Ohmna submerges",	-- !!!!
+	["Dreadphage Ohmna is bored"] = "Dreadphage Ohmna is bored",	-- !!!!
+	["The Archives tremble as Dreadphage Ohmna"] = "The Archives tremble as Dreadphage Ohmna",	-- !!!!
+	["The Archives quake with the furious might"] = "The Archives quake with the furious might",	-- !!!!
+	-- Objectifs.
+	["North Power Core Energy"] = "North Power Core Energy",	-- !!!!
+	["South Power Core Energy"] = "South Power Core Energy",	-- !!!!
+	["East Power Core Energy"] = "East Power Core Energy",	-- !!!!
+	["West Power Core Energy"] = "West Power Core Energy",	-- !!!!
+	-- Cast.
+	["Erupt"] = "Ausbrechen",
+	["Genetic Torrent"] = "Genetische Strömung",
+	-- Bar and messages.
+	["Next Tentacles"] = "Next Tentacles",	-- !!!!
+	["Tentacles"] = "Tentakel",
+	["P2 SOON !"] = "P2 SOON !",	-- !!!!
+	["P2: TENTACLES"] = "P2: TENTACLES",	-- !!!!
+	["PHASE 2"] = "PHASE 2",	-- !!!!
+	["P3 SOON !"] = "P3 SOON !",	-- !!!!
+	["P3: RAVENOUS"] = "P3: RAVENOUS",	-- !!!!
+	["P3 REALLY SOON !"] = "P3 REALLY SOON !",	-- !!!!
+	["PILLAR %u : %u"] = "PILLAR %u : %u",	-- !!!!
+	["PILLAR %u"] = "PILLAR %u",	-- !!!!
+	["SWITCH TANK"] = "SWITCH TANK",	-- !!!!
+	["BIG SPEW"] = "BIG SPEW",	-- !!!!
+	["NEXT BIG SPEW"] = "NEXT BIG SPEW",	-- !!!!
+})
+-- TODO: to be merged
+--[[
+mod:RegisterFrenchLocale({
+	-- Unit names.
+	["Dreadphage Ohmna"] = "Ohmna la Terriphage",
 	-- Datachron messages.
 	-- NPCSay messages.
 	-- Cast.
 	["Genetic Torrent"] = "Torrent génétique",
 	-- Bar and messages.
 })
+--]]
+
+-- TODO: to be merged
+--[[
 mod:RegisterGermanLocale({
 	-- Unit names.
 	-- Datachron messages.
@@ -60,6 +134,8 @@ mod:RegisterGermanLocale({
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
 
 
 --------------------------------------------------------------------------------

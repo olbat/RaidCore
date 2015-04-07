@@ -40,6 +40,54 @@ mod:RegisterFrenchLocale({
 	["Phagetech Protector"] = "Protecteur technophage",
 	["Phagetech Fabricator"] = "Fabricant technophage",
 	-- Datachron messages.
+	["Phagetech Commander is now active!"] = "Phagetech Commander is now active!",	-- !!!!
+	["Phagetech Augmentor is now active!"] = "Phagetech Augmentor is now active!",	-- !!!!
+	["Phagetech Protector is now active!"] = "Phagetech Protector is now active!",	-- !!!!
+	["Phagetech Fabricator is now active!"] = "Phagetech Fabricator is now active!",	-- !!!!
+	-- Cast.
+	["Summon Repairbot"] = "Déployer Bricobot",
+	["Summon Destructobot"] = "Déployer Destructobot",
+	-- Bar and messages.
+	["[1] LINK + KICK"] = "[1] LINK + KICK",	-- !!!!
+	["[2] TP + CROIX + BOTS"] = "[2] TP + CROIX + BOTS",	-- !!!!
+	["[3] SINGULARITY + VAGUE"] = "[3] SINGULARITY + VAGUE",	-- !!!!
+	["[4] SOAK + BOTS"] = "[4] SOAK + BOTS",	-- !!!!
+	["BOTS !!"] = "BOTS !!",	-- !!!!
+	["BERSERK"] = "BERSERK",	-- !!!!
+	["Singularity"] = "Singularité",
+})
+mod:RegisterGermanLocale({
+	-- Unit names.
+	["Phagetech Commander"] = "Phagentech-Kommandant",
+	["Phagetech Augmentor"] = "Phagentech-Augmentor",
+	["Phagetech Protector"] = "Phagentech-Protektor",
+	["Phagetech Fabricator"] = "Phagentech-Fabrikant",
+	-- Datachron messages.
+	["Phagetech Commander is now active!"] = "Phagetech Commander is now active!",	-- !!!!
+	["Phagetech Augmentor is now active!"] = "Phagetech Augmentor is now active!",	-- !!!!
+	["Phagetech Protector is now active!"] = "Phagetech Protector is now active!",	-- !!!!
+	["Phagetech Fabricator is now active!"] = "Phagetech Fabricator is now active!",	-- !!!!
+	-- Cast.
+	["Summon Repairbot"] = "Reparaturbot herbeirufen",
+	["Summon Destructobot"] = "Destruktobot herbeirufen",
+	-- Bar and messages.
+	["[1] LINK + KICK"] = "[1] LINK + KICK",	-- !!!!
+	["[2] TP + CROIX + BOTS"] = "[2] TP + CROIX + BOTS",	-- !!!!
+	["[3] SINGULARITY + VAGUE"] = "[3] SINGULARITY + VAGUE",	-- !!!!
+	["[4] SOAK + BOTS"] = "[4] SOAK + BOTS",	-- !!!!
+	["BOTS !!"] = "BOTS !!",	-- !!!!
+	["BERSERK"] = "BERSERK",	-- !!!!
+	["Singularity"] = "Singularität",
+})
+-- TODO: to be merged
+--[[
+mod:RegisterFrenchLocale({
+	-- Unit names.
+	["Phagetech Commander"] = "Commandant technophage",
+	["Phagetech Augmentor"] = "Augmenteur technophage",
+	["Phagetech Protector"] = "Protecteur technophage",
+	["Phagetech Fabricator"] = "Fabricant technophage",
+	-- Datachron messages.
 	-- Cast.
 	["Summon Repairbot"] = "Déployer Bricobot",
 	["Summon Destructobot"] = "Déployer Destructobot",
@@ -52,6 +100,10 @@ mod:RegisterFrenchLocale({
 	["BERSERK"] = "BERSERK",
 	["Singularity"] = "Singularité",
 })
+--]]
+
+-- TODO: to be merged
+--[[
 mod:RegisterGermanLocale({
 	-- Unit names.
 	-- Datachron messages.
@@ -59,6 +111,8 @@ mod:RegisterGermanLocale({
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
 
 --------------------------------------------------------------------------------
 -- Locals

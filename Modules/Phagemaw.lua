@@ -26,15 +26,45 @@ mod:RegisterFrenchLocale({
 	["Phage Maw"] = "Phagegueule",
 	["Detonation Bomb"] = "Bombe à détonateur",
 	-- Datachron messages.
+	["The augmented shield has been destroyed"] = "The augmented shield has been destroyed",	-- !!!!
+	["Phage Maw begins charging an orbital strike"] = "Phage Maw begins charging an orbital strike",	-- !!!!
+	-- Bar and messages.
+	["Bomb %u"] = "Bomb %u",	-- !!!!
+	["BOOOM !"] = "BOOOM !",	-- !!!!
+})
+mod:RegisterGermanLocale({
+	-- Unit names.
+	["Phage Maw"] = "Phagenschlund",
+	["Detonation Bomb"] = "Sprengbombe",
+	-- Datachron messages.
+	["The augmented shield has been destroyed"] = "The augmented shield has been destroyed",	-- !!!!
+	["Phage Maw begins charging an orbital strike"] = "Phage Maw begins charging an orbital strike",	-- !!!!
+	-- Bar and messages.
+	["Bomb %u"] = "Bomb %u",	-- !!!!
+	["BOOOM !"] = "BOOOM !",	-- !!!!
+})
+-- TODO: to be merged
+--[[
+mod:RegisterFrenchLocale({
+	-- Unit names.
+	["Phage Maw"] = "Phagegueule",
+	["Detonation Bomb"] = "Bombe à détonateur",
+	-- Datachron messages.
 	-- Bar and messages.
 	["Bomb %u"] = "Bombe %u",
 	["BOOOM !"] = "BOOOM !",
 })
+--]]
+
+-- TODO: to be merged
+--[[
 mod:RegisterGermanLocale({
 	-- Unit names.
 	-- Datachron messages.
 	-- Bar and messages.
 })
+--]]
+
 
 --------------------------------------------------------------------------------
 -- Locals

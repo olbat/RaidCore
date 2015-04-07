@@ -26,16 +26,52 @@ mod:RegisterEnglishLocale({
 })
 mod:RegisterFrenchLocale({
 	-- Unit names.
+	["Visceralus"] = "Visceralus",
+	["Pyrobane"] = "Pyromagnus",
+	["Life Force"] = "Force vitale",
+	["Essence of Life"] = "Essence de vie",
+	["Flame Wave"] = "Vague de feu",
+	-- Datachron messages.
+	-- Cast.
+	["Blinding Light"] = "Lumière aveuglante",
+	-- Bar and messages.
+	["You are rooted"] = "You are rooted",	-- !!!!
+	["MIDPHASE"] = "MIDPHASE",	-- !!!!
+})
+mod:RegisterGermanLocale({
+	-- Unit names.
+	["Visceralus"] = "Viszeralus",
+	["Pyrobane"] = "Pyroman",
+	["Life Force"] = "Life Force",
+	["Essence of Life"] = "Lebensessenz",
+	["Flame Wave"] = "Flammenwelle",
+	-- Datachron messages.
+	-- Cast.
+	["Blinding Light"] = "Blendendes Licht",
+	-- Bar and messages.
+	["You are rooted"] = "You are rooted",	-- !!!!
+	["MIDPHASE"] = "MIDPHASE",	-- !!!!
+})
+-- TODO: to be merged
+--[[
+mod:RegisterFrenchLocale({
+	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
+-- TODO: to be merged
+--[[
 mod:RegisterGermanLocale({
 	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
 
 local DEBUFFID_PRIMAL_ENTANGLEMENT = 73179 -- A root ability.
 local DEBUFFIF__TODO__ = 73177 -- TODO: set english debuff name as define name.

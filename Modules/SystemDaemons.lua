@@ -59,16 +59,112 @@ mod:RegisterEnglishLocale({
 })
 mod:RegisterFrenchLocale({
 	-- Unit names.
+	["Brute Force Algorithm"] = "Algorithme de force brute",
+	["Encryption Program"] = "Programme de cryptage",
+	["Radiation Dispersion Unit"] = "Unité de dispersion de radiations",
+	["Defragmentation Unit"] = "Unité de défragmentation",
+	["Extermination Sequence"] = "Séquence d'extermination",
+	["Data Compiler"] = "Compilateur de données",
+	["Viral Diffusion Inhibitor"] = "Inhibiteur de diffusion virale",
+	["Enhancement Module"] = "Module d'amélioration",
+	["Conduction Unit Mk. I"]  = "Unité de conductivité v1",
+	["Conduction Unit Mk. II"]  = "Unité de conductivité v2",
+	["Conduction Unit Mk. III"]  = "Conduction Unit Mk. III",	-- !!!!
+	["Infinite Generator Core"] = "Infinite Generator Core",	-- !!!!
+	["Recovery Protocol"] = "Protocole de récupération",
+	-- Datachron messages.
+	["INVALID SIGNAL. DISCONNECTING"] = "INVALID SIGNAL. DISCONNECTING",	-- !!!!
+	["COMMENCING ENHANCEMENT SEQUENCE"] = "COMMENCING ENHANCEMENT SEQUENCE",	-- !!!!
+	-- Cast.
+	["Repair Sequence"] = "Séquence de réparation",
+	["Power Surge"] = "Afflux d'énergie",
+	["Black IC"] = "CI noir",
+	-- Bar and messages.
+	["[%u] Probe"] = "[%u] Probe",	-- !!!!
+	["[%u] WAVE"] = "[%u] WAVE",	-- !!!!
+	["[%u] MINIBOSS"] = "[%u] MINIBOSS",	-- !!!!
+	["MARKER north"] = "MARKER north",	-- !!!!
+	["MARKER south"] = "MARKER south",	-- !!!!
+	["P2 SOON !"] = "P2 SOON !",	-- !!!!
+	["PHASE 2 !"] = "PHASE 2 !",	-- !!!!
+	["INTERRUPT NORTH"] = "INTERRUPT NORTH",	-- !!!!
+	["INTERRUPT SOUTH"] = "INTERRUPT SOUTH",	-- !!!!
+	["AIDDDDDDDS !"] = "AIDDDDDDDS !",	-- !!!!
+	["PURGE - %s"] = "PURGE - %s",	-- !!!!
+	["INTERRUPT !"] = "INTERRUPT !",	-- !!!!
+	["INTERRUPT HEAL!"] = "INTERRUPT HEAL!",	-- !!!!
+	["BLACK IC"] = "BLACK IC",	-- !!!!
+	["HEAL"] = "HEAL",	-- !!!!
+	["PURGE ON YOU"] = "PURGE ON YOU",	-- !!!!
+	["Probe Spawn"] = "Probe Spawn",	-- !!!!
+	["DISCONNECT (%u)"] = "DISCONNECT (%u)",	-- !!!!
+	["YOU ARE NEXT ON NORTH !"] = "YOU ARE NEXT ON NORTH !",	-- !!!!
+	["YOU ARE NEXT ON SOUTH !"] = "YOU ARE NEXT ON SOUTH !",	-- !!!!
+})
+mod:RegisterGermanLocale({
+	-- Unit names.
+	["Brute Force Algorithm"] = "Brachialgewalt-Algorithmus",
+	["Encryption Program"] = "Verschlüsselungsprogramm",
+	["Radiation Dispersion Unit"] = "Strahlungsverteilungseinheit",
+	["Defragmentation Unit"] = "Defragmentierungseinheit",
+	["Extermination Sequence"] = "Vernichtungssequenz",
+	["Data Compiler"] = "Datenkompilierer",
+	["Viral Diffusion Inhibitor"] = "Virushemmstoff",
+	["Enhancement Module"] = "Verbesserungsmodul",
+	["Conduction Unit Mk. I"]  = "Leistungseinheit V1",
+	["Conduction Unit Mk. II"]  = "Leistungseinheit V2",
+	["Conduction Unit Mk. III"]  = "Conduction Unit Mk. III",	-- !!!!
+	["Infinite Generator Core"] = "Infinite Generator Core",	-- !!!!
+	["Recovery Protocol"] = "Wiederherstellungsprotokoll",
+	-- Datachron messages.
+	["INVALID SIGNAL. DISCONNECTING"] = "INVALID SIGNAL. DISCONNECTING",	-- !!!!
+	["COMMENCING ENHANCEMENT SEQUENCE"] = "COMMENCING ENHANCEMENT SEQUENCE",	-- !!!!
+	-- Cast.
+	["Repair Sequence"] = "Reparatursequenz",
+	["Power Surge"] = "Energieschweller",
+	["Black IC"] = "Glatteis",
+	-- Bar and messages.
+	["[%u] Probe"] = "[%u] Probe",	-- !!!!
+	["[%u] WAVE"] = "[%u] WAVE",	-- !!!!
+	["[%u] MINIBOSS"] = "[%u] MINIBOSS",	-- !!!!
+	["MARKER north"] = "MARKER north",	-- !!!!
+	["MARKER south"] = "MARKER south",	-- !!!!
+	["P2 SOON !"] = "P2 SOON !",	-- !!!!
+	["PHASE 2 !"] = "PHASE 2 !",	-- !!!!
+	["INTERRUPT NORTH"] = "INTERRUPT NORTH",	-- !!!!
+	["INTERRUPT SOUTH"] = "INTERRUPT SOUTH",	-- !!!!
+	["AIDDDDDDDS !"] = "AIDDDDDDDS !",	-- !!!!
+	["PURGE - %s"] = "PURGE - %s",	-- !!!!
+	["INTERRUPT !"] = "INTERRUPT !",	-- !!!!
+	["INTERRUPT HEAL!"] = "INTERRUPT HEAL!",	-- !!!!
+	["BLACK IC"] = "BLACK IC",	-- !!!!
+	["HEAL"] = "HEAL",	-- !!!!
+	["PURGE ON YOU"] = "PURGE ON YOU",	-- !!!!
+	["Probe Spawn"] = "Probe Spawn",	-- !!!!
+	["DISCONNECT (%u)"] = "DISCONNECT (%u)",	-- !!!!
+	["YOU ARE NEXT ON NORTH !"] = "YOU ARE NEXT ON NORTH !",	-- !!!!
+	["YOU ARE NEXT ON SOUTH !"] = "YOU ARE NEXT ON SOUTH !",	-- !!!!
+})
+-- TODO: to be merged
+--[[
+mod:RegisterFrenchLocale({
+	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
+-- TODO: to be merged
+--[[
 mod:RegisterGermanLocale({
 	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
 
 --------------------------------------------------------------------------------
 -- Locals

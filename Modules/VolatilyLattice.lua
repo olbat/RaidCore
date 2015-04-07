@@ -37,6 +37,56 @@ mod:RegisterFrenchLocale({
 	["Avatus"] = "Avatus",
 	["Obstinate Logic Wall"] = "Mur de logique obstiné",
 	["Data Devourer"] = "Dévoreur de données",
+	["Big Red Button"] = "Big Red Button",	-- !!!!
+	-- Datachron messages.
+	["Avatus sets his focus on [PlayerName]!"] = "Avatus sets his focus on [PlayerName]!",	-- !!!!
+	["Avatus prepares to delete all"] = "Avatus prepares to delete all",	-- !!!!
+	["Secure Sector Enhancement"] = "Secure Sector Enhancement",	-- !!!!
+	["Vertical Locomotion Enhancement"] = "Vertical Locomotion Enhancement",	-- !!!!
+	-- Cast.
+	["Null and Void"] = "Caduque",
+	-- Bar and messages.
+	["P2: SHIELD PHASE"] = "P2: SHIELD PHASE",	-- !!!!
+	["P2: JUMP PHASE"] = "P2: JUMP PHASE",	-- !!!!
+	["LASER"] = "LASER",	-- !!!!
+	["EXPLOSION"] = "EXPLOSION",	-- !!!!
+	["NEXT BEAM"] = "NEXT BEAM",	-- !!!!
+	["[%u] WAVE"] = "[%u] WAVE",	-- !!!!
+	["BEAM on YOU !!!"] = "BEAM on YOU !!!",	-- !!!!
+	["[%u] BEAM on %s"] = "[%u] BEAM on %s",	-- !!!!
+	["BIG CAST"] = "BIG CAST",	-- !!!!
+})
+mod:RegisterGermanLocale({
+	-- Unit names.
+	["Avatus"] = "Avatus",
+	["Obstinate Logic Wall"] = "Hartnäckige Logikmauer",
+	["Data Devourer"] = "Datenverschlinger",
+	["Big Red Button"] = "Big Red Button",	-- !!!!
+	-- Datachron messages.
+	["Avatus sets his focus on [PlayerName]!"] = "Avatus sets his focus on [PlayerName]!",	-- !!!!
+	["Avatus prepares to delete all"] = "Avatus prepares to delete all",	-- !!!!
+	["Secure Sector Enhancement"] = "Secure Sector Enhancement",	-- !!!!
+	["Vertical Locomotion Enhancement"] = "Vertical Locomotion Enhancement",	-- !!!!
+	-- Cast.
+	["Null and Void"] = "Unordnung und Chaos",
+	-- Bar and messages.
+	["P2: SHIELD PHASE"] = "P2: SHIELD PHASE",	-- !!!!
+	["P2: JUMP PHASE"] = "P2: JUMP PHASE",	-- !!!!
+	["LASER"] = "LASER",	-- !!!!
+	["EXPLOSION"] = "EXPLOSION",	-- !!!!
+	["NEXT BEAM"] = "NEXT BEAM",	-- !!!!
+	["[%u] WAVE"] = "[%u] WAVE",	-- !!!!
+	["BEAM on YOU !!!"] = "BEAM on YOU !!!",	-- !!!!
+	["[%u] BEAM on %s"] = "[%u] BEAM on %s",	-- !!!!
+	["BIG CAST"] = "BIG CAST",	-- !!!!
+})
+-- TODO: to be merged
+--[[
+mod:RegisterFrenchLocale({
+	-- Unit names.
+	["Avatus"] = "Avatus",
+	["Obstinate Logic Wall"] = "Mur de logique obstiné",
+	["Data Devourer"] = "Dévoreur de données",
 	-- Datachron messages.
 	["Avatus prepares to delete all"] = "Avatus se prépare à effacer toutes les données !",
 	["Secure Sector Enhancement"] = "Les ports d'amélioration de secteur sécurisé ont été activés !",
@@ -45,12 +95,18 @@ mod:RegisterFrenchLocale({
 	["Null and Void"] = "Caduque",
 	-- Bar and messages.
 })
+--]]
+
+-- TODO: to be merged
+--[[
 mod:RegisterGermanLocale({
 	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
 
 --------------------------------------------------------------------------------
 -- Locals

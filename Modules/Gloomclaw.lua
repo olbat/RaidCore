@@ -43,6 +43,70 @@ mod:RegisterFrenchLocale({
 	-- Unit names.
 	["Gloomclaw"] = "Serrenox",
 	["Corrupted Ravager"] = "Ravageur corrompu",
+	["Empowered Ravager"] = "Empowered Ravager",	-- !!!!
+	["Strain Parasite"] = "Parasite de la Souillure",
+	["Gloomclaw Skurge"] = "Skurge serrenox",
+	["Corrupted Fraz"] = "Friz corrompu",
+	["Essence of Logic"] = "Essence de logique",
+	-- Datachron messages.
+	["Gloomclaw is reduced to a weakened state"] = "Gloomclaw is reduced to a weakened state",	-- !!!!
+	["Gloomclaw is vulnerable"] = "Gloomclaw is vulnerable",	-- !!!!
+	["Gloomclaw is pushed back"] = "Gloomclaw is pushed back",	-- !!!!
+	["Gloomclaw is moving forward"] = "Gloomclaw is moving forward",	-- !!!!
+	-- Cast.
+	["Rupture"] = "Rupture",
+	["Corrupting Rays"] = "Rayons de corruption",
+	-- Bar and messages.
+	["INTERRUPT %s"] = "INTERRUPT %s",	-- !!!!
+	["NEXT RUPTURE"] = "NEXT RUPTURE",	-- !!!!
+	["~NEXT RUPTURE"] = "~NEXT RUPTURE",	-- !!!!
+	["FULL CORRUPTION"] = "FULL CORRUPTION",	-- !!!!
+	["SECTION %u"] = "SECTION %u",	-- !!!!
+	["[%u] WAVE"] = "[%u] WAVE",	-- !!!!
+	["FROG %u"] = "FROG %u",	-- !!!!
+	["LEFT"] = "LEFT",	-- !!!!
+	["RIGHT"] = "RIGHT",	-- !!!!
+	["TRANSITION"] = "TRANSITION",	-- !!!!
+	["MOO PHASE"] = "MOO PHASE",	-- !!!!
+	["BURN HIM HARD"] = "BURN HIM HARD",	-- !!!!
+})
+mod:RegisterGermanLocale({
+	-- Unit names.
+	["Gloomclaw"] = "Düsterklaue",
+	["Corrupted Ravager"] = "Korrumpierter Verwüster",
+	["Empowered Ravager"] = "Empowered Ravager",	-- !!!!
+	["Strain Parasite"] = "Transmutierten-Parasit",
+	["Gloomclaw Skurge"] = "Düsterklauen-Geißel",
+	["Corrupted Fraz"] = "Korrumpierter Fraz",
+	["Essence of Logic"] = "Logikessenz",
+	-- Datachron messages.
+	["Gloomclaw is reduced to a weakened state"] = "Gloomclaw is reduced to a weakened state",	-- !!!!
+	["Gloomclaw is vulnerable"] = "Gloomclaw is vulnerable",	-- !!!!
+	["Gloomclaw is pushed back"] = "Gloomclaw is pushed back",	-- !!!!
+	["Gloomclaw is moving forward"] = "Gloomclaw is moving forward",	-- !!!!
+	-- Cast.
+	["Rupture"] = "Aufreißen",
+	["Corrupting Rays"] = "Korrumpierende Strahlen",
+	-- Bar and messages.
+	["INTERRUPT %s"] = "INTERRUPT %s",	-- !!!!
+	["NEXT RUPTURE"] = "NEXT RUPTURE",	-- !!!!
+	["~NEXT RUPTURE"] = "~NEXT RUPTURE",	-- !!!!
+	["FULL CORRUPTION"] = "FULL CORRUPTION",	-- !!!!
+	["SECTION %u"] = "SECTION %u",	-- !!!!
+	["[%u] WAVE"] = "[%u] WAVE",	-- !!!!
+	["FROG %u"] = "FROG %u",	-- !!!!
+	["LEFT"] = "LEFT",	-- !!!!
+	["RIGHT"] = "RIGHT",	-- !!!!
+	["TRANSITION"] = "TRANSITION",	-- !!!!
+	["MOO PHASE"] = "MOO PHASE",	-- !!!!
+	["BURN HIM HARD"] = "BURN HIM HARD",	-- !!!!
+})
+-- TODO: to be merged
+--[[
+mod:RegisterFrenchLocale({
+	-- Unit names.
+	["Gloomclaw"] = "Serrenox",
+	["Corrupted Ravager"] = "Ravageur corrompu",
 	["Empowered Ravager"] = "Ravageur renforcé",
 	["Strain Parasite"] = "Parasite de la Souillure",
 	["Gloomclaw Skurge"] = "Skurge serrenox",
@@ -67,12 +131,18 @@ mod:RegisterFrenchLocale({
 	["TRANSITION"] = "TRANSITION",
 	["MOO PHASE"] = "MOO PHASE",
 })
+--]]
+
+-- TODO: to be merged
+--[[
 mod:RegisterGermanLocale({
 	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
 
 --------------------------------------------------------------------------------
 -- Locals

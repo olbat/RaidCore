@@ -39,16 +39,80 @@ mod:RegisterEnglishLocale({
 })
 mod:RegisterFrenchLocale({
 	-- Unit names.
+	["Essence of Life"] = "Essence de vie",
+	["Essence of Logic"] = "Essence de logique",
+	["Alphanumeric Hash"] = "Hachis alphanumérique",
+	["Life Force"] = "Force vitale",
+	["Mnemesis"] = "Mnémésis",
+	["Visceralus"] = "Visceralus",
+	-- Datachron messages.
+	-- Cast.
+	["Blinding Light"] = "Lumière aveuglante",
+	["Defragment"] = "Défragmentation",
+	-- Bar and messages.
+	["Defrag Explosion"] = "Defrag Explosion",	-- !!!!
+	["~DEFRAG CD"] = "~DEFRAG CD",	-- !!!!
+	["DEFRAG"] = "DEFRAG",	-- !!!!
+	["ENRAGE"] = "ENRAGE",	-- !!!!
+	["No-Healing Debuff!"] = "No-Healing Debuff!",	-- !!!!
+	["NO HEAL DEBUFF"] = "NO HEAL DEBUFF",	-- !!!!
+	["SNAKE ON YOU!"] = "SNAKE ON YOU!",	-- !!!!
+	["SNAKE ON %s!"] = "SNAKE ON %s!",	-- !!!!
+	["SNAKE"] = "SNAKE",	-- !!!!
+	["THORNS DEBUFF"] = "THORNS DEBUFF",	-- !!!!
+	["MARKER North"] = "MARKER North",	-- !!!!
+	["MARKER South"] = "MARKER South",	-- !!!!
+	["MARKER East"] = "MARKER East",	-- !!!!
+	["MARKER West"] = "MARKER West",	-- !!!!
+})
+mod:RegisterGermanLocale({
+	-- Unit names.
+	["Essence of Life"] = "Lebensessenz",
+	["Essence of Logic"] = "Logikessenz",
+	["Alphanumeric Hash"] = "Alphanumerische Raute",
+	["Life Force"] = "Life Force",
+	["Mnemesis"] = "Mnemesis",
+	["Visceralus"] = "Viszeralus",
+	-- Datachron messages.
+	-- Cast.
+	["Blinding Light"] = "Blendendes Licht",
+	["Defragment"] = "Defragmentieren",
+	-- Bar and messages.
+	["Defrag Explosion"] = "Defrag Explosion",	-- !!!!
+	["~DEFRAG CD"] = "~DEFRAG CD",	-- !!!!
+	["DEFRAG"] = "DEFRAG",	-- !!!!
+	["ENRAGE"] = "ENRAGE",	-- !!!!
+	["No-Healing Debuff!"] = "No-Healing Debuff!",	-- !!!!
+	["NO HEAL DEBUFF"] = "NO HEAL DEBUFF",	-- !!!!
+	["SNAKE ON YOU!"] = "SNAKE ON YOU!",	-- !!!!
+	["SNAKE ON %s!"] = "SNAKE ON %s!",	-- !!!!
+	["SNAKE"] = "SNAKE",	-- !!!!
+	["THORNS DEBUFF"] = "THORNS DEBUFF",	-- !!!!
+	["MARKER North"] = "MARKER North",	-- !!!!
+	["MARKER South"] = "MARKER South",	-- !!!!
+	["MARKER East"] = "MARKER East",	-- !!!!
+	["MARKER West"] = "MARKER West",	-- !!!!
+})
+-- TODO: to be merged
+--[[
+mod:RegisterFrenchLocale({
+	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
+-- TODO: to be merged
+--[[
 mod:RegisterGermanLocale({
 	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
 
 --------------------------------------------------------------------------------
 -- Locals

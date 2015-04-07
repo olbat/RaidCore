@@ -31,16 +31,64 @@ mod:RegisterEnglishLocale({
 })
 mod:RegisterFrenchLocale({
 	-- Unit names.
+	["Mnemesis"] = "Mnémésis",
+	["Hydroflux"] = "Hydroflux",
+	["Alphanumeric Hash"] = "Hachis alphanumérique",
+	["Hydro Disrupter - DNT"] = "Hydro Disrupter - DNT",	-- !!!!
+	-- Datachron messages.
+	-- Cast.
+	["Circuit Breaker"] = "Coupe-circuit",
+	["Imprison"] = "Emprisonner",
+	["Defragment"] = "Défragmentation",
+	["Watery Grave"] = "Tombe aqueuse",
+	-- Bar and messages.
+	["Middle Phase"] = "Middle Phase",	-- !!!!
+	["SPREAD"] = "SPREAD",	-- !!!!
+	["~Defrag"] = "~Defrag",	-- !!!!
+	["Defrag"] = "Défragmentation",
+	["Stay away from boss with buff!"] = "Stay away from boss with buff!",	-- !!!!
+	["ORB"] = "ORB",	-- !!!!
+})
+mod:RegisterGermanLocale({
+	-- Unit names.
+	["Mnemesis"] = "Mnemesis",
+	["Hydroflux"] = "Hydroflux",
+	["Alphanumeric Hash"] = "Alphanumerische Raute",
+	["Hydro Disrupter - DNT"] = "Hydro Disrupter - DNT",	-- !!!!
+	-- Datachron messages.
+	-- Cast.
+	["Circuit Breaker"] = "Schaltkreiszerstörer",
+	["Imprison"] = "Einsperren",
+	["Defragment"] = "Defragmentieren",
+	["Watery Grave"] = "Seemannsgrab",
+	-- Bar and messages.
+	["Middle Phase"] = "Middle Phase",	-- !!!!
+	["SPREAD"] = "SPREAD",	-- !!!!
+	["~Defrag"] = "~Defrag",	-- !!!!
+	["Defrag"] = "Defrag",
+	["Stay away from boss with buff!"] = "Stay away from boss with buff!",	-- !!!!
+	["ORB"] = "ORB",	-- !!!!
+})
+-- TODO: to be merged
+--[[
+mod:RegisterFrenchLocale({
+	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
+-- TODO: to be merged
+--[[
 mod:RegisterGermanLocale({
 	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
 
 --------------------------------------------------------------------------------
 -- Locals

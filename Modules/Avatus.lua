@@ -39,16 +39,88 @@ mod:RegisterEnglishLocale({
 })
 mod:RegisterFrenchLocale({
 	-- Unit names.
+	["Avatus"] = "Avatus",
+	["Holo Hand"] = "Holo-main",
+	["Holo Hand Spawned"] = "Holo Hand Spawned",	-- !!!!
+	["Mobius Physics Constructor"] = "Constructeur de physique de Möbius",
+	["Unstoppable Object Simulation"] = "Simulacre invincible",
+	["Holo Cannon"] = "Holocanon",
+	["Shock Sphere"] = "Sphère de choc",
+	["Support Cannon"] = "Canon d'appui",
+	["Infinite Logic Loop"] = "Boucle de logique infinie",
+	-- Datachron messages.
+	["Portals have opened!"] = "Portals have opened!",	-- !!!!
+	["Gun Grid Activated"] = "Gun Grid Activated",	-- !!!!
+	-- Cast.
+	["Crushing Blow"] = "Coup écrasant",
+	["Data Flare"] = "Signal de données",
+	["Obliteration Beam"] = "Rayon de suppression",
+	-- Bar and messages.
+	["PURGE BLUE BOSS"] = "PURGE BLUE BOSS",	-- !!!!
+	["P2 SOON !"] = "P2 SOON !",	-- !!!!
+	["GO TO SIDES !"] = "GO TO SIDES !",	-- !!!!
+	["INTERRUPT CRUSHING BLOW!"] = "INTERRUPT CRUSHING BLOW!",	-- !!!!
+	["BLIND! TURN AWAY FROM BOSS"] = "BLIND! TURN AWAY FROM BOSS",	-- !!!!
+	["Blind"] = "Blind",	-- !!!!
+	["Gun Grid NOW!"] = "Gun Grid NOW!",	-- !!!!
+	["~Gun Grid"] = "~Gun Grid",	-- !!!!
+	["Holo Hands spawn"] = "Holo Hands spawn",	-- !!!!
+	["Hand %u"] = "Hand %u",	-- !!!!
+	["MARKER North"] = "MARKER North",	-- !!!!
+	["MARKER South"] = "MARKER South",	-- !!!!
+})
+mod:RegisterGermanLocale({
+	-- Unit names.
+	["Avatus"] = "Avatus",
+	["Holo Hand"] = "Holohand",
+	["Holo Hand Spawned"] = "Holo Hand Spawned",	-- !!!!
+	["Mobius Physics Constructor"] = "Mobius Physikkonstrukteur",
+	["Unstoppable Object Simulation"] = "Unaufhaltbare Objektsimulation",
+	["Holo Cannon"] = "Holokanone",
+	["Shock Sphere"] = "Schocksphäre",
+	["Support Cannon"] = "Hilfskanone",
+	["Infinite Logic Loop"] = "Unendliche Logikschleife",
+	-- Datachron messages.
+	["Portals have opened!"] = "Portals have opened!",	-- !!!!
+	["Gun Grid Activated"] = "Gun Grid Activated",	-- !!!!
+	-- Cast.
+	["Crushing Blow"] = "Vernichtender Schlag",
+	["Data Flare"] = "Daten-Leuchtsignal",
+	["Obliteration Beam"] = "Vernichtungsstrahl",
+	-- Bar and messages.
+	["PURGE BLUE BOSS"] = "PURGE BLUE BOSS",	-- !!!!
+	["P2 SOON !"] = "P2 SOON !",	-- !!!!
+	["GO TO SIDES !"] = "GO TO SIDES !",	-- !!!!
+	["INTERRUPT CRUSHING BLOW!"] = "INTERRUPT CRUSHING BLOW!",	-- !!!!
+	["BLIND! TURN AWAY FROM BOSS"] = "BLIND! TURN AWAY FROM BOSS",	-- !!!!
+	["Blind"] = "Geblendet",
+	["Gun Grid NOW!"] = "Gun Grid NOW!",	-- !!!!
+	["~Gun Grid"] = "~Gun Grid",	-- !!!!
+	["Holo Hands spawn"] = "Holo Hands spawn",	-- !!!!
+	["Hand %u"] = "Hand %u",	-- !!!!
+	["MARKER North"] = "MARKER North",	-- !!!!
+	["MARKER South"] = "MARKER South",	-- !!!!
+})
+-- TODO: to be merged
+--[[
+mod:RegisterFrenchLocale({
+	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
+-- TODO: to be merged
+--[[
 mod:RegisterGermanLocale({
 	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
 
 local phase2warn, phase2 = false, false
 local phase_blueroom = false

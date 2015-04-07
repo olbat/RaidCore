@@ -31,16 +31,62 @@ mod:RegisterEnglishLocale({
 })
 mod:RegisterFrenchLocale({
 	-- Unit names.
+	["Megalith"] = "Mégalithe",
+	["Mnemesis"] = "Mnémésis",
+	["Obsidian Outcropping"] = "Obsidian Outcropping",	-- !!!!
+	["Crystalline Matrix"] = "Matrice cristalline",
+	-- Datachron messages.
+	["The ground shudders beneath Megalith"] = "The ground shudders beneath Megalith",	-- !!!!
+	["Logic creates powerful data caches"] = "Logic creates powerful data caches",	-- !!!!
+	-- Cast.
+	["Defragment"] = "Défragmentation",
+	-- Bar and messages.
+	["SNAKE ON %s"] = "SNAKE ON %s",	-- !!!!
+	["DEFRAG"] = "DEFRAG",	-- !!!!
+	["SPREAD"] = "SPREAD",	-- !!!!
+	["BOOM"] = "BOOM",	-- !!!!
+	["JUMP !"] = "JUMP !",	-- !!!!
+	["STARS"] = "STARS"	-- !!!!
+})
+mod:RegisterGermanLocale({
+	-- Unit names.
+	["Megalith"] = "Megalith",
+	["Mnemesis"] = "Mnemesis",
+	["Obsidian Outcropping"] = "Obsidian Outcropping",	-- !!!!
+	["Crystalline Matrix"] = "Kristallmatrix",
+	-- Datachron messages.
+	["The ground shudders beneath Megalith"] = "The ground shudders beneath Megalith",	-- !!!!
+	["Logic creates powerful data caches"] = "Logic creates powerful data caches",	-- !!!!
+	-- Cast.
+	["Defragment"] = "Defragmentieren",
+	-- Bar and messages.
+	["SNAKE ON %s"] = "SNAKE ON %s",	-- !!!!
+	["DEFRAG"] = "DEFRAG",	-- !!!!
+	["SPREAD"] = "SPREAD",	-- !!!!
+	["BOOM"] = "BOOM",	-- !!!!
+	["JUMP !"] = "JUMP !",	-- !!!!
+	["STARS"] = "STARS"	-- !!!!
+})
+-- TODO: to be merged
+--[[
+mod:RegisterFrenchLocale({
+	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
+-- TODO: to be merged
+--[[
 mod:RegisterGermanLocale({
 	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
 
 --------------------------------------------------------------------------------
 -- Locals

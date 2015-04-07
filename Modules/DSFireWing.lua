@@ -37,6 +37,56 @@ mod:RegisterFrenchLocale({
 	["Warmonger Agratha"] = "Guerroyeuse Agratha",
 	["Warmonger Talarii"] = "Guerroyeuse Talarii",
 	["Warmonger Chuna"] = "Guerroyeuse Chuna",
+	["Grand Warmonger Tar'gresh"] = "Grand guerroyeur Tar'gresh",
+	["Conjured Fire Bomb"] = "Bombe incendiaire invoquée",
+	-- Datachron messages.
+	-- NPCSay messages.
+	-- Cast.
+	["Incineration"] = "Incinération",
+	["Conjure Fire Elementals"] = "Invocation d'Élémentaires de feu",
+	["Meteor Storm"] = "Pluie de météores",
+	-- Bar and messages.
+	["INTERRUPT !"] = "INTERRUPT !",	-- !!!!
+	["ELEMENTALS SOON"] = "ELEMENTALS SOON",	-- !!!!
+	["ELEMENTALS"] = "ELEMENTALS",	-- !!!!
+	["FIRST ABILITY"] = "FIRST ABILITY",	-- !!!!
+	["SECOND ABILITY"] = "SECOND ABILITY",	-- !!!!
+	["STORM !!"] = "STORM !!",	-- !!!!
+	["METEOR STORM"] = "METEOR STORM",	-- !!!!
+	["KNOCKBACK"] = "KNOCKBACK",	-- !!!!
+	["BOMB"] = "BOMB",	-- !!!!
+})
+mod:RegisterGermanLocale({
+	-- Unit names.
+	["Warmonger Agratha"] = "Kriegstreiberin Agratha",
+	["Warmonger Talarii"] = "Kriegstreiberin Talarii",
+	["Warmonger Chuna"] = "Kriegstreiberin Chuna",
+	["Grand Warmonger Tar'gresh"] = "Großer Kriegstreiber Tar’gresh",
+	["Conjured Fire Bomb"] = "Beschworene Feuerbombe",
+	-- Datachron messages.
+	-- NPCSay messages.
+	-- Cast.
+	["Incineration"] = "Lodernde Flammen",
+	["Conjure Fire Elementals"] = "Feuerelementare beschwören",
+	["Meteor Storm"] = "Meteorsturm",
+	-- Bar and messages.
+	["INTERRUPT !"] = "INTERRUPT !",	-- !!!!
+	["ELEMENTALS SOON"] = "ELEMENTALS SOON",	-- !!!!
+	["ELEMENTALS"] = "ELEMENTALS",	-- !!!!
+	["FIRST ABILITY"] = "FIRST ABILITY",	-- !!!!
+	["SECOND ABILITY"] = "SECOND ABILITY",	-- !!!!
+	["STORM !!"] = "STORM !!",	-- !!!!
+	["METEOR STORM"] = "METEOR STORM",	-- !!!!
+	["KNOCKBACK"] = "KNOCKBACK",	-- !!!!
+	["BOMB"] = "BOMB",	-- !!!!
+})
+-- TODO: to be merged
+--[[
+mod:RegisterFrenchLocale({
+	-- Unit names.
+	["Warmonger Agratha"] = "Guerroyeuse Agratha",
+	["Warmonger Talarii"] = "Guerroyeuse Talarii",
+	["Warmonger Chuna"] = "Guerroyeuse Chuna",
 	["Conjured Fire Bomb"] = "Bombe incendiaire invoquée",
 	["Totem's Fire"] = "Totem de feu invoqué",
 	-- Datachron messages.
@@ -44,6 +94,10 @@ mod:RegisterFrenchLocale({
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
+-- TODO: to be merged
+--[[
 mod:RegisterGermanLocale({
 	-- Unit names.
 	-- Datachron messages.
@@ -51,6 +105,8 @@ mod:RegisterGermanLocale({
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
 
 --------------------------------------------------------------------------------
 -- Locals

@@ -28,16 +28,56 @@ mod:RegisterEnglishLocale({
 })
 mod:RegisterFrenchLocale({
 	-- Unit names.
+	["Megalith"] = "Mégalithe",
+	["Aileron"] = "Ventemort",
+	["Air Column"] = "Colonne d'air",
+	-- Datachron messages.
+	["The ground shudders beneath Megalith"] = "The ground shudders beneath Megalith",	-- !!!!
+	["fractured crust leaves it exposed"] = "fractured crust leaves it exposed",	-- !!!!
+	-- Cast.
+	["Supercell"] = "Super-cellule",
+	["Raw Power"] = "Énergie brute",
+	-- Bar and messages.
+	["MOO !"] = "MOO !",	-- !!!!
+	["EARTH"] = "EARTH",	-- !!!!
+	["~Tornado Spawn"] = "~Tornado Spawn",	-- !!!!
+})
+mod:RegisterGermanLocale({
+	-- Unit names.
+	["Megalith"] = "Megalith",
+	["Aileron"] = "Aileron",
+	["Air Column"] = "Luftsäule",
+	-- Datachron messages.
+	["The ground shudders beneath Megalith"] = "The ground shudders beneath Megalith",	-- !!!!
+	["fractured crust leaves it exposed"] = "fractured crust leaves it exposed",	-- !!!!
+	-- Cast.
+	["Supercell"] = "Superzelle",
+	["Raw Power"] = "Rohe Kraft",
+	-- Bar and messages.
+	["MOO !"] = "MOO !",	-- !!!!
+	["EARTH"] = "EARTH",	-- !!!!
+	["~Tornado Spawn"] = "~Tornado Spawn",	-- !!!!
+})
+-- TODO: to be merged
+--[[
+mod:RegisterFrenchLocale({
+	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
+-- TODO: to be merged
+--[[
 mod:RegisterGermanLocale({
 	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
 
 --------------------------------------------------------------------------------
 -- Locals

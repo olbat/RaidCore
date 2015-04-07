@@ -36,17 +36,73 @@ mod:RegisterEnglishLocale({
 })
 mod:RegisterFrenchLocale({
 	-- Unit names.
+	["Visceralus"] = "Visceralus",
+	["Aileron"] = "Ventemort",
+	["Wild Brambles"] = "Ronces sauvages",
+	["[DS] e395 - Air - Tornado"] = "[DS] e395 - Air - Tornado",	-- !!!!
+	["Life Force"] = "Force vitale",
+	["Lifekeeper"] = "Garde-vie",
+	-- Datachron messages.
+	-- Cast.
+	["Blinding Light"] = "Lumière aveuglante",
+	-- Bar and messages.
+	["TWIRL ON YOU!"] = "TWIRL ON YOU!",	-- !!!!
+	["Thorns"] = "Épines",
+	["Twirl"] = "Tournoiement",
+	["Midphase ending"] = "Midphase ending",	-- !!!!
+	["Middle Phase"] = "Middle Phase",	-- !!!!
+	["Next Healing Tree"] = "Next Healing Tree",	-- !!!!
+	["No-Healing Debuff!"] = "No-Healing Debuff!",	-- !!!!
+	["NO HEAL DEBUFF"] = "NO HEAL DEBUFF",	-- !!!!
+	["Lightning"] = "Foudre",
+	["Lightning on YOU"] = "Lightning on YOU",	-- !!!!
+	["Recently Saved!"] = "Recently Saved!",	-- !!!!
+})
+mod:RegisterGermanLocale({
+	-- Unit names.
+	["Visceralus"] = "Viszeralus",
+	["Aileron"] = "Aileron",
+	["Wild Brambles"] = "Wilde Brombeeren",
+	["[DS] e395 - Air - Tornado"] = "[DS] e395 - Air - Tornado",	-- !!!!
+	["Life Force"] = "Life Force",
+	["Lifekeeper"] = "Lebensbewahrer",
+	-- Datachron messages.
+	-- Cast.
+	["Blinding Light"] = "Blendendes Licht",
+	-- Bar and messages.
+	["TWIRL ON YOU!"] = "TWIRL ON YOU!",	-- !!!!
+	["Thorns"] = "Thorns",
+	["Twirl"] = "Wirbel",
+	["Midphase ending"] = "Midphase ending",	-- !!!!
+	["Middle Phase"] = "Middle Phase",	-- !!!!
+	["Next Healing Tree"] = "Next Healing Tree",	-- !!!!
+	["No-Healing Debuff!"] = "No-Healing Debuff!",	-- !!!!
+	["NO HEAL DEBUFF"] = "NO HEAL DEBUFF",	-- !!!!
+	["Lightning"] = "Blitz",
+	["Lightning on YOU"] = "Lightning on YOU",	-- !!!!
+	["Recently Saved!"] = "Recently Saved!",	-- !!!!
+})
+-- TODO: to be merged
+--[[
+mod:RegisterFrenchLocale({
+	-- Unit names.
 	["Aileron"] = "Ventemort",
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
+-- TODO: to be merged
+--[[
 mod:RegisterGermanLocale({
 	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
 
 -- Tracking Blinding Light and Aileron knockback seems too random to display on timers.
 

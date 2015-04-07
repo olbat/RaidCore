@@ -43,16 +43,74 @@ mod:RegisterEnglishLocale({
 })
 mod:RegisterFrenchLocale({
 	-- Unit names.
+	["Wind Wall"] = "Mur de vent",
+	["Avatus Hologram"] = "Avatus Hologram",	-- !!!!
+	["Weather Station"] = "Station météorologique",
+	["Maelstrom Authority"] = "Contrôleur du Maelstrom",
+	-- Datachron messages.
+	["The platform trembles"] = "The platform trembles",	-- !!!!
+	-- Cast.
+	["Activate Weather Cycle"] = "Activer cycle climatique",
+	["Ice Breath"] = "Souffle de glace",
+	["Crystallize"] = "Cristalliser",
+	["Typhoon"] = "Typhon",
+	-- Bar and messages.
+	["[%u] STATION: %s %s"] = "[%u] STATION: %s %s",	-- !!!!
+	["[%u] STATION"] = "[%u] STATION",	-- !!!!
+	["ICE BREATH"] = "ICE BREATH",	-- !!!!
+	["TYPHOON"] = "TYPHOON",	-- !!!!
+	["JUMP"] = "JUMP",	-- !!!!
+	["Encounter Start"] = "Encounter Start",	-- !!!!
+	["NORTH"] = "NORTH",	-- !!!!
+	["SOUTH"] = "SOUTH",	-- !!!!
+	["EAST"] = "EAST",	-- !!!!
+	["WEST"] = "WEST",	-- !!!!
+})
+mod:RegisterGermanLocale({
+	-- Unit names.
+	["Wind Wall"] = "Windwand",
+	["Avatus Hologram"] = "Avatus Hologram",	-- !!!!
+	["Weather Station"] = "Wetterstation",
+	["Maelstrom Authority"] = "Mahlstromgewalt",
+	-- Datachron messages.
+	["The platform trembles"] = "The platform trembles",	-- !!!!
+	-- Cast.
+	["Activate Weather Cycle"] = "Wetterzyklus aktivieren",
+	["Ice Breath"] = "Eisatem",
+	["Crystallize"] = "Kristallisieren",
+	["Typhoon"] = "Taifun",
+	-- Bar and messages.
+	["[%u] STATION: %s %s"] = "[%u] STATION: %s %s",	-- !!!!
+	["[%u] STATION"] = "[%u] STATION",	-- !!!!
+	["ICE BREATH"] = "ICE BREATH",	-- !!!!
+	["TYPHOON"] = "TYPHOON",	-- !!!!
+	["JUMP"] = "JUMP",	-- !!!!
+	["Encounter Start"] = "Encounter Start",	-- !!!!
+	["NORTH"] = "NORTH",	-- !!!!
+	["SOUTH"] = "SOUTH",	-- !!!!
+	["EAST"] = "EAST",	-- !!!!
+	["WEST"] = "WEST",	-- !!!!
+})
+-- TODO: to be merged
+--[[
+mod:RegisterFrenchLocale({
+	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
+-- TODO: to be merged
+--[[
 mod:RegisterGermanLocale({
 	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
 
 --------------------------------------------------------------------------------
 -- Initialization

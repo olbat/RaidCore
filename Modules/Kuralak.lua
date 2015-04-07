@@ -48,6 +48,76 @@ mod:RegisterFrenchLocale({
 	-- Unit names.
 	["Kuralak the Defiler"] = "Kuralak la Profanatrice",
 	-- Datachron messages.
+	["Kuralak the Defiler returns to the Archive Core"] = "Kuralak the Defiler returns to the Archive Core",	-- !!!!
+	["Kuralak the Defiler causes a violent outbreak of corruption"] = "Kuralak the Defiler causes a violent outbreak of corruption",	-- !!!!
+	["The corruption begins to fester"] = "The corruption begins to fester",	-- !!!!
+	["has been anesthetized"] = "has been anesthetized",	-- !!!!
+	-- NPCSay messages.
+	["Through the Strain you will be transformed"] = "Through the Strain you will be transformed",	-- !!!!
+	["Your form is flawed, but I will make you beautiful"] = "Your form is flawed, but I will make you beautiful",	-- !!!!
+	["Let the Strain perfect you"] = "Let the Strain perfect you",	-- !!!!
+	["The Experiment has failed"] = "The Experiment has failed",	-- !!!!
+	["Join us... become one with the Strain"] = "Join us... become one with the Strain",	-- !!!!
+	["One of us... you will become one of us"] = "One of us... you will become one of us",	-- !!!!
+	-- Cast.
+	["Vanish into Darkness"] = "Disparaître dans les ténèbres",
+	-- Bar and messages.
+	["P2 SOON !"] = "P2 SOON !",	-- !!!!
+	["PHASE 2 !"] = "PHASE 2 !",	-- !!!!
+	["VANISH"] = "VANISH",	-- !!!!
+	["Vanish"] = "Disparition",
+	["OUTBREAK"] = "OUTBREAK",	-- !!!!
+	["Outbreak (%s)"] = "Outbreak (%s)",	-- !!!!
+	["EGGS (%s)"] = "EGGS (%s)",	-- !!!!
+	["Eggs (%s)"] = "Eggs (%s)",	-- !!!!
+	["BERSERK !!"] = "BERSERK !!",	-- !!!!
+	["SWITCH TANK"] = "SWITCH TANK",	-- !!!!
+	["Switch Tank (%s)"] = "Switch Tank (%s)",	-- !!!!
+	["MARKER north"] = "MARKER north",	-- !!!!
+	["MARKER south"] = "MARKER south",	-- !!!!
+	["MARKER east"] = "MARKER east",	-- !!!!
+	["MARKER west"] = "MARKER west",	-- !!!!
+})
+mod:RegisterGermanLocale({
+	-- Unit names.
+	["Kuralak the Defiler"] = "Kuralak die Schänderin",
+	-- Datachron messages.
+	["Kuralak the Defiler returns to the Archive Core"] = "Kuralak the Defiler returns to the Archive Core",	-- !!!!
+	["Kuralak the Defiler causes a violent outbreak of corruption"] = "Kuralak the Defiler causes a violent outbreak of corruption",	-- !!!!
+	["The corruption begins to fester"] = "The corruption begins to fester",	-- !!!!
+	["has been anesthetized"] = "has been anesthetized",	-- !!!!
+	-- NPCSay messages.
+	["Through the Strain you will be transformed"] = "Through the Strain you will be transformed",	-- !!!!
+	["Your form is flawed, but I will make you beautiful"] = "Your form is flawed, but I will make you beautiful",	-- !!!!
+	["Let the Strain perfect you"] = "Let the Strain perfect you",	-- !!!!
+	["The Experiment has failed"] = "The Experiment has failed",	-- !!!!
+	["Join us... become one with the Strain"] = "Join us... become one with the Strain",	-- !!!!
+	["One of us... you will become one of us"] = "One of us... you will become one of us",	-- !!!!
+	-- Cast.
+	["Vanish into Darkness"] = "In der Dunkelheit verschwinden",
+	-- Bar and messages.
+	["P2 SOON !"] = "P2 SOON !",	-- !!!!
+	["PHASE 2 !"] = "PHASE 2 !",	-- !!!!
+	["VANISH"] = "VANISH",	-- !!!!
+	["Vanish"] = "Verschwinden",
+	["OUTBREAK"] = "OUTBREAK",	-- !!!!
+	["Outbreak (%s)"] = "Outbreak (%s)",	-- !!!!
+	["EGGS (%s)"] = "EGGS (%s)",	-- !!!!
+	["Eggs (%s)"] = "Eggs (%s)",	-- !!!!
+	["BERSERK !!"] = "BERSERK !!",	-- !!!!
+	["SWITCH TANK"] = "SWITCH TANK",	-- !!!!
+	["Switch Tank (%s)"] = "Switch Tank (%s)",	-- !!!!
+	["MARKER north"] = "MARKER north",	-- !!!!
+	["MARKER south"] = "MARKER south",	-- !!!!
+	["MARKER east"] = "MARKER east",	-- !!!!
+	["MARKER west"] = "MARKER west",	-- !!!!
+})
+-- TODO: to be merged
+--[[
+mod:RegisterFrenchLocale({
+	-- Unit names.
+	["Kuralak the Defiler"] = "Kuralak la Profanatrice",
+	-- Datachron messages.
 	-- NPCSay messages.
 	-- Cast.
 	["Vanish into Darkness"] = "Disparaître dans les ténèbres",
@@ -68,6 +138,10 @@ mod:RegisterFrenchLocale({
 	["MARKER east"] = "E",
 	["MARKER west"] = "O",
 })
+--]]
+
+-- TODO: to be merged
+--[[
 mod:RegisterGermanLocale({
 	-- Unit names.
 	-- Datachron messages.
@@ -75,6 +149,8 @@ mod:RegisterGermanLocale({
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
 
 --------------------------------------------------------------------------------
 -- Locals

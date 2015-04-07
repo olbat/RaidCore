@@ -35,16 +35,70 @@ mod:RegisterEnglishLocale({
 })
 mod:RegisterFrenchLocale({
 	-- Unit names.
+	["Hydroflux"] = "Hydroflux",
+	["Aileron"] = "Ventemort",
+	["Landing Volume"] = "Landing Volume",	-- !!!!
+	["Wind Wall"] = "Mur de vent",
+	-- Datachron messages.
+	["Hydroflux evaporates"] = "Hydroflux evaporates",	-- !!!!
+	["Aileron dissipates with a flurry"] = "Aileron dissipates with a flurry",	-- !!!!
+	["The wind starts to blow faster and faster"] = "The wind starts to blow faster and faster",	-- !!!!
+	-- Cast.
+	["Tsunami"] = "Tsunami",
+	["Glacial Icestorm"] = "Tempête de neige glaciale",
+	-- Bar and messages.
+	["EYE OF THE STORM"] = "EYE OF THE STORM",	-- !!!!
+	["MOO !"] = "MOO !",	-- !!!!
+	["MOO PHASE"] = "MOO PHASE",	-- !!!!
+	["ICESTORM"] = "ICESTORM",	-- !!!!
+	["~Middle Phase"] = "~Middle Phase",	-- !!!!
+	["~Frost Tombs"] = "~Frost Tombs",	-- !!!!
+	["TWIRL ON YOU!"] = "TWIRL ON YOU!",	-- !!!!
+	["TWIRL"] = "TWIRL",	-- !!!!
+})
+mod:RegisterGermanLocale({
+	-- Unit names.
+	["Hydroflux"] = "Hydroflux",
+	["Aileron"] = "Aileron",
+	["Landing Volume"] = "Landing Volume",	-- !!!!
+	["Wind Wall"] = "Windwand",
+	-- Datachron messages.
+	["Hydroflux evaporates"] = "Hydroflux evaporates",	-- !!!!
+	["Aileron dissipates with a flurry"] = "Aileron dissipates with a flurry",	-- !!!!
+	["The wind starts to blow faster and faster"] = "The wind starts to blow faster and faster",	-- !!!!
+	-- Cast.
+	["Tsunami"] = "Tsunami",
+	["Glacial Icestorm"] = "Glacial Icestorm",
+	-- Bar and messages.
+	["EYE OF THE STORM"] = "EYE OF THE STORM",	-- !!!!
+	["MOO !"] = "MOO !",	-- !!!!
+	["MOO PHASE"] = "MOO PHASE",	-- !!!!
+	["ICESTORM"] = "ICESTORM",	-- !!!!
+	["~Middle Phase"] = "~Middle Phase",	-- !!!!
+	["~Frost Tombs"] = "~Frost Tombs",	-- !!!!
+	["TWIRL ON YOU!"] = "TWIRL ON YOU!",	-- !!!!
+	["TWIRL"] = "TWIRL",	-- !!!!
+})
+-- TODO: to be merged
+--[[
+mod:RegisterFrenchLocale({
+	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
+-- TODO: to be merged
+--[[
 mod:RegisterGermanLocale({
 	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
 
 --------------------------------------------------------------------------------
 -- Locals
