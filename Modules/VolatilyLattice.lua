@@ -135,7 +135,7 @@ function mod:OnChatDC(message)
 			core:AddBar("WAVE", self.L["[%u] WAVE"]:format(waveCount + 1), 15, 1)
 			phase2 = false
 		else
-			core:AddBar("BEAM", self.L["[%u] BEAM %s"]:format(beamCount, playerFocus), 15)
+			core:AddBar("BEAM", self.L["[%u] BEAM on %s"]:format(beamCount, playerFocus), 15)
 			if beamCount == 3 then
 				core:AddBar("WAVE", self.L["[%u] WAVE"]:format(waveCount + 1), 15, 1)
 			end
