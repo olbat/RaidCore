@@ -34,6 +34,48 @@ mod:RegisterFrenchLocale({
 	-- Unit names.
 	["Experiment X-89"] = "Expérience X-89",
 	-- Datachron messages.
+	---- This entry is used with string.match, so the dash in X-89 needs to be escaped.
+--	["Experiment X-89 has placed a bomb"] = "Experiment X%-89 has placed a bomb on (.*)!",	-- TODO: translation missing !!!!
+	-- Cast.
+	["Shattering Shockwave"] = "Onde de choc dévastatrice",
+	["Repugnant Spew"] = "Crachat répugnant",
+	["Resounding Shout"] = "Hurlement retentissant",
+	-- Bar and messages.
+--	["KNOCKBACK !!"] = "KNOCKBACK !!",	-- TODO: translation missing !!!!
+--	["KNOCKBACK"] = "KNOCKBACK",	-- TODO: translation missing !!!!
+--	["BEAM !!"] = "BEAM !!",	-- TODO: translation missing !!!!
+--	["BEAM"] = "BEAM",	-- TODO: translation missing !!!!
+--	["SHOCKWAVE"] = "SHOCKWAVE",	-- TODO: translation missing !!!!
+--	["BIG BOMB on YOU !!!"] = "BIG BOMB on YOU !!!",	-- TODO: translation missing !!!!
+--	["LITTLE BOMB on YOU !!!"] = "LITTLE BOMB on YOU !!!",	-- TODO: translation missing !!!!
+--	["LITTLE BOMB"] = "LITTLE BOMB",	-- TODO: translation missing !!!!
+})
+mod:RegisterGermanLocale({
+	-- Unit names.
+	["Experiment X-89"] = "Experiment X-89",
+	-- Datachron messages.
+	---- This entry is used with string.match, so the dash in X-89 needs to be escaped.
+--	["Experiment X-89 has placed a bomb"] = "Experiment X%-89 has placed a bomb on (.*)!",	-- TODO: translation missing !!!!
+	-- Cast.
+	["Shattering Shockwave"] = "Zerschmetternde Schockwelle",
+	["Repugnant Spew"] = "Widerliches Erbrochenes",
+	["Resounding Shout"] = "Widerhallender Schrei",
+	-- Bar and messages.
+--	["KNOCKBACK !!"] = "KNOCKBACK !!",	-- TODO: translation missing !!!!
+--	["KNOCKBACK"] = "KNOCKBACK",	-- TODO: translation missing !!!!
+--	["BEAM !!"] = "BEAM !!",	-- TODO: translation missing !!!!
+--	["BEAM"] = "BEAM",	-- TODO: translation missing !!!!
+--	["SHOCKWAVE"] = "SHOCKWAVE",	-- TODO: translation missing !!!!
+--	["BIG BOMB on YOU !!!"] = "BIG BOMB on YOU !!!",	-- TODO: translation missing !!!!
+--	["LITTLE BOMB on YOU !!!"] = "LITTLE BOMB on YOU !!!",	-- TODO: translation missing !!!!
+--	["LITTLE BOMB"] = "LITTLE BOMB",	-- TODO: translation missing !!!!
+})
+-- TODO: to be merged
+--[[
+mod:RegisterFrenchLocale({
+	-- Unit names.
+	["Experiment X-89"] = "Expérience X-89",
+	-- Datachron messages.
 	["Experiment X-89 has placed a bomb"] = "L'expérience X%-89 a posé une bombe sur (.*) !",
 	-- Cast.
 	["Shattering Shockwave"] = "Onde de choc dévastatrice",
@@ -49,6 +91,10 @@ mod:RegisterFrenchLocale({
 	["LITTLE BOMB on YOU !!!"] = "PETITE BOMBE sur VOUS !!!",
 	["LITTLE BOMB"] = "PETITE BOMBE",
 })
+--]]
+
+-- TODO: to be merged
+--[[
 mod:RegisterGermanLocale({
 	-- Unit names.
 	["Experiment X-89"] = "Experiment X-89",
@@ -68,6 +114,8 @@ mod:RegisterGermanLocale({
 	["LITTLE BOMB on YOU !!!"] = "KLEINE BOMBE auf DIR !!!",
 	["LITTLE BOMB"] = "KLEINE BOMBE",
 })
+--]]
+
 
 --------------------------------------------------------------------------------
 -- Locals

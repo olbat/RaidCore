@@ -35,16 +35,70 @@ mod:RegisterEnglishLocale({
 })
 mod:RegisterFrenchLocale({
 	-- Unit names.
+	["Hydroflux"] = "Hydroflux",
+	["Aileron"] = "Ventemort",
+--	["Landing Volume"] = "Landing Volume",	-- TODO: translation missing !!!!
+	["Wind Wall"] = "Mur de vent",
+	-- Datachron messages.
+--	["Hydroflux evaporates"] = "Hydroflux evaporates",	-- TODO: translation missing !!!!
+--	["Aileron dissipates with a flurry"] = "Aileron dissipates with a flurry",	-- TODO: translation missing !!!!
+--	["The wind starts to blow faster and faster"] = "The wind starts to blow faster and faster",	-- TODO: translation missing !!!!
+	-- Cast.
+	["Tsunami"] = "Tsunami",
+	["Glacial Icestorm"] = "Glacial Icestorm",
+	-- Bar and messages.
+--	["EYE OF THE STORM"] = "EYE OF THE STORM",	-- TODO: translation missing !!!!
+--	["MOO !"] = "MOO !",	-- TODO: translation missing !!!!
+--	["MOO PHASE"] = "MOO PHASE",	-- TODO: translation missing !!!!
+--	["ICESTORM"] = "ICESTORM",	-- TODO: translation missing !!!!
+--	["~Middle Phase"] = "~Middle Phase",	-- TODO: translation missing !!!!
+--	["~Frost Tombs"] = "~Frost Tombs",	-- TODO: translation missing !!!!
+--	["TWIRL ON YOU!"] = "TWIRL ON YOU!",	-- TODO: translation missing !!!!
+--	["TWIRL"] = "TWIRL",	-- TODO: translation missing !!!!
+})
+mod:RegisterGermanLocale({
+	-- Unit names.
+	["Hydroflux"] = "Hydroflux",
+	["Aileron"] = "Aileron",
+--	["Landing Volume"] = "Landing Volume",	-- TODO: translation missing !!!!
+	["Wind Wall"] = "Windwand",
+	-- Datachron messages.
+--	["Hydroflux evaporates"] = "Hydroflux evaporates",	-- TODO: translation missing !!!!
+--	["Aileron dissipates with a flurry"] = "Aileron dissipates with a flurry",	-- TODO: translation missing !!!!
+--	["The wind starts to blow faster and faster"] = "The wind starts to blow faster and faster",	-- TODO: translation missing !!!!
+	-- Cast.
+	["Tsunami"] = "Tsunami",
+	["Glacial Icestorm"] = "Frostiger Eissturm",
+	-- Bar and messages.
+--	["EYE OF THE STORM"] = "EYE OF THE STORM",	-- TODO: translation missing !!!!
+--	["MOO !"] = "MOO !",	-- TODO: translation missing !!!!
+--	["MOO PHASE"] = "MOO PHASE",	-- TODO: translation missing !!!!
+--	["ICESTORM"] = "ICESTORM",	-- TODO: translation missing !!!!
+--	["~Middle Phase"] = "~Middle Phase",	-- TODO: translation missing !!!!
+--	["~Frost Tombs"] = "~Frost Tombs",	-- TODO: translation missing !!!!
+--	["TWIRL ON YOU!"] = "TWIRL ON YOU!",	-- TODO: translation missing !!!!
+--	["TWIRL"] = "TWIRL",	-- TODO: translation missing !!!!
+})
+-- TODO: to be merged
+--[[
+mod:RegisterFrenchLocale({
+	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
+-- TODO: to be merged
+--[[
 mod:RegisterGermanLocale({
 	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
 
 --------------------------------------------------------------------------------
 -- Locals

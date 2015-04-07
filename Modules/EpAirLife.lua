@@ -36,17 +36,73 @@ mod:RegisterEnglishLocale({
 })
 mod:RegisterFrenchLocale({
 	-- Unit names.
+	["Visceralus"] = "Visceralus",
+	["Aileron"] = "Ventemort",
+	["Wild Brambles"] = "Ronces sauvages",
+--	["[DS] e395 - Air - Tornado"] = "[DS] e395 - Air - Tornado",	-- TODO: translation missing !!!!
+	["Life Force"] = "Life Force",
+	["Lifekeeper"] = "Garde-vie",
+	-- Datachron messages.
+	-- Cast.
+	["Blinding Light"] = "Lumière aveuglante",
+	-- Bar and messages.
+--	["TWIRL ON YOU!"] = "TWIRL ON YOU!",	-- TODO: translation missing !!!!
+	["Thorns"] = "Thorns",
+	["Twirl"] = "Tournoiement",
+--	["Midphase ending"] = "Midphase ending",	-- TODO: translation missing !!!!
+--	["Middle Phase"] = "Middle Phase",	-- TODO: translation missing !!!!
+--	["Next Healing Tree"] = "Next Healing Tree",	-- TODO: translation missing !!!!
+--	["No-Healing Debuff!"] = "No-Healing Debuff!",	-- TODO: translation missing !!!!
+--	["NO HEAL DEBUFF"] = "NO HEAL\nDEBUFF",	-- TODO: translation missing !!!!
+	["Lightning"] = "Foudre",
+--	["Lightning on YOU"] = "Lightning on YOU",	-- TODO: translation missing !!!!
+--	["Recently Saved!"] = "Recently Saved!",	-- TODO: translation missing !!!!
+})
+mod:RegisterGermanLocale({
+	-- Unit names.
+	["Visceralus"] = "Viszeralus",
+	["Aileron"] = "Aileron",
+	["Wild Brambles"] = "Wilde Brombeeren",
+--	["[DS] e395 - Air - Tornado"] = "[DS] e395 - Air - Tornado",	-- TODO: translation missing !!!!
+	["Life Force"] = "Life Force",
+	["Lifekeeper"] = "Lebensbewahrer",
+	-- Datachron messages.
+	-- Cast.
+	["Blinding Light"] = "Blendendes Licht",
+	-- Bar and messages.
+--	["TWIRL ON YOU!"] = "TWIRL ON YOU!",	-- TODO: translation missing !!!!
+	["Thorns"] = "Dornen",
+	["Twirl"] = "Wirbel",
+--	["Midphase ending"] = "Midphase ending",	-- TODO: translation missing !!!!
+--	["Middle Phase"] = "Middle Phase",	-- TODO: translation missing !!!!
+--	["Next Healing Tree"] = "Next Healing Tree",	-- TODO: translation missing !!!!
+--	["No-Healing Debuff!"] = "No-Healing Debuff!",	-- TODO: translation missing !!!!
+--	["NO HEAL DEBUFF"] = "NO HEAL\nDEBUFF",	-- TODO: translation missing !!!!
+	["Lightning"] = "Blitz",
+--	["Lightning on YOU"] = "Lightning on YOU",	-- TODO: translation missing !!!!
+--	["Recently Saved!"] = "Recently Saved!",	-- TODO: translation missing !!!!
+})
+-- TODO: to be merged
+--[[
+mod:RegisterFrenchLocale({
+	-- Unit names.
 	["Aileron"] = "Ventemort",
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
+-- TODO: to be merged
+--[[
 mod:RegisterGermanLocale({
 	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
 
 -- Tracking Blinding Light and Aileron knockback seems too random to display on timers.
 

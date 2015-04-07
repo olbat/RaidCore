@@ -33,16 +33,66 @@ mod:RegisterEnglishLocale({
 })
 mod:RegisterFrenchLocale({
 	-- Unit names.
+	["Hydroflux"] = "Hydroflux",
+	["Pyrobane"] = "Pyromagnus",
+	["Ice Tomb"] = "Tombeau de glace",
+	-- Datachron messages.
+	-- NPCSay messages.
+--	["Burning mortals... such sweet agony"] = "Burning mortals... such sweet agony",	-- TODO: translation missing !!!!
+--	["Run! Soon my fires will destroy you"] = "Run! Soon my fires will destroy you",	-- TODO: translation missing !!!!
+--	["Ah! The smell of seared flesh"] = "Ah! The smell of seared flesh",	-- TODO: translation missing !!!!
+--	["Enshrouded in deadly flame"] = "Enshrouded in deadly flame",	-- TODO: translation missing !!!!
+--	["Pyrobane ignites you"] = "Pyrobane ignites you",	-- TODO: translation missing !!!!
+	-- Cast.
+	["Flame Wave"] = "Vague de feu",
+	-- Bar and messages.
+--	["Frost Bomb"] = "Frost\nBomb",	-- TODO: translation missing !!!!
+--	["BOMBS"] = "BOMBS",	-- TODO: translation missing !!!!
+--	["BOMBS UP !"] = "BOMBS UP !",	-- TODO: translation missing !!!!
+	["Bomb Explosion"] = "Bomb Explosion",
+--	["ICE TOMB"] = "ICE TOMB",	-- TODO: translation missing !!!!
+})
+mod:RegisterGermanLocale({
+	-- Unit names.
+	["Hydroflux"] = "Hydroflux",
+	["Pyrobane"] = "Pyroman",
+	["Ice Tomb"] = "Eisgrab",
+	-- Datachron messages.
+	-- NPCSay messages.
+--	["Burning mortals... such sweet agony"] = "Burning mortals... such sweet agony",	-- TODO: translation missing !!!!
+--	["Run! Soon my fires will destroy you"] = "Run! Soon my fires will destroy you",	-- TODO: translation missing !!!!
+--	["Ah! The smell of seared flesh"] = "Ah! The smell of seared flesh",	-- TODO: translation missing !!!!
+--	["Enshrouded in deadly flame"] = "Enshrouded in deadly flame",	-- TODO: translation missing !!!!
+--	["Pyrobane ignites you"] = "Pyrobane ignites you",	-- TODO: translation missing !!!!
+	-- Cast.
+	["Flame Wave"] = "Flammenwelle",
+	-- Bar and messages.
+--	["Frost Bomb"] = "Frost\nBomb",	-- TODO: translation missing !!!!
+--	["BOMBS"] = "BOMBS",	-- TODO: translation missing !!!!
+--	["BOMBS UP !"] = "BOMBS UP !",	-- TODO: translation missing !!!!
+	["Bomb Explosion"] = "Bomb Explosion",
+--	["ICE TOMB"] = "ICE TOMB",	-- TODO: translation missing !!!!
+})
+-- TODO: to be merged
+--[[
+mod:RegisterFrenchLocale({
+	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
+-- TODO: to be merged
+--[[
 mod:RegisterGermanLocale({
 	-- Unit names.
 	-- Datachron messages.
 	-- Cast.
 	-- Bar and messages.
 })
+--]]
+
 
 --------------------------------------------------------------------------------
 -- Locals
