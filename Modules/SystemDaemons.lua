@@ -15,6 +15,8 @@ mod:RegisterRestrictEventObjective("SystemDaemons", "Defeat the System Daemons")
 mod:RegisterEnableEventObjective("SystemDaemons", "Defeat the System Daemons")
 mod:RegisterEnglishLocale({
 	-- Unit names.
+	["Binary System Daemon"] = "Binary System Daemon",
+	["Null System Daemon"] = "Null System Daemon",
 	["Brute Force Algorithm"] = "Brute Force Algorithm",
 	["Encryption Program"] = "Encryption Program",
 	["Radiation Dispersion Unit"] = "Radiation Dispersion Unit",
@@ -150,8 +152,8 @@ function mod:OnUnitCreated(unit, sName)
 			sdwaveCount = sdwaveCount + 1
 			probeCount = 0
 			if sdwaveCount == 1 then
-				core:AddMsg("SDWAVE", self.L["[%s] WAVE"]:format(sdwaveCount), 5, GetSoundSetting("Info", "SoundWave"), "Blue")
-				core:AddBar("SDWAVE", self.L["[%s] WAVE"]:format(sdwaveCount + 1), 50, GetSoundSetting(true, "SoundWave"))
+				core:AddMsg("SDWAVE", self.L["[%u] WAVE"]:format(sdwaveCount), 5, GetSoundSetting("Info", "SoundWave"), "Blue")
+				core:AddBar("SDWAVE", self.L["[%u] WAVE"]:format(sdwaveCount + 1), 50, GetSoundSetting(true, "SoundWave"))
 			elseif sdwaveCount % 2 == 0 then
 				core:AddMsg("SDWAVE", self.L["[%u] WAVE"]:format(sdwaveCount), 5, GetSoundSetting("Info", "SoundWave"), "Blue")
 				core:AddBar("SDWAVE", self.L["[%u] MINIBOSS"]:format(sdwaveCount + 1), 50, GetSoundSetting(true, "SoundWave"))
@@ -182,7 +184,7 @@ function mod:OnUnitCreated(unit, sName)
 		if probeCount == 1 then probeCount = 2 end
 		if GetCurrentSubZoneName():find(self.L["Infinite Generator Core"]) then core:MarkUnit(unit, 1, 2) end
 		core:AddBar("PROBES", self.L["[%u] Probe"]:format(3), 10)
-	elseif sName == self.L["Conduction Unit Mark III"] then
+	elseif sName == self.L["Conduction Unit Mk. III"] then
 		if probeCount == 2 then probeCount = 3 end
 		if GetCurrentSubZoneName():find(self.L["Infinite Generator Core"]) then core:MarkUnit(unit, 1, 3) end
 	elseif sName == self.L["Enhancement Module"] then
