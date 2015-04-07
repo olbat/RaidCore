@@ -29,15 +29,41 @@ mod:RegisterEnglishLocale({
 })
 mod:RegisterFrenchLocale({
 	-- Unit names.
+	["Conjured Fire Bomb"] = "Bombe incendiaire invoquée",
+	["Abstract Augmentation Algorithm"] = "Algorithme d'augmentation abstrait",
+	["Augmented Herald of Avatus"] = "Messager d'Avatus augmenté",
+	["Quantum Processing Unit"] = "Processeur quantique",
+	["Hyper-Accelerated Skeledroid"] = "Crânedroïde hyper-accéléré",
 	-- Datachron messages.
+--	["The Abstract Augmentation Algorithm has amplified a Quantum Processing Unit"] = "The Abstract Augmentation Algorithm has amplified a Quantum Processing Unit",	-- TODO: translation missing !!!!
 	-- Cast.
+	["Data Deconstruction"] = "Déconstruction de données",
 	-- Bar and messages.
+--	["[%u] INTERRUPT"] = "[%u] INTERRUPT",	-- TODO: translation missing !!!!
+--	["HEAL SOON"] = "HEAL SOON",	-- TODO: translation missing !!!!
+--	["CUBE SMASH"] = "CUBE SMASH",	-- TODO: translation missing !!!!
+--	["EMPOWER"] = "EMPOWER%s",	-- TODO: translation missing !!!!
+--	["BOMB"] = "BOMB",	-- TODO: translation missing !!!!
+--	["BERSERK"] = "BERSERK",	-- TODO: translation missing !!!!
 })
 mod:RegisterGermanLocale({
 	-- Unit names.
+	["Conjured Fire Bomb"] = "Beschworene Feuerbombe",
+	["Abstract Augmentation Algorithm"] = "Abstrakter Augmentations-Algorithmus",
+	["Augmented Herald of Avatus"] = "Avatus’ augmentierter Herold",
+	["Quantum Processing Unit"] = "Quantum-Aufbereitungseinheit",
+	["Hyper-Accelerated Skeledroid"] = "Hyper-beschleunigter Skeledroid",
 	-- Datachron messages.
+--	["The Abstract Augmentation Algorithm has amplified a Quantum Processing Unit"] = "The Abstract Augmentation Algorithm has amplified a Quantum Processing Unit",	-- TODO: translation missing !!!!
 	-- Cast.
+	["Data Deconstruction"] = "Datendekonstruktion",
 	-- Bar and messages.
+--	["[%u] INTERRUPT"] = "[%u] INTERRUPT",	-- TODO: translation missing !!!!
+--	["HEAL SOON"] = "HEAL SOON",	-- TODO: translation missing !!!!
+--	["CUBE SMASH"] = "CUBE SMASH",	-- TODO: translation missing !!!!
+--	["EMPOWER"] = "EMPOWER%s",	-- TODO: translation missing !!!!
+--	["BOMB"] = "BOMB",	-- TODO: translation missing !!!!
+--	["BERSERK"] = "BERSERK",	-- TODO: translation missing !!!!
 })
 
 --------------------------------------------------------------------------------

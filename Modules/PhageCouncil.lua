@@ -37,20 +37,35 @@ mod:RegisterFrenchLocale({
 	["Noxmind the Insidious"] = "Toxultime l'Insidieux",
 	["Ersoth Curseform"] = "Ersoth le Maudisseur",
 	-- Datachron messages.
+--	["The Phageborn Convergence begins gathering its power"] = "The Phageborn Convergence begins gathering its power",	-- TODO: translation missing !!!!
 	-- Cast.
 	["Teleport"] = "Se téléporter",
+	["Channeling Energy"] = "Canalisation d'énergie",
 	-- Bar and messages.
-	["[%u] NEXT P2"] = "[%u] PROCHAINE P2",
-	["P2 : 20 IA"] = "P2 : 20 IA",
-	["P2 : MINI ADDS"] = "P2 : MINI ADDS",
-	["P2 : SUBDUE"] = "P2 : DESARMEMENT",
-	["P2 : PILLARS"] = "P2 : PILLIERS",
+--	["[%u] NEXT P2"] = "[%u] NEXT P2",	-- TODO: translation missing !!!!
+--	["P2 : 20 IA"] = "P2 : 20 IA",	-- TODO: translation missing !!!!
+--	["P2 : MINI ADDS"] = "P2 : MINI ADDS",	-- TODO: translation missing !!!!
+--	["P2 : SUBDUE"] = "P2 : SUBDUE",	-- TODO: translation missing !!!!
+--	["P2 : PILLARS"] = "P2 : PILLARS",	-- TODO: translation missing !!!!
 })
 mod:RegisterGermanLocale({
 	-- Unit names.
+	["Terax Blightweaver"] = "Terax Faulflechter",
+	["Golgox the Lifecrusher"] = "Golgox der Lebenszermalmer",
+	["Fleshmonger Vratorg"] = "Fleischhändler Vratorg",
+	["Noxmind the Insidious"] = "Noxgeist der Hinterlistige",
+	["Ersoth Curseform"] = "Ersoth Fluchform",
 	-- Datachron messages.
+--	["The Phageborn Convergence begins gathering its power"] = "The Phageborn Convergence begins gathering its power",	-- TODO: translation missing !!!!
 	-- Cast.
+	["Teleport"] = "Teleportieren",
+	["Channeling Energy"] = "Energie kanalisieren",
 	-- Bar and messages.
+--	["[%u] NEXT P2"] = "[%u] NEXT P2",	-- TODO: translation missing !!!!
+--	["P2 : 20 IA"] = "P2 : 20 IA",	-- TODO: translation missing !!!!
+--	["P2 : MINI ADDS"] = "P2 : MINI ADDS",	-- TODO: translation missing !!!!
+--	["P2 : SUBDUE"] = "P2 : SUBDUE",	-- TODO: translation missing !!!!
+--	["P2 : PILLARS"] = "P2 : PILLARS",	-- TODO: translation missing !!!!
 })
 
 

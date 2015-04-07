@@ -45,15 +45,39 @@ mod:RegisterEnglishLocale({
 })
 mod:RegisterFrenchLocale({
 	-- Unit names.
-	-- Datachron messages.
+	["Frost-Boulder Avalanche"] = "Avalanche cryoroc",
+	["Frostbringer Warlock"] = "Sorcier cryogène",
 	-- Cast.
+	["Icicle Storm"] = "Tempête de stalactites",
+	["Shatter"] = "Fracasser",
+	["Cyclone"] = "Cyclone",
 	-- Bar and messages.
+--	["CYCLONE SOON"] = "CYCLONE SOON",	-- TODO: translation missing !!!!
+--	["ICICLE"] = "ICICLE",	-- TODO: translation missing !!!!
+--	["PHASE 2 SOON"] = "PHASE 2 SOON",	-- TODO: translation missing !!!!
+--	["1ST ABILITY"] = "1ST ABILITY",	-- TODO: translation missing !!!!
+--	["2ND ABILITY"] = "2ND ABILITY",	-- TODO: translation missing !!!!
+--	["3RD ABILITY"] = "3RD ABILITY",	-- TODO: translation missing !!!!
+--	["FROST WAVE"] = "FROST WAVE",	-- TODO: translation missing !!!!
+--	["RUNNNN"] = "RUNNNN",	-- TODO: translation missing !!!!
 })
 mod:RegisterGermanLocale({
 	-- Unit names.
-	-- Datachron messages.
+	["Frost-Boulder Avalanche"] = "Frostfelsen-Lawine",
+	["Frostbringer Warlock"] = "Frostbringer-Hexenmeister",
 	-- Cast.
+	["Icicle Storm"] = "Eiszapfensturm",
+	["Shatter"] = "Zerschmettern",
+	["Cyclone"] = "Wirbelsturm",
 	-- Bar and messages.
+--	["CYCLONE SOON"] = "CYCLONE SOON",	-- TODO: translation missing !!!!
+--	["ICICLE"] = "ICICLE",	-- TODO: translation missing !!!!
+--	["PHASE 2 SOON"] = "PHASE 2 SOON",	-- TODO: translation missing !!!!
+--	["1ST ABILITY"] = "1ST ABILITY",	-- TODO: translation missing !!!!
+--	["2ND ABILITY"] = "2ND ABILITY",	-- TODO: translation missing !!!!
+--	["3RD ABILITY"] = "3RD ABILITY",	-- TODO: translation missing !!!!
+--	["FROST WAVE"] = "FROST WAVE",	-- TODO: translation missing !!!!
+--	["RUNNNN"] = "RUNNNN",	-- TODO: translation missing !!!!
 })
 
 

@@ -40,24 +40,44 @@ mod:RegisterFrenchLocale({
 	["Phagetech Protector"] = "Protecteur technophage",
 	["Phagetech Fabricator"] = "Fabricant technophage",
 	-- Datachron messages.
+--	["Phagetech Commander is now active!"] = "Phagetech Commander is now active!",	-- TODO: translation missing !!!!
+--	["Phagetech Augmentor is now active!"] = "Phagetech Augmentor is now active!",	-- TODO: translation missing !!!!
+--	["Phagetech Protector is now active!"] = "Phagetech Protector is now active!",	-- TODO: translation missing !!!!
+--	["Phagetech Fabricator is now active!"] = "Phagetech Fabricator is now active!",	-- TODO: translation missing !!!!
 	-- Cast.
 	["Summon Repairbot"] = "Déployer Bricobot",
 	["Summon Destructobot"] = "Déployer Destructobot",
 	-- Bar and messages.
-	["[1] LINK + KICK"] = "[1] LIEN + KICK",
-	["[2] TP + CROIX + BOTS"] = "[2] TP + CROIX + BOTS",
-	["[3] SINGULARITY + VAGUE"] = "[3] SINGULARITÉ + VAGUE",
-	["[4] SOAK + BOTS"] = "[4] SOAK + BOTS",
-	["BOTS !!"] = "BOTS !!",
-	["BERSERK"] = "BERSERK",
+--	["[1] LINK + KICK"] = "[1] LINK + KICK",	-- TODO: translation missing !!!!
+--	["[2] TP + CROIX + BOTS"] = "[2] TP + CROIX + BOTS",	-- TODO: translation missing !!!!
+--	["[3] SINGULARITY + VAGUE"] = "[3] SINGULARITY + VAGUE",	-- TODO: translation missing !!!!
+--	["[4] SOAK + BOTS"] = "[4] SOAK + BOTS",	-- TODO: translation missing !!!!
+--	["BOTS !!"] = "BOTS !!",	-- TODO: translation missing !!!!
+--	["BERSERK"] = "BERSERK",	-- TODO: translation missing !!!!
 	["Singularity"] = "Singularité",
 })
 mod:RegisterGermanLocale({
 	-- Unit names.
+	["Phagetech Commander"] = "Phagentech-Kommandant",
+	["Phagetech Augmentor"] = "Phagentech-Augmentor",
+	["Phagetech Protector"] = "Phagentech-Protektor",
+	["Phagetech Fabricator"] = "Phagentech-Fabrikant",
 	-- Datachron messages.
-	-- NPCSay messages.
+--	["Phagetech Commander is now active!"] = "Phagetech Commander is now active!",	-- TODO: translation missing !!!!
+--	["Phagetech Augmentor is now active!"] = "Phagetech Augmentor is now active!",	-- TODO: translation missing !!!!
+--	["Phagetech Protector is now active!"] = "Phagetech Protector is now active!",	-- TODO: translation missing !!!!
+--	["Phagetech Fabricator is now active!"] = "Phagetech Fabricator is now active!",	-- TODO: translation missing !!!!
 	-- Cast.
+	["Summon Repairbot"] = "Reparaturbot herbeirufen",
+	["Summon Destructobot"] = "Destruktobot herbeirufen",
 	-- Bar and messages.
+--	["[1] LINK + KICK"] = "[1] LINK + KICK",	-- TODO: translation missing !!!!
+--	["[2] TP + CROIX + BOTS"] = "[2] TP + CROIX + BOTS",	-- TODO: translation missing !!!!
+--	["[3] SINGULARITY + VAGUE"] = "[3] SINGULARITY + VAGUE",	-- TODO: translation missing !!!!
+--	["[4] SOAK + BOTS"] = "[4] SOAK + BOTS",	-- TODO: translation missing !!!!
+--	["BOTS !!"] = "BOTS !!",	-- TODO: translation missing !!!!
+--	["BERSERK"] = "BERSERK",	-- TODO: translation missing !!!!
+	["Singularity"] = "Singularität",
 })
 
 --------------------------------------------------------------------------------

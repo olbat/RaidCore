@@ -43,35 +43,63 @@ mod:RegisterFrenchLocale({
 	-- Unit names.
 	["Gloomclaw"] = "Serrenox",
 	["Corrupted Ravager"] = "Ravageur corrompu",
-	["Empowered Ravager"] = "Ravageur renforcé",
+--	["Empowered Ravager"] = "Empowered Ravager",	-- TODO: translation missing !!!!
 	["Strain Parasite"] = "Parasite de la Souillure",
 	["Gloomclaw Skurge"] = "Skurge serrenox",
 	["Corrupted Fraz"] = "Friz corrompu",
+	["Essence of Logic"] = "Essence de logique",
 	-- Datachron messages.
-	["Gloomclaw is reduced to a weakened state"] = "Serrenox a été affaibli !",
-	["Gloomclaw is vulnerable"] = "Serrenox est vulnérable !",
-	["Gloomclaw is pushed back"] = "Serrenox est repoussé par la purification des essences !",
-	["Gloomclaw is moving forward"] = "Serrenox s'approche pour corrompre davantage d'essences !",
+--	["Gloomclaw is reduced to a weakened state"] = "Gloomclaw is reduced to a weakened state!",	-- TODO: translation missing !!!!
+--	["Gloomclaw is vulnerable"] = "Gloomclaw is vulnerable!",	-- TODO: translation missing !!!!
+--	["Gloomclaw is pushed back"] = "Gloomclaw is pushed back by the purification of the essences!",	-- TODO: translation missing !!!!
+--	["Gloomclaw is moving forward"] = "Gloomclaw is moving forward to corrupt more essences!",	-- TODO: translation missing !!!!
 	-- Cast.
 	["Rupture"] = "Rupture",
+	["Corrupting Rays"] = "Rayons de corruption",
 	-- Bar and messages.
-	["INTERRUPT %s"] = "INTÉRROMPRE %s",
-	["NEXT RUPTURE"] = "PROCHAINE RUPTURE",
-	["~NEXT RUPTURE"] = "~PROCHAINE RUPTURE",
-	["FULL CORRUPTION"] = "100% CORROMPU",
-	["SECTION %u"] = "SECTION %u",
-	["[%u] WAVE"] = "[%u] WAVE",
-	["FROG %u"] = "ADD %u",
-	["LEFT"] = "GAUCHE",
-	["RIGHT"] = "DROITE",
-	["TRANSITION"] = "TRANSITION",
-	["MOO PHASE"] = "MOO PHASE",
+--	["INTERRUPT %s"] = "INTERRUPT %s",	-- TODO: translation missing !!!!
+--	["NEXT RUPTURE"] = "NEXT RUPTURE",	-- TODO: translation missing !!!!
+--	["~NEXT RUPTURE"] = "~NEXT RUPTURE",	-- TODO: translation missing !!!!
+--	["FULL CORRUPTION"] = "FULL CORRUPTION",	-- TODO: translation missing !!!!
+--	["SECTION %u"] = "SECTION %u",	-- TODO: translation missing !!!!
+--	["[%u] WAVE"] = "[%u] WAVE",	-- TODO: translation missing !!!!
+--	["FROG %u"] = "FROG %u",	-- TODO: translation missing !!!!
+--	["LEFT"] = "LEFT",	-- TODO: translation missing !!!!
+--	["RIGHT"] = "RIGHT",	-- TODO: translation missing !!!!
+--	["TRANSITION"] = "TRANSITION",	-- TODO: translation missing !!!!
+--	["MOO PHASE"] = "MOO PHASE",	-- TODO: translation missing !!!!
+--	["BURN HIM HARD"] = "BURN HIM HARD",	-- TODO: translation missing !!!!
 })
 mod:RegisterGermanLocale({
 	-- Unit names.
+	["Gloomclaw"] = "Düsterklaue",
+	["Corrupted Ravager"] = "Korrumpierter Verwüster",
+--	["Empowered Ravager"] = "Empowered Ravager",	-- TODO: translation missing !!!!
+	["Strain Parasite"] = "Transmutierten-Parasit",
+	["Gloomclaw Skurge"] = "Düsterklauen-Geißel",
+	["Corrupted Fraz"] = "Korrumpierter Fraz",
+	["Essence of Logic"] = "Logikessenz",
 	-- Datachron messages.
+--	["Gloomclaw is reduced to a weakened state"] = "Gloomclaw is reduced to a weakened state!",	-- TODO: translation missing !!!!
+--	["Gloomclaw is vulnerable"] = "Gloomclaw is vulnerable!",	-- TODO: translation missing !!!!
+--	["Gloomclaw is pushed back"] = "Gloomclaw is pushed back by the purification of the essences!",	-- TODO: translation missing !!!!
+--	["Gloomclaw is moving forward"] = "Gloomclaw is moving forward to corrupt more essences!",	-- TODO: translation missing !!!!
 	-- Cast.
+	["Rupture"] = "Aufreißen",
+	["Corrupting Rays"] = "Korrumpierende Strahlen",
 	-- Bar and messages.
+--	["INTERRUPT %s"] = "INTERRUPT %s",	-- TODO: translation missing !!!!
+--	["NEXT RUPTURE"] = "NEXT RUPTURE",	-- TODO: translation missing !!!!
+--	["~NEXT RUPTURE"] = "~NEXT RUPTURE",	-- TODO: translation missing !!!!
+--	["FULL CORRUPTION"] = "FULL CORRUPTION",	-- TODO: translation missing !!!!
+--	["SECTION %u"] = "SECTION %u",	-- TODO: translation missing !!!!
+--	["[%u] WAVE"] = "[%u] WAVE",	-- TODO: translation missing !!!!
+--	["FROG %u"] = "FROG %u",	-- TODO: translation missing !!!!
+--	["LEFT"] = "LEFT",	-- TODO: translation missing !!!!
+--	["RIGHT"] = "RIGHT",	-- TODO: translation missing !!!!
+--	["TRANSITION"] = "TRANSITION",	-- TODO: translation missing !!!!
+--	["MOO PHASE"] = "MOO PHASE",	-- TODO: translation missing !!!!
+--	["BURN HIM HARD"] = "BURN HIM HARD",	-- TODO: translation missing !!!!
 })
 
 --------------------------------------------------------------------------------

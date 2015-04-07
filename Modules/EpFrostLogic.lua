@@ -31,15 +31,43 @@ mod:RegisterEnglishLocale({
 })
 mod:RegisterFrenchLocale({
 	-- Unit names.
+	["Mnemesis"] = "Mnémésis",
+	["Hydroflux"] = "Hydroflux",
+	["Alphanumeric Hash"] = "Hachis alphanumérique",
+--	["Hydro Disrupter - DNT"] = "Hydro Disrupter - DNT",	-- TODO: translation missing !!!!
 	-- Datachron messages.
 	-- Cast.
+	["Circuit Breaker"] = "Coupe-circuit",
+	["Imprison"] = "Emprisonner",
+	["Defragment"] = "Défragmentation",
+	["Watery Grave"] = "Tombe aqueuse",
 	-- Bar and messages.
+--	["Middle Phase"] = "Middle Phase",	-- TODO: translation missing !!!!
+--	["SPREAD"] = "SPREAD",	-- TODO: translation missing !!!!
+--	["~Defrag"] = "~Defrag",	-- TODO: translation missing !!!!
+	["Defrag"] = "Défragmentation",
+--	["Stay away from boss with buff!"] = "Stay away from boss with buff!",	-- TODO: translation missing !!!!
+--	["ORB"] = "ORB",	-- TODO: translation missing !!!!
 })
 mod:RegisterGermanLocale({
 	-- Unit names.
+	["Mnemesis"] = "Mnemesis",
+	["Hydroflux"] = "Hydroflux",
+	["Alphanumeric Hash"] = "Alphanumerische Raute",
+--	["Hydro Disrupter - DNT"] = "Hydro Disrupter - DNT",	-- TODO: translation missing !!!!
 	-- Datachron messages.
 	-- Cast.
+	["Circuit Breaker"] = "Schutzschalter",
+	["Imprison"] = "Einsperren",
+	["Defragment"] = "Defragmentieren",
+	["Watery Grave"] = "Seemannsgrab",
 	-- Bar and messages.
+--	["Middle Phase"] = "Middle Phase",	-- TODO: translation missing !!!!
+--	["SPREAD"] = "SPREAD",	-- TODO: translation missing !!!!
+--	["~Defrag"] = "~Defrag",	-- TODO: translation missing !!!!
+	["Defrag"] = "Defrag",
+--	["Stay away from boss with buff!"] = "Stay away from boss with buff!",	-- TODO: translation missing !!!!
+--	["ORB"] = "ORB",	-- TODO: translation missing !!!!
 })
 
 --------------------------------------------------------------------------------

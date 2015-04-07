@@ -43,15 +43,53 @@ mod:RegisterEnglishLocale({
 })
 mod:RegisterFrenchLocale({
 	-- Unit names.
+	["Wind Wall"] = "Mur de vent",
+--	["Avatus Hologram"] = "Avatus Hologram",	-- TODO: translation missing !!!!
+	["Weather Station"] = "Station météorologique",
+	["Maelstrom Authority"] = "Contrôleur du Maelstrom",
 	-- Datachron messages.
+--	["The platform trembles"] = "The platform trembles",	-- TODO: translation missing !!!!
 	-- Cast.
+	["Activate Weather Cycle"] = "Activer cycle climatique",
+	["Ice Breath"] = "Souffle de glace",
+	["Crystallize"] = "Cristalliser",
+	["Typhoon"] = "Typhon",
 	-- Bar and messages.
+--	["[%u] STATION: %s %s"] = "[%u] STATION: %s %s",	-- TODO: translation missing !!!!
+--	["[%u] STATION"] = "[%u] STATION",	-- TODO: translation missing !!!!
+--	["ICE BREATH"] = "ICE BREATH",	-- TODO: translation missing !!!!
+--	["TYPHOON"] = "TYPHOON",	-- TODO: translation missing !!!!
+--	["JUMP"] = "JUMP",	-- TODO: translation missing !!!!
+--	["Encounter Start"] = "Encounter Start",	-- TODO: translation missing !!!!
+--	["NORTH"] = "NORTH",	-- TODO: translation missing !!!!
+--	["SOUTH"] = "SOUTH",	-- TODO: translation missing !!!!
+--	["EAST"] = "EAST",	-- TODO: translation missing !!!!
+--	["WEST"] = "WEST",	-- TODO: translation missing !!!!
 })
 mod:RegisterGermanLocale({
 	-- Unit names.
+	["Wind Wall"] = "Windwand",
+--	["Avatus Hologram"] = "Avatus Hologram",	-- TODO: translation missing !!!!
+	["Weather Station"] = "Wetterstation",
+	["Maelstrom Authority"] = "Mahlstromgewalt",
 	-- Datachron messages.
+--	["The platform trembles"] = "The platform trembles",	-- TODO: translation missing !!!!
 	-- Cast.
+	["Activate Weather Cycle"] = "Wetterzyklus aktivieren",
+	["Ice Breath"] = "Eisatem",
+	["Crystallize"] = "Kristallisieren",
+	["Typhoon"] = "Taifun",
 	-- Bar and messages.
+--	["[%u] STATION: %s %s"] = "[%u] STATION: %s %s",	-- TODO: translation missing !!!!
+--	["[%u] STATION"] = "[%u] STATION",	-- TODO: translation missing !!!!
+--	["ICE BREATH"] = "ICE BREATH",	-- TODO: translation missing !!!!
+--	["TYPHOON"] = "TYPHOON",	-- TODO: translation missing !!!!
+--	["JUMP"] = "JUMP",	-- TODO: translation missing !!!!
+--	["Encounter Start"] = "Encounter Start",	-- TODO: translation missing !!!!
+--	["NORTH"] = "NORTH",	-- TODO: translation missing !!!!
+--	["SOUTH"] = "SOUTH",	-- TODO: translation missing !!!!
+--	["EAST"] = "EAST",	-- TODO: translation missing !!!!
+--	["WEST"] = "WEST",	-- TODO: translation missing !!!!
 })
 
 --------------------------------------------------------------------------------

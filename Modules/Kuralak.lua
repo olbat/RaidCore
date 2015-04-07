@@ -48,32 +48,69 @@ mod:RegisterFrenchLocale({
 	-- Unit names.
 	["Kuralak the Defiler"] = "Kuralak la Profanatrice",
 	-- Datachron messages.
+--	["Kuralak the Defiler returns to the Archive Core"] = "Kuralak the Defiler returns to the Archive Core",	-- TODO: translation missing !!!!
+--	["Kuralak the Defiler causes a violent outbreak of corruption"] = "Kuralak the Defiler causes a violent outbreak of corruption",	-- TODO: translation missing !!!!
+--	["The corruption begins to fester"] = "The corruption begins to fester",	-- TODO: translation missing !!!!
+--	["has been anesthetized"] = "has been anesthetized",	-- TODO: translation missing !!!!
 	-- NPCSay messages.
+--	["Through the Strain you will be transformed"] = "Through the Strain you will be transformed",	-- TODO: translation missing !!!!
+--	["Your form is flawed, but I will make you beautiful"] = "Your form is flawed, but I will make you beautiful",	-- TODO: translation missing !!!!
+--	["Let the Strain perfect you"] = "Let the Strain perfect you",	-- TODO: translation missing !!!!
+--	["The Experiment has failed"] = "The Experiment has failed",	-- TODO: translation missing !!!!
+--	["Join us... become one with the Strain"] = "Join us... become one with the Strain",	-- TODO: translation missing !!!!
+--	["One of us... you will become one of us"] = "One of us... you will become one of us",	-- TODO: translation missing !!!!
 	-- Cast.
 	["Vanish into Darkness"] = "Disparaître dans les ténèbres",
 	-- Bar and messages.
-	["P2 SOON !"] = "P2 SOON !",
-	["PHASE 2 !"] = "PHASE 2 !",
-	["VANISH"] = "DISPARITION",
+--	["P2 SOON !"] = "P2 SOON !",	-- TODO: translation missing !!!!
+--	["PHASE 2 !"] = "PHASE 2 !",	-- TODO: translation missing !!!!
+--	["VANISH"] = "VANISH",	-- TODO: translation missing !!!!
 	["Vanish"] = "Disparition",
-	["OUTBREAK"] = "INVASION",
-	["Outbreak (%s)"] = "Invasion (%s)",
-	["EGGS (%s)"] = "Oeufs (%s)",
-	["Eggs (%s)"] = "Oeufs (%s)",
-	["BERSERK !!"] = "BERSERK !!",
-	["SWITCH TANK"] = "CHANGEMENT TANK",
-	["Switch Tank (%s)"] = "Changement de Tank (%s)",
-	["MARKER north"] = "N",
-	["MARKER south"] = "S",
-	["MARKER east"] = "E",
-	["MARKER west"] = "O",
+--	["OUTBREAK"] = "OUTBREAK",	-- TODO: translation missing !!!!
+--	["Outbreak (%s)"] = "Outbreak (%s)",	-- TODO: translation missing !!!!
+--	["EGGS (%s)"] = "EGGS (%s)",	-- TODO: translation missing !!!!
+--	["Eggs (%s)"] = "Eggs (%s)",	-- TODO: translation missing !!!!
+--	["BERSERK !!"] = "BERSERK !!",	-- TODO: translation missing !!!!
+--	["SWITCH TANK"] = "SWITCH TANK",	-- TODO: translation missing !!!!
+--	["Switch Tank (%s)"] = "Switch Tank (%s)",	-- TODO: translation missing !!!!
+--	["MARKER north"] = "N",	-- TODO: translation missing !!!!
+--	["MARKER south"] = "S",	-- TODO: translation missing !!!!
+--	["MARKER east"] = "E",	-- TODO: translation missing !!!!
+--	["MARKER west"] = "W",	-- TODO: translation missing !!!!
 })
 mod:RegisterGermanLocale({
 	-- Unit names.
+	["Kuralak the Defiler"] = "Kuralak die Schänderin",
 	-- Datachron messages.
+--	["Kuralak the Defiler returns to the Archive Core"] = "Kuralak the Defiler returns to the Archive Core",	-- TODO: translation missing !!!!
+--	["Kuralak the Defiler causes a violent outbreak of corruption"] = "Kuralak the Defiler causes a violent outbreak of corruption",	-- TODO: translation missing !!!!
+--	["The corruption begins to fester"] = "The corruption begins to fester",	-- TODO: translation missing !!!!
+--	["has been anesthetized"] = "has been anesthetized",	-- TODO: translation missing !!!!
 	-- NPCSay messages.
+--	["Through the Strain you will be transformed"] = "Through the Strain you will be transformed",	-- TODO: translation missing !!!!
+--	["Your form is flawed, but I will make you beautiful"] = "Your form is flawed, but I will make you beautiful",	-- TODO: translation missing !!!!
+--	["Let the Strain perfect you"] = "Let the Strain perfect you",	-- TODO: translation missing !!!!
+--	["The Experiment has failed"] = "The Experiment has failed",	-- TODO: translation missing !!!!
+--	["Join us... become one with the Strain"] = "Join us... become one with the Strain",	-- TODO: translation missing !!!!
+--	["One of us... you will become one of us"] = "One of us... you will become one of us",	-- TODO: translation missing !!!!
 	-- Cast.
+	["Vanish into Darkness"] = "In der Dunkelheit verschwinden",
 	-- Bar and messages.
+--	["P2 SOON !"] = "P2 SOON !",	-- TODO: translation missing !!!!
+--	["PHASE 2 !"] = "PHASE 2 !",	-- TODO: translation missing !!!!
+--	["VANISH"] = "VANISH",	-- TODO: translation missing !!!!
+	["Vanish"] = "Verschwinden",
+--	["OUTBREAK"] = "OUTBREAK",	-- TODO: translation missing !!!!
+--	["Outbreak (%s)"] = "Outbreak (%s)",	-- TODO: translation missing !!!!
+--	["EGGS (%s)"] = "EGGS (%s)",	-- TODO: translation missing !!!!
+--	["Eggs (%s)"] = "Eggs (%s)",	-- TODO: translation missing !!!!
+--	["BERSERK !!"] = "BERSERK !!",	-- TODO: translation missing !!!!
+--	["SWITCH TANK"] = "SWITCH TANK",	-- TODO: translation missing !!!!
+--	["Switch Tank (%s)"] = "Switch Tank (%s)",	-- TODO: translation missing !!!!
+--	["MARKER north"] = "N",	-- TODO: translation missing !!!!
+--	["MARKER south"] = "S",	-- TODO: translation missing !!!!
+--	["MARKER east"] = "E",	-- TODO: translation missing !!!!
+--	["MARKER west"] = "W",	-- TODO: translation missing !!!!
 })
 
 --------------------------------------------------------------------------------
