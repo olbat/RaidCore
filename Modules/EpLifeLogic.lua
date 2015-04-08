@@ -42,7 +42,7 @@ mod:RegisterFrenchLocale({
 	["Essence of Life"] = "Essence de vie",
 	["Essence of Logic"] = "Essence de logique",
 	["Alphanumeric Hash"] = "Hachis alphanumérique",
-	["Life Force"] = "Life Force",
+	["Life Force"] = "Force vitale",
 	["Mnemesis"] = "Mnémésis",
 	["Visceralus"] = "Visceralus",
 	-- Datachron messages.
@@ -70,7 +70,7 @@ mod:RegisterGermanLocale({
 	["Essence of Life"] = "Lebensessenz",
 	["Essence of Logic"] = "Logikessenz",
 	["Alphanumeric Hash"] = "Alphanumerische Raute",
-	["Life Force"] = "Life Force",
+	["Life Force"] = "Lebenskraft",
 	["Mnemesis"] = "Mnemesis",
 	["Visceralus"] = "Viszeralus",
 	-- Datachron messages.

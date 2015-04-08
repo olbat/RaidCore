@@ -61,6 +61,8 @@ mod:RegisterEnglishLocale({
 })
 mod:RegisterFrenchLocale({
 	-- Unit names.
+	["Binary System Daemon"] = "Daemon 2.0",
+	["Null System Daemon"] = "Daemon 1.0",
 	["Brute Force Algorithm"] = "Algorithme de force brute",
 	["Encryption Program"] = "Programme de cryptage",
 	["Radiation Dispersion Unit"] = "Unité de dispersion de radiations",
@@ -83,12 +85,12 @@ mod:RegisterFrenchLocale({
 	["Black IC"] = "CI noir",
 	-- Bar and messages.
 --	["[%u] Probe"] = "[%u] Probe",	-- TODO: translation missing !!!!
---	["[%u] WAVE"] = "[%u] WAVE",	-- TODO: translation missing !!!!
+	["[%u] WAVE"] = "[%u] WAVE",
 --	["[%u] MINIBOSS"] = "[%u] MINIBOSS",	-- TODO: translation missing !!!!
 --	["MARKER north"] = "N",	-- TODO: translation missing !!!!
 --	["MARKER south"] = "S",	-- TODO: translation missing !!!!
---	["P2 SOON !"] = "P2 SOON !",	-- TODO: translation missing !!!!
---	["PHASE 2 !"] = "PHASE 2 !",	-- TODO: translation missing !!!!
+	["P2 SOON !"] = "P2 SOON !",
+	["PHASE 2 !"] = "PHASE 2 !",
 --	["INTERRUPT NORTH"] = "INTERRUPT NORTH",	-- TODO: translation missing !!!!
 --	["INTERRUPT SOUTH"] = "INTERRUPT SOUTH",	-- TODO: translation missing !!!!
 --	["AIDDDDDDDS !"] = "AIDDDDDDDS !",	-- TODO: translation missing !!!!
@@ -105,6 +107,8 @@ mod:RegisterFrenchLocale({
 })
 mod:RegisterGermanLocale({
 	-- Unit names.
+	["Binary System Daemon"] = "Binärsystem-Dämon",
+	["Null System Daemon"] = "Nullsystem-Dämon",
 	["Brute Force Algorithm"] = "Brachialgewalt-Algorithmus",
 	["Encryption Program"] = "Verschlüsselungsprogramm",
 	["Radiation Dispersion Unit"] = "Strahlungsverteilungseinheit",
@@ -123,7 +127,7 @@ mod:RegisterGermanLocale({
 --	["COMMENCING ENHANCEMENT SEQUENCE"] = "COMMENCING ENHANCEMENT SEQUENCE",	-- TODO: translation missing !!!!
 	-- Cast.
 	["Repair Sequence"] = "Reparatursequenz",
-	["Power Surge"] = "Kraft der Brandung",
+	["Power Surge"] = "Energieschweller",
 	["Black IC"] = "Glatteis",
 	-- Bar and messages.
 --	["[%u] Probe"] = "[%u] Probe",	-- TODO: translation missing !!!!
@@ -131,7 +135,7 @@ mod:RegisterGermanLocale({
 --	["[%u] MINIBOSS"] = "[%u] MINIBOSS",	-- TODO: translation missing !!!!
 --	["MARKER north"] = "N",	-- TODO: translation missing !!!!
 --	["MARKER south"] = "S",	-- TODO: translation missing !!!!
---	["P2 SOON !"] = "P2 SOON !",	-- TODO: translation missing !!!!
+	["P2 SOON !"] = "GLEICH PHASE 2 !",
 --	["PHASE 2 !"] = "PHASE 2 !",	-- TODO: translation missing !!!!
 --	["INTERRUPT NORTH"] = "INTERRUPT NORTH",	-- TODO: translation missing !!!!
 --	["INTERRUPT SOUTH"] = "INTERRUPT SOUTH",	-- TODO: translation missing !!!!

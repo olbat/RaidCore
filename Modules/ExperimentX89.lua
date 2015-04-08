@@ -41,14 +41,14 @@ mod:RegisterFrenchLocale({
 	["Repugnant Spew"] = "Crachat répugnant",
 	["Resounding Shout"] = "Hurlement retentissant",
 	-- Bar and messages.
---	["KNOCKBACK !!"] = "KNOCKBACK !!",	-- TODO: translation missing !!!!
---	["KNOCKBACK"] = "KNOCKBACK",	-- TODO: translation missing !!!!
---	["BEAM !!"] = "BEAM !!",	-- TODO: translation missing !!!!
---	["BEAM"] = "BEAM",	-- TODO: translation missing !!!!
---	["SHOCKWAVE"] = "SHOCKWAVE",	-- TODO: translation missing !!!!
---	["BIG BOMB on YOU !!!"] = "BIG BOMB on YOU !!!",	-- TODO: translation missing !!!!
---	["LITTLE BOMB on YOU !!!"] = "LITTLE BOMB on YOU !!!",	-- TODO: translation missing !!!!
---	["LITTLE BOMB"] = "LITTLE BOMB",	-- TODO: translation missing !!!!
+	["KNOCKBACK !!"] = "KNOCKBACK !!",
+	["KNOCKBACK"] = "KNOCKBACK",
+	["BEAM !!"] = "LASER !!",
+	["BEAM"] = "LASER",
+	["SHOCKWAVE"] = "ONDE DE CHOC",
+	["BIG BOMB on YOU !!!"] = "GROSSE BOMBE sur VOUS !!!",
+	["LITTLE BOMB on YOU !!!"] = "PETITE BOMBE sur VOUS !!!",
+	["LITTLE BOMB"] = "PETITE BOMBE",
 })
 mod:RegisterGermanLocale({
 	-- Unit names.
@@ -62,13 +62,13 @@ mod:RegisterGermanLocale({
 	["Resounding Shout"] = "Widerhallender Schrei",
 	-- Bar and messages.
 --	["KNOCKBACK !!"] = "KNOCKBACK !!",	-- TODO: translation missing !!!!
---	["KNOCKBACK"] = "KNOCKBACK",	-- TODO: translation missing !!!!
+	["KNOCKBACK"] = "RÜCKSTOß",
 --	["BEAM !!"] = "BEAM !!",	-- TODO: translation missing !!!!
---	["BEAM"] = "BEAM",	-- TODO: translation missing !!!!
---	["SHOCKWAVE"] = "SHOCKWAVE",	-- TODO: translation missing !!!!
---	["BIG BOMB on YOU !!!"] = "BIG BOMB on YOU !!!",	-- TODO: translation missing !!!!
---	["LITTLE BOMB on YOU !!!"] = "LITTLE BOMB on YOU !!!",	-- TODO: translation missing !!!!
---	["LITTLE BOMB"] = "LITTLE BOMB",	-- TODO: translation missing !!!!
+	["BEAM"] = "LASER",
+	["SHOCKWAVE"] = "SCHOCKWELLE",
+	["BIG BOMB on YOU !!!"] = "GROßE BOMBE auf DIR !!!",
+	["LITTLE BOMB on YOU !!!"] = "KLEINE BOMBE auf DIR !!!",
+	["LITTLE BOMB"] = "KLEINE BOMBE",
 })
 
 --------------------------------------------------------------------------------

@@ -66,7 +66,7 @@ mod:RegisterFrenchLocale({
 	-- Bar and messages.
 --	["Next Tentacles"] = "Next Tentacles",	-- TODO: translation missing !!!!
 	["Tentacles"] = "Tentacule",
---	["P2 SOON !"] = "P2 SOON !",	-- TODO: translation missing !!!!
+	["P2 SOON !"] = "P2 SOON !",
 --	["P2: TENTACLES"] = "P2: TENTACLES",	-- TODO: translation missing !!!!
 --	["PHASE 2"] = "PHASE 2",	-- TODO: translation missing !!!!
 --	["P3 SOON !"] = "P3 SOON !",	-- TODO: translation missing !!!!
@@ -74,7 +74,7 @@ mod:RegisterFrenchLocale({
 --	["P3 REALLY SOON !"] = "P3 REALLY SOON !",	-- TODO: translation missing !!!!
 --	["PILLAR %u : %u"] = "PILLAR %u : %u",	-- TODO: translation missing !!!!
 --	["PILLAR %u"] = "PILLAR %u",	-- TODO: translation missing !!!!
---	["SWITCH TANK"] = "SWITCH TANK",	-- TODO: translation missing !!!!
+	["SWITCH TANK"] = "CHANGEMENT TANK",
 --	["BIG SPEW"] = "BIG SPEW",	-- TODO: translation missing !!!!
 --	["NEXT BIG SPEW"] = "NEXT BIG SPEW",	-- TODO: translation missing !!!!
 })
@@ -84,33 +84,33 @@ mod:RegisterGermanLocale({
 	["Tentacle of Ohmna"] = "Tentakel von Ohmna",
 	["Ravenous Maw of the Dreadphage"] = "Unersättliches Maul der Schreckensphage",
 	-- Datachron messages.
---	["A plasma leech begins draining"] = "A plasma leech begins draining",	-- TODO: translation missing !!!!
---	["Dreadphage Ohmna submerges"] = "Dreadphage Ohmna submerges",	-- TODO: translation missing !!!!
---	["Dreadphage Ohmna is bored"] = "Dreadphage Ohmna is bored",	-- TODO: translation missing !!!!
---	["The Archives tremble as Dreadphage Ohmna"] = "The Archives tremble as Dreadphage Ohmna",	-- TODO: translation missing !!!!
---	["The Archives quake with the furious might"] = "The Archives quake with the furious might",	-- TODO: translation missing !!!!
+	["A plasma leech begins draining"] = "Ein Plasmaegel beginnt, den",
+	["Dreadphage Ohmna submerges"] = "Die Schreckensphage Ohmna taucht in den",
+	["Dreadphage Ohmna is bored"] = "Die Schreckensphage Ohmna langweilt sich",
+	["The Archives tremble as Dreadphage Ohmna"] = "Die Archive beben, als die Tentakeln der Schreckensphage Ohmna um dich herum auftauchen",
+	["The Archives quake with the furious might"] = "Die Archive beben unter der wütenden Macht der Schreckensphage",
 	-- Objectifs.
---	["North Power Core Energy"] = "North Power Core Energy",	-- TODO: translation missing !!!!
---	["South Power Core Energy"] = "South Power Core Energy",	-- TODO: translation missing !!!!
---	["East Power Core Energy"] = "East Power Core Energy",	-- TODO: translation missing !!!!
---	["West Power Core Energy"] = "West Power Core Energy",	-- TODO: translation missing !!!!
+	["North Power Core Energy"] = "Nördliche Kraftkernenergie",
+	["South Power Core Energy"] = "Südliche Kraftkernenergie",
+	["East Power Core Energy"] = "Östliche Kraftkernenergie",
+	["West Power Core Energy"] = "Westliche Kraftkernenergie",
 	-- Cast.
 	["Erupt"] = "Ausbrechen",
 	["Genetic Torrent"] = "Genetische Strömung",
 	-- Bar and messages.
---	["Next Tentacles"] = "Next Tentacles",	-- TODO: translation missing !!!!
-	["Tentacles"] = "Tentakel",
---	["P2 SOON !"] = "P2 SOON !",	-- TODO: translation missing !!!!
+	["Next Tentacles"] = "NÄCHSTE TENTAKEL",
+	["Tentacles"] = "TENTAKEL",
+	["P2 SOON !"] = "GLEICH PHASE 2 !",
 --	["P2: TENTACLES"] = "P2: TENTACLES",	-- TODO: translation missing !!!!
---	["PHASE 2"] = "PHASE 2",	-- TODO: translation missing !!!!
---	["P3 SOON !"] = "P3 SOON !",	-- TODO: translation missing !!!!
+	["PHASE 2"] = "PHASE 2",
+	["P3 SOON !"] = "GLEICH PHASE 3 !",
 --	["P3: RAVENOUS"] = "P3: RAVENOUS",	-- TODO: translation missing !!!!
---	["P3 REALLY SOON !"] = "P3 REALLY SOON !",	-- TODO: translation missing !!!!
+	["P3 REALLY SOON !"] = "17 % | VORSICHT MIT DAMAGE",
 --	["PILLAR %u : %u"] = "PILLAR %u : %u",	-- TODO: translation missing !!!!
 --	["PILLAR %u"] = "PILLAR %u",	-- TODO: translation missing !!!!
---	["SWITCH TANK"] = "SWITCH TANK",	-- TODO: translation missing !!!!
---	["BIG SPEW"] = "BIG SPEW",	-- TODO: translation missing !!!!
---	["NEXT BIG SPEW"] = "NEXT BIG SPEW",	-- TODO: translation missing !!!!
+	["SWITCH TANK"] = "TANKWECHSEL",
+	["BIG SPEW"] = "GROßES BRECHEN",
+	["NEXT BIG SPEW"] = "NÄCHSTES GROßES BRECHEN",
 })
 
 

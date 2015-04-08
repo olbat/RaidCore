@@ -57,7 +57,7 @@ mod:RegisterGermanLocale({
 --	["Hydro Disrupter - DNT"] = "Hydro Disrupter - DNT",	-- TODO: translation missing !!!!
 	-- Datachron messages.
 	-- Cast.
-	["Circuit Breaker"] = "Schutzschalter",
+	["Circuit Breaker"] = "Schaltkreiszerstörer",
 	["Imprison"] = "Einsperren",
 	["Defragment"] = "Defragmentieren",
 	["Watery Grave"] = "Seemannsgrab",

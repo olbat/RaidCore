@@ -44,7 +44,7 @@ mod:RegisterFrenchLocale({
 --	["CUBE SMASH"] = "CUBE SMASH",	-- TODO: translation missing !!!!
 --	["EMPOWER"] = "EMPOWER%s",	-- TODO: translation missing !!!!
 --	["BOMB"] = "BOMB",	-- TODO: translation missing !!!!
---	["BERSERK"] = "BERSERK",	-- TODO: translation missing !!!!
+	["BERSERK"] = "BERSERK",
 })
 mod:RegisterGermanLocale({
 	-- Unit names.
@@ -63,7 +63,7 @@ mod:RegisterGermanLocale({
 --	["CUBE SMASH"] = "CUBE SMASH",	-- TODO: translation missing !!!!
 --	["EMPOWER"] = "EMPOWER%s",	-- TODO: translation missing !!!!
 --	["BOMB"] = "BOMB",	-- TODO: translation missing !!!!
---	["BERSERK"] = "BERSERK",	-- TODO: translation missing !!!!
+	["BERSERK"] = "BERSERK",
 })
 
 --------------------------------------------------------------------------------

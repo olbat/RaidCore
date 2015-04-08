@@ -40,7 +40,7 @@ mod:RegisterFrenchLocale({
 	["Aileron"] = "Ventemort",
 	["Wild Brambles"] = "Ronces sauvages",
 --	["[DS] e395 - Air - Tornado"] = "[DS] e395 - Air - Tornado",	-- TODO: translation missing !!!!
-	["Life Force"] = "Life Force",
+	["Life Force"] = "Force vitale",
 	["Lifekeeper"] = "Garde-vie",
 	-- Datachron messages.
 	-- Cast.
@@ -64,14 +64,14 @@ mod:RegisterGermanLocale({
 	["Aileron"] = "Aileron",
 	["Wild Brambles"] = "Wilde Brombeeren",
 --	["[DS] e395 - Air - Tornado"] = "[DS] e395 - Air - Tornado",	-- TODO: translation missing !!!!
-	["Life Force"] = "Life Force",
+	["Life Force"] = "Lebenskraft",
 	["Lifekeeper"] = "Lebensbewahrer",
 	-- Datachron messages.
 	-- Cast.
 	["Blinding Light"] = "Blendendes Licht",
 	-- Bar and messages.
 --	["TWIRL ON YOU!"] = "TWIRL ON YOU!",	-- TODO: translation missing !!!!
-	["Thorns"] = "Dornen",
+	["Thorns"] = "Thorns",
 	["Twirl"] = "Wirbel",
 --	["Midphase ending"] = "Midphase ending",	-- TODO: translation missing !!!!
 --	["Middle Phase"] = "Middle Phase",	-- TODO: translation missing !!!!

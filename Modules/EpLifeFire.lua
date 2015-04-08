@@ -28,7 +28,7 @@ mod:RegisterFrenchLocale({
 	-- Unit names.
 	["Visceralus"] = "Visceralus",
 	["Pyrobane"] = "Pyromagnus",
-	["Life Force"] = "Life Force",
+	["Life Force"] = "Force vitale",
 	["Essence of Life"] = "Essence de vie",
 	["Flame Wave"] = "Vague de feu",
 	-- Datachron messages.
@@ -42,7 +42,7 @@ mod:RegisterGermanLocale({
 	-- Unit names.
 	["Visceralus"] = "Viszeralus",
 	["Pyrobane"] = "Pyroman",
-	["Life Force"] = "Life Force",
+	["Life Force"] = "Lebenskraft",
 	["Essence of Life"] = "Lebensessenz",
 	["Flame Wave"] = "Flammenwelle",
 	-- Datachron messages.

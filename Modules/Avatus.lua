@@ -57,7 +57,7 @@ mod:RegisterFrenchLocale({
 	["Obliteration Beam"] = "Rayon de suppression",
 	-- Bar and messages.
 --	["PURGE BLUE BOSS"] = "PURGE BLUE BOSS",	-- TODO: translation missing !!!!
---	["P2 SOON !"] = "P2 SOON !",	-- TODO: translation missing !!!!
+	["P2 SOON !"] = "P2 SOON !",
 --	["GO TO SIDES !"] = "GO TO SIDES !",	-- TODO: translation missing !!!!
 --	["INTERRUPT CRUSHING BLOW!"] = "INTERRUPT CRUSHING BLOW!",	-- TODO: translation missing !!!!
 --	["BLIND! TURN AWAY FROM BOSS"] = "BLIND! TURN AWAY FROM BOSS",	-- TODO: translation missing !!!!
@@ -89,11 +89,11 @@ mod:RegisterGermanLocale({
 	["Obliteration Beam"] = "Vernichtungsstrahl",
 	-- Bar and messages.
 --	["PURGE BLUE BOSS"] = "PURGE BLUE BOSS",	-- TODO: translation missing !!!!
---	["P2 SOON !"] = "P2 SOON !",	-- TODO: translation missing !!!!
+	["P2 SOON !"] = "GLEICH PHASE 2 !",
 --	["GO TO SIDES !"] = "GO TO SIDES !",	-- TODO: translation missing !!!!
 --	["INTERRUPT CRUSHING BLOW!"] = "INTERRUPT CRUSHING BLOW!",	-- TODO: translation missing !!!!
 --	["BLIND! TURN AWAY FROM BOSS"] = "BLIND! TURN AWAY FROM BOSS",	-- TODO: translation missing !!!!
---	["Blind"] = "Blind",	-- TODO: translation missing !!!!
+	["Blind"] = "Geblendet",
 --	["Gun Grid NOW!"] = "Gun Grid NOW!",	-- TODO: translation missing !!!!
 --	["~Gun Grid"] = "~Gun Grid",	-- TODO: translation missing !!!!
 --	["Holo Hands spawn"] = "Holo Hands spawn",	-- TODO: translation missing !!!!

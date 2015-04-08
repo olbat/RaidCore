@@ -43,7 +43,7 @@ mod:RegisterFrenchLocale({
 	-- Unit names.
 	["Gloomclaw"] = "Serrenox",
 	["Corrupted Ravager"] = "Ravageur corrompu",
---	["Empowered Ravager"] = "Empowered Ravager",	-- TODO: translation missing !!!!
+	["Empowered Ravager"] = "Ravageur renforcé",
 	["Strain Parasite"] = "Parasite de la Souillure",
 	["Gloomclaw Skurge"] = "Skurge serrenox",
 	["Corrupted Fraz"] = "Friz corrompu",
@@ -57,17 +57,17 @@ mod:RegisterFrenchLocale({
 	["Rupture"] = "Rupture",
 	["Corrupting Rays"] = "Rayons de corruption",
 	-- Bar and messages.
---	["INTERRUPT %s"] = "INTERRUPT %s",	-- TODO: translation missing !!!!
---	["NEXT RUPTURE"] = "NEXT RUPTURE",	-- TODO: translation missing !!!!
---	["~NEXT RUPTURE"] = "~NEXT RUPTURE",	-- TODO: translation missing !!!!
---	["FULL CORRUPTION"] = "FULL CORRUPTION",	-- TODO: translation missing !!!!
---	["SECTION %u"] = "SECTION %u",	-- TODO: translation missing !!!!
---	["[%u] WAVE"] = "[%u] WAVE",	-- TODO: translation missing !!!!
---	["FROG %u"] = "FROG %u",	-- TODO: translation missing !!!!
---	["LEFT"] = "LEFT",	-- TODO: translation missing !!!!
---	["RIGHT"] = "RIGHT",	-- TODO: translation missing !!!!
---	["TRANSITION"] = "TRANSITION",	-- TODO: translation missing !!!!
---	["MOO PHASE"] = "MOO PHASE",	-- TODO: translation missing !!!!
+	["INTERRUPT %s"] = "INTÉRROMPRE %s",
+	["NEXT RUPTURE"] = "PROCHAINE RUPTURE",
+	["~NEXT RUPTURE"] = "~PROCHAINE RUPTURE",
+	["FULL CORRUPTION"] = "100% CORROMPU",
+	["SECTION %u"] = "SECTION %u",
+	["[%u] WAVE"] = "[%u] WAVE",
+	["FROG %u"] = "ADD %u",
+	["LEFT"] = "GAUCHE",
+	["RIGHT"] = "DROITE",
+	["TRANSITION"] = "TRANSITION",
+	["MOO PHASE"] = "MOO PHASE",
 --	["BURN HIM HARD"] = "BURN HIM HARD",	-- TODO: translation missing !!!!
 })
 mod:RegisterGermanLocale({

@@ -36,7 +36,7 @@ mod:RegisterFrenchLocale({
 --	["fractured crust leaves it exposed"] = "fractured crust leaves it exposed",	-- TODO: translation missing !!!!
 	-- Cast.
 	["Supercell"] = "Super-cellule",
-	["Raw Power"] = "Puissance brute",
+	["Raw Power"] = "Énergie brute",
 	-- Bar and messages.
 --	["MOO !"] = "MOO !",	-- TODO: translation missing !!!!
 --	["EARTH"] = "EARTH",	-- TODO: translation missing !!!!

@@ -49,7 +49,7 @@ mod:RegisterFrenchLocale({
 	-- Bar and messages.
 --	["EYE OF THE STORM"] = "EYE OF THE STORM",	-- TODO: translation missing !!!!
 --	["MOO !"] = "MOO !",	-- TODO: translation missing !!!!
---	["MOO PHASE"] = "MOO PHASE",	-- TODO: translation missing !!!!
+	["MOO PHASE"] = "MOO PHASE",
 --	["ICESTORM"] = "ICESTORM",	-- TODO: translation missing !!!!
 --	["~Middle Phase"] = "~Middle Phase",	-- TODO: translation missing !!!!
 --	["~Frost Tombs"] = "~Frost Tombs",	-- TODO: translation missing !!!!

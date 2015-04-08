@@ -53,7 +53,7 @@ mod:RegisterFrenchLocale({
 --	["SECOND ABILITY"] = "SECOND ABILITY",	-- TODO: translation missing !!!!
 --	["STORM !!"] = "STORM !!",	-- TODO: translation missing !!!!
 --	["METEOR STORM"] = "METEOR STORM",	-- TODO: translation missing !!!!
---	["KNOCKBACK"] = "KNOCKBACK",	-- TODO: translation missing !!!!
+	["KNOCKBACK"] = "KNOCKBACK",
 --	["BOMB"] = "BOMB",	-- TODO: translation missing !!!!
 })
 mod:RegisterGermanLocale({
@@ -77,7 +77,7 @@ mod:RegisterGermanLocale({
 --	["SECOND ABILITY"] = "SECOND ABILITY",	-- TODO: translation missing !!!!
 --	["STORM !!"] = "STORM !!",	-- TODO: translation missing !!!!
 --	["METEOR STORM"] = "METEOR STORM",	-- TODO: translation missing !!!!
---	["KNOCKBACK"] = "KNOCKBACK",	-- TODO: translation missing !!!!
+	["KNOCKBACK"] = "RÜCKSTOß",
 --	["BOMB"] = "BOMB",	-- TODO: translation missing !!!!
 })
 

@@ -51,7 +51,7 @@ mod:RegisterFrenchLocale({
 --	["LASER"] = "LASER",	-- TODO: translation missing !!!!
 --	["EXPLOSION"] = "EXPLOSION",	-- TODO: translation missing !!!!
 --	["NEXT BEAM"] = "NEXT BEAM",	-- TODO: translation missing !!!!
---	["[%u] WAVE"] = "[%u] WAVE",	-- TODO: translation missing !!!!
+	["[%u] WAVE"] = "[%u] WAVE",
 --	["BEAM on YOU !!!"] = "BEAM on YOU !!!",	-- TODO: translation missing !!!!
 --	["[%u] BEAM on %s"] = "[%u] BEAM on %s",	-- TODO: translation missing !!!!
 --	["BIG CAST"] = "BIG CAST",	-- TODO: translation missing !!!!

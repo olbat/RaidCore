@@ -86,10 +86,10 @@ mod:RegisterGermanLocale({
 --	["TYPHOON"] = "TYPHOON",	-- TODO: translation missing !!!!
 --	["JUMP"] = "JUMP",	-- TODO: translation missing !!!!
 --	["Encounter Start"] = "Encounter Start",	-- TODO: translation missing !!!!
---	["NORTH"] = "NORTH",	-- TODO: translation missing !!!!
---	["SOUTH"] = "SOUTH",	-- TODO: translation missing !!!!
---	["EAST"] = "EAST",	-- TODO: translation missing !!!!
---	["WEST"] = "WEST",	-- TODO: translation missing !!!!
+	["NORTH"] = "N",
+	["SOUTH"] = "S",
+	["EAST"] = "E",
+	["WEST"] = "W",
 })
 
 --------------------------------------------------------------------------------
