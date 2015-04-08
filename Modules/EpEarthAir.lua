@@ -28,15 +28,35 @@ mod:RegisterEnglishLocale({
 })
 mod:RegisterFrenchLocale({
 	-- Unit names.
+	["Megalith"] = "Mégalithe",
+	["Aileron"] = "Ventemort",
+	["Air Column"] = "Colonne d'air",
 	-- Datachron messages.
+--	["The ground shudders beneath Megalith"] = "The ground shudders beneath Megalith",	-- TODO: translation missing !!!!
+--	["fractured crust leaves it exposed"] = "fractured crust leaves it exposed",	-- TODO: translation missing !!!!
 	-- Cast.
+	["Supercell"] = "Super-cellule",
+	["Raw Power"] = "Énergie brute",
 	-- Bar and messages.
+--	["MOO !"] = "MOO !",	-- TODO: translation missing !!!!
+--	["EARTH"] = "EARTH",	-- TODO: translation missing !!!!
+--	["~Tornado Spawn"] = "~Tornado Spawn",	-- TODO: translation missing !!!!
 })
 mod:RegisterGermanLocale({
 	-- Unit names.
+	["Megalith"] = "Megalith",
+	["Aileron"] = "Aileron",
+	["Air Column"] = "Luftsäule",
 	-- Datachron messages.
+--	["The ground shudders beneath Megalith"] = "The ground shudders beneath Megalith",	-- TODO: translation missing !!!!
+--	["fractured crust leaves it exposed"] = "fractured crust leaves it exposed",	-- TODO: translation missing !!!!
 	-- Cast.
+	["Supercell"] = "Superzelle",
+	["Raw Power"] = "Rohe Kraft",
 	-- Bar and messages.
+--	["MOO !"] = "MOO !",	-- TODO: translation missing !!!!
+--	["EARTH"] = "EARTH",	-- TODO: translation missing !!!!
+--	["~Tornado Spawn"] = "~Tornado Spawn",	-- TODO: translation missing !!!!
 })
 
 --------------------------------------------------------------------------------

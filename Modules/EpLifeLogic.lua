@@ -39,15 +39,59 @@ mod:RegisterEnglishLocale({
 })
 mod:RegisterFrenchLocale({
 	-- Unit names.
+	["Essence of Life"] = "Essence de vie",
+	["Essence of Logic"] = "Essence de logique",
+	["Alphanumeric Hash"] = "Hachis alphanumérique",
+	["Life Force"] = "Force vitale",
+	["Mnemesis"] = "Mnémésis",
+	["Visceralus"] = "Visceralus",
 	-- Datachron messages.
 	-- Cast.
+	["Blinding Light"] = "Lumière aveuglante",
+	["Defragment"] = "Défragmentation",
 	-- Bar and messages.
+--	["Defrag Explosion"] = "Defrag Explosion",	-- TODO: translation missing !!!!
+--	["~DEFRAG CD"] = "~DEFRAG CD",	-- TODO: translation missing !!!!
+--	["DEFRAG"] = "DEFRAG",	-- TODO: translation missing !!!!
+--	["ENRAGE"] = "ENRAGE",	-- TODO: translation missing !!!!
+--	["No-Healing Debuff!"] = "No-Healing Debuff!",	-- TODO: translation missing !!!!
+--	["NO HEAL DEBUFF"] = "NO HEAL\nDEBUFF",	-- TODO: translation missing !!!!
+--	["SNAKE ON YOU!"] = "SNAKE ON YOU!",	-- TODO: translation missing !!!!
+--	["SNAKE ON %s!"] = "SNAKE ON %s!",	-- TODO: translation missing !!!!
+--	["SNAKE"] = "SNAKE",	-- TODO: translation missing !!!!
+--	["THORNS DEBUFF"] = "THORNS\nDEBUFF",	-- TODO: translation missing !!!!
+--	["MARKER North"] = "North",	-- TODO: translation missing !!!!
+--	["MARKER South"] = "South",	-- TODO: translation missing !!!!
+--	["MARKER East"] = "East",	-- TODO: translation missing !!!!
+--	["MARKER West"] = "West",	-- TODO: translation missing !!!!
 })
 mod:RegisterGermanLocale({
 	-- Unit names.
+	["Essence of Life"] = "Lebensessenz",
+	["Essence of Logic"] = "Logikessenz",
+	["Alphanumeric Hash"] = "Alphanumerische Raute",
+	["Life Force"] = "Lebenskraft",
+	["Mnemesis"] = "Mnemesis",
+	["Visceralus"] = "Viszeralus",
 	-- Datachron messages.
 	-- Cast.
+	["Blinding Light"] = "Blendendes Licht",
+	["Defragment"] = "Defragmentieren",
 	-- Bar and messages.
+--	["Defrag Explosion"] = "Defrag Explosion",	-- TODO: translation missing !!!!
+--	["~DEFRAG CD"] = "~DEFRAG CD",	-- TODO: translation missing !!!!
+--	["DEFRAG"] = "DEFRAG",	-- TODO: translation missing !!!!
+--	["ENRAGE"] = "ENRAGE",	-- TODO: translation missing !!!!
+--	["No-Healing Debuff!"] = "No-Healing Debuff!",	-- TODO: translation missing !!!!
+--	["NO HEAL DEBUFF"] = "NO HEAL\nDEBUFF",	-- TODO: translation missing !!!!
+--	["SNAKE ON YOU!"] = "SNAKE ON YOU!",	-- TODO: translation missing !!!!
+--	["SNAKE ON %s!"] = "SNAKE ON %s!",	-- TODO: translation missing !!!!
+--	["SNAKE"] = "SNAKE",	-- TODO: translation missing !!!!
+--	["THORNS DEBUFF"] = "THORNS\nDEBUFF",	-- TODO: translation missing !!!!
+--	["MARKER North"] = "North",	-- TODO: translation missing !!!!
+--	["MARKER South"] = "South",	-- TODO: translation missing !!!!
+--	["MARKER East"] = "East",	-- TODO: translation missing !!!!
+--	["MARKER West"] = "West",	-- TODO: translation missing !!!!
 })
 
 --------------------------------------------------------------------------------

@@ -37,19 +37,48 @@ mod:RegisterFrenchLocale({
 	["Avatus"] = "Avatus",
 	["Obstinate Logic Wall"] = "Mur de logique obstiné",
 	["Data Devourer"] = "Dévoreur de données",
+--	["Big Red Button"] = "Big Red Button",	-- TODO: translation missing !!!!
 	-- Datachron messages.
-	["Avatus prepares to delete all"] = "Avatus se prépare à effacer toutes les données !",
-	["Secure Sector Enhancement"] = "Les ports d'amélioration de secteur sécurisé ont été activés !",
-	["Vertical Locomotion Enhancement"] = "Les ports d'amélioration de locomotion verticale ont été activés !",
+--	["Avatus sets his focus on [PlayerName]!"] = "Avatus sets his focus on (.*)!",	-- TODO: translation missing !!!!
+--	["Avatus prepares to delete all"] = "Avatus prepares to delete all data!",	-- TODO: translation missing !!!!
+--	["Secure Sector Enhancement"] = "The Secure Sector Enhancement Ports have been activated!",	-- TODO: translation missing !!!!
+--	["Vertical Locomotion Enhancement"] = "The Vertical Locomotion Enhancement Ports have been activated!",	-- TODO: translation missing !!!!
 	-- Cast.
 	["Null and Void"] = "Caduque",
 	-- Bar and messages.
+--	["P2: SHIELD PHASE"] = "P2: SHIELD PHASE",	-- TODO: translation missing !!!!
+--	["P2: JUMP PHASE"] = "P2: JUMP PHASE",	-- TODO: translation missing !!!!
+--	["LASER"] = "LASER",	-- TODO: translation missing !!!!
+--	["EXPLOSION"] = "EXPLOSION",	-- TODO: translation missing !!!!
+--	["NEXT BEAM"] = "NEXT BEAM",	-- TODO: translation missing !!!!
+	["[%u] WAVE"] = "[%u] WAVE",
+--	["BEAM on YOU !!!"] = "BEAM on YOU !!!",	-- TODO: translation missing !!!!
+--	["[%u] BEAM on %s"] = "[%u] BEAM on %s",	-- TODO: translation missing !!!!
+--	["BIG CAST"] = "BIG CAST",	-- TODO: translation missing !!!!
 })
 mod:RegisterGermanLocale({
 	-- Unit names.
+	["Avatus"] = "Avatus",
+	["Obstinate Logic Wall"] = "Hartnäckige Logikmauer",
+	["Data Devourer"] = "Datenverschlinger",
+--	["Big Red Button"] = "Big Red Button",	-- TODO: translation missing !!!!
 	-- Datachron messages.
+--	["Avatus sets his focus on [PlayerName]!"] = "Avatus sets his focus on (.*)!",	-- TODO: translation missing !!!!
+--	["Avatus prepares to delete all"] = "Avatus prepares to delete all data!",	-- TODO: translation missing !!!!
+--	["Secure Sector Enhancement"] = "The Secure Sector Enhancement Ports have been activated!",	-- TODO: translation missing !!!!
+--	["Vertical Locomotion Enhancement"] = "The Vertical Locomotion Enhancement Ports have been activated!",	-- TODO: translation missing !!!!
 	-- Cast.
+	["Null and Void"] = "Unordnung und Chaos",
 	-- Bar and messages.
+--	["P2: SHIELD PHASE"] = "P2: SHIELD PHASE",	-- TODO: translation missing !!!!
+--	["P2: JUMP PHASE"] = "P2: JUMP PHASE",	-- TODO: translation missing !!!!
+--	["LASER"] = "LASER",	-- TODO: translation missing !!!!
+--	["EXPLOSION"] = "EXPLOSION",	-- TODO: translation missing !!!!
+--	["NEXT BEAM"] = "NEXT BEAM",	-- TODO: translation missing !!!!
+--	["[%u] WAVE"] = "[%u] WAVE",	-- TODO: translation missing !!!!
+--	["BEAM on YOU !!!"] = "BEAM on YOU !!!",	-- TODO: translation missing !!!!
+--	["[%u] BEAM on %s"] = "[%u] BEAM on %s",	-- TODO: translation missing !!!!
+--	["BIG CAST"] = "BIG CAST",	-- TODO: translation missing !!!!
 })
 
 --------------------------------------------------------------------------------

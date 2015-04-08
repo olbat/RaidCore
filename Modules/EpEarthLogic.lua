@@ -31,15 +31,41 @@ mod:RegisterEnglishLocale({
 })
 mod:RegisterFrenchLocale({
 	-- Unit names.
+	["Megalith"] = "Mégalithe",
+	["Mnemesis"] = "Mnémésis",
+--	["Obsidian Outcropping"] = "Obsidian Outcropping",	-- TODO: translation missing !!!!
+	["Crystalline Matrix"] = "Matrice cristalline",
 	-- Datachron messages.
+--	["The ground shudders beneath Megalith"] = "The ground shudders beneath Megalith",	-- TODO: translation missing !!!!
+--	["Logic creates powerful data caches"] = "Logic creates powerful data caches",	-- TODO: translation missing !!!!
 	-- Cast.
+	["Defragment"] = "Défragmentation",
 	-- Bar and messages.
+--	["SNAKE ON %s"] = "SNAKE ON %s",	-- TODO: translation missing !!!!
+--	["DEFRAG"] = "DEFRAG",	-- TODO: translation missing !!!!
+--	["SPREAD"] = "SPREAD",	-- TODO: translation missing !!!!
+--	["BOOM"] = "BOOM",	-- TODO: translation missing !!!!
+--	["JUMP !"] = "JUMP !",	-- TODO: translation missing !!!!
+--	["STARS"] = "STARS%s"	-- TODO: translation missing !!!!
 })
 mod:RegisterGermanLocale({
 	-- Unit names.
+	["Megalith"] = "Megalith",
+	["Mnemesis"] = "Mnemesis",
+--	["Obsidian Outcropping"] = "Obsidian Outcropping",	-- TODO: translation missing !!!!
+	["Crystalline Matrix"] = "Kristallmatrix",
 	-- Datachron messages.
+--	["The ground shudders beneath Megalith"] = "The ground shudders beneath Megalith",	-- TODO: translation missing !!!!
+--	["Logic creates powerful data caches"] = "Logic creates powerful data caches",	-- TODO: translation missing !!!!
 	-- Cast.
+	["Defragment"] = "Defragmentieren",
 	-- Bar and messages.
+--	["SNAKE ON %s"] = "SNAKE ON %s",	-- TODO: translation missing !!!!
+--	["DEFRAG"] = "DEFRAG",	-- TODO: translation missing !!!!
+--	["SPREAD"] = "SPREAD",	-- TODO: translation missing !!!!
+--	["BOOM"] = "BOOM",	-- TODO: translation missing !!!!
+--	["JUMP !"] = "JUMP !",	-- TODO: translation missing !!!!
+--	["STARS"] = "STARS%s"	-- TODO: translation missing !!!!
 })
 
 --------------------------------------------------------------------------------

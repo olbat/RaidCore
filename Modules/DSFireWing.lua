@@ -37,19 +37,48 @@ mod:RegisterFrenchLocale({
 	["Warmonger Agratha"] = "Guerroyeuse Agratha",
 	["Warmonger Talarii"] = "Guerroyeuse Talarii",
 	["Warmonger Chuna"] = "Guerroyeuse Chuna",
+	["Grand Warmonger Tar'gresh"] = "Grand guerroyeur Tar'gresh",
 	["Conjured Fire Bomb"] = "Bombe incendiaire invoquée",
-	["Totem's Fire"] = "Totem de feu invoqué",
 	-- Datachron messages.
 	-- NPCSay messages.
 	-- Cast.
+	["Incineration"] = "Incinération",
+	["Conjure Fire Elementals"] = "Invocation d'Élémentaires de feu",
+	["Meteor Storm"] = "Pluie de météores",
 	-- Bar and messages.
+--	["INTERRUPT !"] = "INTERRUPT !",	-- TODO: translation missing !!!!
+--	["ELEMENTALS SOON"] = "ELEMENTALS SOON",	-- TODO: translation missing !!!!
+--	["ELEMENTALS"] = "ELEMENTALS",	-- TODO: translation missing !!!!
+--	["FIRST ABILITY"] = "FIRST ABILITY",	-- TODO: translation missing !!!!
+--	["SECOND ABILITY"] = "SECOND ABILITY",	-- TODO: translation missing !!!!
+--	["STORM !!"] = "STORM !!",	-- TODO: translation missing !!!!
+--	["METEOR STORM"] = "METEOR STORM",	-- TODO: translation missing !!!!
+	["KNOCKBACK"] = "KNOCKBACK",
+--	["BOMB"] = "BOMB",	-- TODO: translation missing !!!!
 })
 mod:RegisterGermanLocale({
 	-- Unit names.
+	["Warmonger Agratha"] = "Kriegstreiberin Agratha",
+	["Warmonger Talarii"] = "Kriegstreiberin Talarii",
+	["Warmonger Chuna"] = "Kriegstreiberin Chuna",
+	["Grand Warmonger Tar'gresh"] = "Großer Kriegstreiber Tar’gresh",
+	["Conjured Fire Bomb"] = "Beschworene Feuerbombe",
 	-- Datachron messages.
 	-- NPCSay messages.
 	-- Cast.
+	["Incineration"] = "Lodernde Flammen",
+	["Conjure Fire Elementals"] = "Feuerelementare beschwören",
+	["Meteor Storm"] = "Meteorsturm",
 	-- Bar and messages.
+--	["INTERRUPT !"] = "INTERRUPT !",	-- TODO: translation missing !!!!
+--	["ELEMENTALS SOON"] = "ELEMENTALS SOON",	-- TODO: translation missing !!!!
+--	["ELEMENTALS"] = "ELEMENTALS",	-- TODO: translation missing !!!!
+--	["FIRST ABILITY"] = "FIRST ABILITY",	-- TODO: translation missing !!!!
+--	["SECOND ABILITY"] = "SECOND ABILITY",	-- TODO: translation missing !!!!
+--	["STORM !!"] = "STORM !!",	-- TODO: translation missing !!!!
+--	["METEOR STORM"] = "METEOR STORM",	-- TODO: translation missing !!!!
+	["KNOCKBACK"] = "RÜCKSTOß",
+--	["BOMB"] = "BOMB",	-- TODO: translation missing !!!!
 })
 
 --------------------------------------------------------------------------------

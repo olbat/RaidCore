@@ -22,17 +22,27 @@ mod:RegisterEnglishLocale({
 })
 mod:RegisterFrenchLocale({
 	-- Unit names.
-	-- Datachron messages.
-	-- NPCSay messages.
+	["Frost-Boulder Avalanche"] = "Avalanche cryoroc",
 	-- Cast.
+	["Icicle Storm"] = "Tempête de stalactites",
+	["Shatter"] = "Fracasser",
+	["Cyclone"] = "Cyclone",
 	-- Bar and messages.
+--	["CYCLONE SOON"] = "CYCLONE SOON",	-- TODO: translation missing !!!!
+--	["ICICLE"] = "ICICLE%s"	-- TODO: translation missing !!!!
+--	["SHATTER"] = "SHATTER%s"	-- TODO: translation missing !!!!
 })
 mod:RegisterGermanLocale({
 	-- Unit names.
-	-- Datachron messages.
-	-- NPCSay messages.
+	["Frost-Boulder Avalanche"] = "Frostfelsen-Lawine",
 	-- Cast.
+	["Icicle Storm"] = "Eiszapfensturm",
+	["Shatter"] = "Zerschmettern",
+	["Cyclone"] = "Wirbelsturm",
 	-- Bar and messages.
+--	["CYCLONE SOON"] = "CYCLONE SOON",	-- TODO: translation missing !!!!
+--	["ICICLE"] = "ICICLE%s"	-- TODO: translation missing !!!!
+--	["SHATTER"] = "SHATTER%s"	-- TODO: translation missing !!!!
 })
 
 --------------------------------------------------------------------------------
