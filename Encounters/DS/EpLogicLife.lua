@@ -154,7 +154,7 @@ end
 function mod:OnDebuffApplied(unitName, splId, unit)
     if DEBUFF__SNAKE_SNACK == splId then
         if unit == GetPlayerUnit() then
-            core:AddMsg("SNAKE", self.L["SNAKE ON YOU!"], 5, mod:GetSetting("SoundSnakeOnYou") and "RunAway")
+            core:AddMsg("SNAKE", "SNAKE ON YOU!", 5, mod:GetSetting("SoundSnakeOnYou") and "RunAway")
         else
             core:AddMsg("SNAKE", self.L["SNAKE ON %s!"]:format(unitName), 5, mod:GetSetting("SoundSnakeOnOther") and "Info")
         end
@@ -166,7 +166,7 @@ function mod:OnDebuffApplied(unitName, splId, unit)
             core:MarkUnit(unit, nil, self.L["NO HEAL DEBUFF"])
         end
         if unit == GetPlayerUnit() then
-            core:AddMsg("NOHEAL", self.L["No-Healing Debuff!"], 5, mod:GetSetting("SoundNoHealDebuff") and "Alarm")
+            core:AddMsg("NOHEAL", "No-Healing Debuff!", 5, mod:GetSetting("SoundNoHealDebuff") and "Alarm")
         end
     elseif DEBUFF__THORNS == splId then
         if mod:GetSetting("OtherRootedPlayersMarkers") then
@@ -245,12 +245,12 @@ function mod:OnSpellCastStart(unitName, castName, unit)
     local eventTime = GameLib.GetGameTime()
     if unitName == self.L["Visceralus"] and castName == self.L["Blinding Light"] then
         if self:GetDistanceBetweenUnits(unit, GetPlayerUnit()) < 33 then
-            core:AddMsg("BLIND", self.L["Blinding Light"], 5, mod:GetSetting("SoundBlindingLight") and "Beware")
+            core:AddMsg("BLIND", "Blinding Light", 5, mod:GetSetting("SoundBlindingLight") and "Beware")
         end
     elseif unitName == self.L["Mnemesis"] and castName == self.L["Defragment"] then
         -- Defrag is unreliable, but seems to take at least this long.
         mod:AddTimerBar("DEFRAG", "~DEFRAG CD", 40, mod:GetSetting("SoundDefrag"))
         mod:AddTimerBar("DEFRAG_EXPLOSION", "Defrag Explosion", 9, mod:GetSetting("SoundDefrag"))
-        core:AddMsg("DEFRAG", self.L["DEFRAG"], 5, mod:GetSetting("SoundDefrag") and "Beware")
+        core:AddMsg("DEFRAG", "DEFRAG", 5, mod:GetSetting("SoundDefrag") and "Beware")
     end
 end

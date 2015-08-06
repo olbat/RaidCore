@@ -105,9 +105,9 @@ end
 function mod:OnHealthChanged(sUnitName, nHealth)
     if sUnitName == self.L["Frost-Boulder Avalanche"] then
         if nHealth == 85 or nHealth == 55 or nHealth == 31 then
-            core:AddMsg("CYCLONE", self.L["CYCLONE SOON"], 5, "Info", "Blue")
+            core:AddMsg("CYCLONE", "CYCLONE SOON", 5, "Info", "Blue")
         elseif nHealth == 22 then
-            core:AddMsg("PHASE2", self.L["PHASE 2 SOON"], 5, "Info", "Blue")
+            core:AddMsg("PHASE2", "PHASE 2 SOON", 5, "Info", "Blue")
         end
     end
 end

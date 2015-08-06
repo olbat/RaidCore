@@ -168,7 +168,7 @@ function mod:OnUnitCreated(unit, sName)
         local nCurrentTime = GetGameTime()
         if nCurrentTime - nLastIceTombTime > 13 then
             nLastIceTombTime = nCurrentTime
-            core:AddMsg("TOMB", self.L["ICE TOMB"], 5, mod:GetSetting("SoundIceTomb") and "Alert", "Blue")
+            core:AddMsg("TOMB", "ICE TOMB", 5, mod:GetSetting("SoundIceTomb") and "Alert", "Blue")
             mod:AddTimerBar("TOMB", "ICE TOMB", 15)
         end
         core:AddUnit(unit)
@@ -197,7 +197,7 @@ function mod:OnDebuffAdd(nId, nSpellId, nStack, fTimeRemaining)
         core:AddUnit(tUnit)
         tFireBombPlayersList[sUnitName] = tUnit
         if tUnit == GetPlayerUnit() then
-            core:AddMsg("BOMB", self.L["BOMBS UP !"], 5, mod:GetSetting("SoundBomb") and "RunAway")
+            core:AddMsg("BOMB", "BOMBS UP !", 5, mod:GetSetting("SoundBomb") and "RunAway")
             if mod:GetSetting("LineBombPlayers") then
                 self:ScheduleTimer("ApplyBombLines", 1, "fire")
             end
@@ -210,7 +210,7 @@ function mod:OnDebuffAdd(nId, nSpellId, nStack, fTimeRemaining)
         core:AddUnit(tUnit)
         tFrostBombPlayersList[sUnitName] = tUnit
         if tUnit == GetPlayerUnit() then
-            core:AddMsg("BOMB", self.L["BOMBS UP !"], 5, mod:GetSetting("SoundBomb") and "RunAway")
+            core:AddMsg("BOMB", "BOMBS UP !", 5, mod:GetSetting("SoundBomb") and "RunAway")
             if mod:GetSetting("LineBombPlayers") then
                 self:ScheduleTimer("ApplyBombLines", 1, "frost")
             end

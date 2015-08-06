@@ -136,7 +136,7 @@ function mod:OnSpellCastStart(unitName, castName, unit)
             local timeOfEvent = GetGameTime()
             if timeOfEvent - nPreviousDefragmentTime > 10 then
                 nPreviousDefragmentTime = timeOfEvent
-                core:AddMsg("DEFRAG", self.L["SPREAD"], 5, mod:GetSetting("SoundDefrag") and "Alarm")
+                core:AddMsg("DEFRAG", "SPREAD", 5, mod:GetSetting("SoundDefrag") and "Alarm")
                 mod:AddTimerBar("BOOM", "BOOM", 9)
                 mod:AddTimerBar("DEFRAG", "DEFRAG", 40)
             end
@@ -146,7 +146,7 @@ end
 
 function mod:OnChatDC(message)
     if message:find(self.L["The ground shudders beneath Megalith"]) then
-        core:AddMsg("QUAKE", self.L["JUMP !"], 3, mod:GetSetting("SoundQuakeJump") and "Beware")
+        core:AddMsg("QUAKE", "JUMP !", 3, mod:GetSetting("SoundQuakeJump") and "Beware")
     elseif message:find(self.L["Logic creates powerful data caches"]) then
         core:AddMsg("STAR", self.L["STARS"]:format(" !"), 5, mod:GetSetting("SoundStars") and "Alert")
         mod:AddTimerBar("STAR", self.L["STARS"]:format(""), 60)

@@ -184,7 +184,7 @@ function mod:OnUnitCreated(unit, sName)
         core:AddLine("Ohmna3", 2, unit, nil, 1, 25, -120)
     elseif sName == self.L["Tentacle of Ohmna"] then
         if not OhmnaP4 then
-            core:AddMsg("OTENT", self.L["Tentacles"], 5, "Info", "Blue")
+            core:AddMsg("OTENT", "Tentacles", 5, "Info", "Blue")
             core:AddTimerBar("OTENT", "Next Tentacles", 20)
         end
     elseif sName == self.L["Ravenous Maw of the Dreadphage"] then
@@ -196,11 +196,11 @@ end
 function mod:OnHealthChanged(unitName, health)
     if unitName == self.L["Dreadphage Ohmna"] then
         if health == 52 then
-            core:AddMsg("OP2", self.L["P2 SOON !"], 5, "Alert")
+            core:AddMsg("OP2", "P2 SOON !", 5, "Alert")
         elseif health == 20 then
-            core:AddMsg("OP3", self.L["P3 SOON !"], 5, "Alert")
+            core:AddMsg("OP3", "P3 SOON !", 5, "Alert")
         elseif health == 17 then
-            core:AddMsg("OP3", self.L["P3 REALLY SOON !"], 5, "Alert")
+            core:AddMsg("OP3", "P3 REALLY SOON !", 5, "Alert")
         end
     end
 end
@@ -215,7 +215,7 @@ function mod:OnSpellCastStart(unitName, castName, unit)
                 core:AddTimerBar("OBORE", "SWITCH TANK", 45)
             end
         elseif castName == self.L["Genetic Torrent"] then
-            core:AddMsg("SPEW", self.L["BIG SPEW"], 5, "RunAway")
+            core:AddMsg("SPEW", "BIG SPEW", 5, "RunAway")
             core:AddTimerBar("OSPEW", "NEXT BIG SPEW", OhmnaP4 and 40 or 60)
         end
     end
@@ -270,9 +270,9 @@ function mod:OnChatDC(message)
             core:AddTimerBar("OBORE", "SWITCH TANK", 42)
         end
     elseif message:find(self.L["The Archives tremble as Dreadphage Ohmna"]) then
-        core:AddMsg("OP2", self.L["P2: TENTACLES"], 5, "Alert")
+        core:AddMsg("OP2", "P2: TENTACLES", 5, "Alert")
     elseif message:find(self.L["The Archives quake with the furious might"]) then
-        core:AddMsg("OP3", self.L["P3: RAVENOUS"], 5, "Alert")
+        core:AddMsg("OP3", "P3: RAVENOUS", 5, "Alert")
         OhmnaP3 = true
         core:RemoveTimerBar("OPILAR")
         core:RemoveTimerBar("OBORE")

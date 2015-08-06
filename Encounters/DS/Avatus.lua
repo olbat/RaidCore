@@ -312,7 +312,7 @@ function mod:OnUnitCreated(unit, sName)
         end
     elseif self.L["Augmented Rowsdower"] == sName then
         nCurrentPhase = LABYRINTH_PHASE
-        core:AddMsg("Rowsdower", self.L["Augmented Rowsdower"], 3)
+        core:AddMsg("Rowsdower", "Augmented Rowsdower", 3)
         SetTargetUnit(unit)
     elseif sName == self.L["Mobius Physics Constructor"] then
         -- Portals have same name, actual boss has HP, portals have nil value.
@@ -351,7 +351,7 @@ function mod:OnUnitCreated(unit, sName)
         core:AddUnit(unit)
         core:WatchUnit(unit)
         table.insert(tHoloHandsList, nUnitId, { ["unit"] = unit} )
-        core:AddMsg("HHAND", self.L["Holo Hand Spawned"], 5, "Info")
+        core:AddMsg("HHAND", "Holo Hand Spawned", 5, "Info")
         if mod:GetSetting("LineCleaveHands") then
             core:AddPixie(nUnitId .. "_1", 2, unit, nil, "Blue", 7, 20, 0)
         end
@@ -476,10 +476,10 @@ function mod:OnHealthChanged(unitName, health)
     if unitName == self.L["Avatus"] then
         if health >= 75 and health <= 76 and not phase2warn then
             phase2warn = true
-            core:AddMsg("AVAP2", self.L["P2 SOON !"], 5, mod:GetSetting("SoundPortalPhase") and "Info")
+            core:AddMsg("AVAP2", "P2 SOON !", 5, mod:GetSetting("SoundPortalPhase") and "Info")
         elseif health >= 50 and health <= 52 and not phase2warn then
             phase2warn = true
-            core:AddMsg("AVAP2", self.L["P2 SOON!"], 5, mod:GetSetting("SoundPortalPhase") and "Info")
+            core:AddMsg("AVAP2", "P2 SOON!", 5, mod:GetSetting("SoundPortalPhase") and "Info")
         elseif health >= 70 and health <= 72 and phase2warn then
             phase2warn = false
         end
@@ -508,18 +508,18 @@ function mod:OnSpellCastStart(unitName, castName, unit)
         end
         local sSpellName = closest_holo_hand["unit"]:GetCastName():gsub(NO_BREAK_SPACE, " ")
         if sSpellName == self.L["Crushing Blow"] then
-            core:AddMsg("CRBLOW", self.L["INTERRUPT CRUSHING BLOW!"], 5, mod:GetSetting("SoundHandInterrupt") and "Inferno")
+            core:AddMsg("CRBLOW", "INTERRUPT CRUSHING BLOW!", 5, mod:GetSetting("SoundHandInterrupt") and "Inferno")
         end
     elseif unitName == self.L["Mobius Physics Constructor"] and castName == self.L["Data Flare"] then
         mod:AddTimerBar("BLIND", "Blind", 29, mod:GetSetting("SoundBlindYellowRoom"))
-        core:AddMsg("BLIND", self.L["BLIND! TURN AWAY FROM BOSS"], 5, mod:GetSetting("SoundBlindYellowRoom") and "Inferno")
+        core:AddMsg("BLIND", "BLIND! TURN AWAY FROM BOSS", 5, mod:GetSetting("SoundBlindYellowRoom") and "Inferno")
     end
 end
 
 function mod:OnChatDC(message)
     if message:find(self.L["Gun Grid Activated"]) then
         nGunGridLastPopTime = GetGameTime()
-        core:AddMsg("GGRIDMSG", self.L["Gun Grid NOW!"], 5, mod:GetSetting("SoundGunGrid") and "Beware")
+        core:AddMsg("GGRIDMSG", "Gun Grid NOW!", 5, mod:GetSetting("SoundGunGrid") and "Beware")
         mod:AddTimerBar("GGRID", "~Gun Grid", 112, mod:GetSetting("SoundGunGrid"))
         if bIsHoloHand then
             mod:AddTimerBar("HOLO", "Holo Hand", 22)

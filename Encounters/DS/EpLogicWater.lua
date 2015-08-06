@@ -132,7 +132,7 @@ function mod:OnSpellCastStart(unitName, castName, unit)
         elseif castName == self.L["Imprison"] then
             mod:RemoveTimerBar("PRISON")
         elseif castName == self.L["Defragment"] then
-            core:AddMsg("DEFRAG", self.L["SPREAD"], 5, mod:GetSetting("SoundDefrag") and "Beware")
+            core:AddMsg("DEFRAG", "SPREAD", 5, mod:GetSetting("SoundDefrag") and "Beware")
             mod:AddTimerBar("DEFRAG", "~Defrag", 36, mod:GetSetting("SoundDefrag"))
         end
     elseif unitName == self.L["Hydroflux"] then

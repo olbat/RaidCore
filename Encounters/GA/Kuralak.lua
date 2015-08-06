@@ -154,16 +154,16 @@ end
 
 function mod:OnHealthChanged(unitName, health)
     if health == 74 and unitName == self.L["Kuralak the Defiler"] then
-        core:AddMsg("P2", self.L["P2 SOON !"], 5, "Info")
+        core:AddMsg("P2", "P2 SOON !", 5, "Info")
     end
 end
 
 function mod:OnChatDC(message)
     if message:find(self.L["Kuralak the Defiler returns to the Archive Core"]) then
-        core:AddMsg("VANISH", self.L["VANISH"], 5, "Alert")
+        core:AddMsg("VANISH", "VANISH", 5, "Alert")
         core:AddTimerBar("VANISH", "Vanish", 47)
     elseif message:find(self.L["Kuralak the Defiler causes a violent outbreak of corruption"]) then
-        core:AddMsg("OUTBREAK", self.L["OUTBREAK"], 5, "RunAway")
+        core:AddMsg("OUTBREAK", "OUTBREAK", 5, "RunAway")
         outbreakCount = outbreakCount + 1
         if outbreakCount <= 5 then
             core:AddTimerBar("OUTBREAK", self.L["Outbreak (%s)"]:format(outbreakCount + 1), 45)
@@ -182,7 +182,7 @@ function mod:OnChatDC(message)
         if siphonCount == 0 then siphonCount = 1 end
         siphonCount = siphonCount + 1
         if self:Tank() then
-            core:AddMsg("SIPHON", self.L["SWITCH TANK"], 5, "Alarm")
+            core:AddMsg("SIPHON", "SWITCH TANK", 5, "Alarm")
             if siphonCount < 4 then
                 core:AddTimerBar("SIPHON", self.L["Switch Tank (%s)"]:format(siphonCount), 88)
             end
@@ -199,7 +199,7 @@ function mod:OnChatNPCSay(message)
         or message:find(self.L["One of us... you will become one of us"]) then
         eggsCount, siphonCount, outbreakCount = 2, 1, 0
         core:RemoveTimerBar("VANISH")
-        core:AddMsg("KP2", self.L["PHASE 2 !"], 5, "Alert")
+        core:AddMsg("KP2", "PHASE 2 !", 5, "Alert")
         core:AddTimerBar("OUTBREAK", self.L["Outbreak (%s)"]:format(outbreakCount + 1), 15)
         core:AddTimerBar("EGGS", self.L["Eggs (%s)"]:format(eggsCount), 73)
         if self:Tank() then

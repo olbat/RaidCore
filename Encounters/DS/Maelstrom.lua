@@ -185,11 +185,11 @@ function mod:OnSpellCastStart(unitName, castName, unit)
             nStationCount = 0
             mod:AddTimerBar("STATION", "STATION", 13)
         elseif castName == self.L["Ice Breath"] then
-            core:AddMsg("BREATH", self.L["ICE BREATH"], 5, mod:GetSetting("SoundIceBreath") and "RunAway")
+            core:AddMsg("BREATH", "ICE BREATH", 5, mod:GetSetting("SoundIceBreath") and "RunAway")
         elseif castName == self.L["Crystallize"] then
-            core:AddMsg("BREATH", self.L["ICE BREATH"], 5, mod:GetSetting("SoundCrystallize") and "Beware")
+            core:AddMsg("BREATH", "ICE BREATH", 5, mod:GetSetting("SoundCrystallize") and "Beware")
         elseif castName == self.L["Typhoon"] then
-            core:AddMsg("BREATH", self.L["TYPHOON"], 5, mod:GetSetting("SoundTyphoon") and "Beware")
+            core:AddMsg("BREATH", "TYPHOON", 5, mod:GetSetting("SoundTyphoon") and "Beware")
         end
     end
 end
